@@ -476,8 +476,10 @@ function knownPool(it) {
 }
 function distractors(it, n = 3) {
   const ok = x => x.nl !== it.nl && !meaningClash(x, it) && soundSim(x, it) < SIMILAR;
+  const same = x => x.isPhrase === it.isPhrase;
   let cands = shuffle(knownPool(it)).filter(ok);
-  if (cands.length < n) cands = cands.concat(shuffle(allItemIds().filter(id => id !== it.id)).slice(0, 40).map(item).filter(x => x && ok(x)));
+  if (cands.filter(same).length < n) cands = cands.concat(shuffle(allItemIds().filter(id => id !== it.id)).slice(0, 80).map(item).filter(x => x && ok(x)));
+  cands = [...cands.filter(same), ...cands.filter(x => !same(x))]; // zinnen tegen zinnen, woorden tegen woorden
   const out = [], seenE = new Set([it.e]);
   for (const x of cands) {
     if (out.some(o => soundSim(o, x) >= SIMILAR || meaningClash(o, x))) continue; // ook onderling niet op elkaar lijkend
