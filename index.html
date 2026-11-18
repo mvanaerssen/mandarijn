@@ -80,6 +80,12 @@ h2{font-size:20px;margin:18px 0 8px}
 .opt{background:var(--card);border-radius:18px;box-shadow:0 3px 0 var(--line);padding:16px 8px;min-height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;border:3px solid transparent}
 .opt .e{font-size:46px}
 .opt .l{font-size:13px;color:var(--muted)}
+.opt.word{min-height:84px;padding:12px 10px}
+.opt.word .e{font-size:22px;line-height:1}
+.opt.word .l{font-size:18px;font-weight:700;color:var(--ink);line-height:1.25;text-align:center}
+.opts.one{grid-template-columns:1fr}
+.opts.one .opt.word{min-height:60px;flex-direction:row;justify-content:flex-start;gap:12px;text-align:left}
+.opts.one .opt.word .l{text-align:left;font-size:17px}
 .opt.text{min-height:70px;font-size:22px;font-weight:700}
 .opt.ok{border-color:var(--green);background:var(--green-bg)}
 .opt.bad{border-color:var(--red);background:var(--bad-bg)}
@@ -457,6 +463,11 @@ function sylsSim(A, B) {
   return shared / Math.max(A.length, B.length) >= 0.67 ? 0.6 : 0;
 }
 function soundSim(a, b) { return sylsSim(a.syls, b.syls); }
+// betekenissen vergelijken: "mooi (om te zien)" en "mooi" betekenen hetzelfde → nooit samen als opties
+function nlKeys(nl) {
+  return new Set(nl.toLowerCase().replace(/\([^)]*\)/g, "").split(/[\/,;]| of /).map(s => s.replace(/[?!.…'"]/g, "").trim()).filter(Boolean));
+}
+function meaningClash(a, b) { const A = nlKeys(a.nl), B = nlKeys(b.nl); for (const k of A) if (B.has(k)) return true; return false; }
 const SIMILAR = 0.6;
 function knownPool(it) {
   const pool = new Set([...introducedIds(), ...(it.unit != null ? UNITS[it.unit].items.map(i => i.id) : [])]);
@@ -464,12 +475,12 @@ function knownPool(it) {
   return [...pool].map(item).filter(Boolean);
 }
 function distractors(it, n = 3) {
-  const ok = x => x.e !== it.e && x.nl !== it.nl && soundSim(x, it) < SIMILAR;
+  const ok = x => x.nl !== it.nl && !meaningClash(x, it) && soundSim(x, it) < SIMILAR;
   let cands = shuffle(knownPool(it)).filter(ok);
   if (cands.length < n) cands = cands.concat(shuffle(allItemIds().filter(id => id !== it.id)).slice(0, 40).map(item).filter(x => x && ok(x)));
   const out = [], seenE = new Set([it.e]);
   for (const x of cands) {
-    if (seenE.has(x.e) || out.some(o => soundSim(o, x) >= SIMILAR)) continue; // ook onderling niet op elkaar lijkend
+    if (out.some(o => soundSim(o, x) >= SIMILAR || meaningClash(o, x))) continue; // ook onderling niet op elkaar lijkend
     out.push(x); seenE.add(x.e);
     if (out.length >= n) break;
   }
@@ -785,7 +796,7 @@ function pickBatch(fresh, size) {
   for (const r of fresh) {
     if (out.length >= size) break;
     const it = item(r.id);
-    if (out.some(o => soundSim(o, it) >= SIMILAR)) continue; // die komt in een volgende les
+    if (out.some(o => soundSim(o, it) >= SIMILAR || meaningClash(o, it))) continue; // die komt in een volgende les
     out.push(it);
   }
   if (!out.length && fresh.length) out.push(item(fresh[0].id));
@@ -1172,12 +1183,13 @@ ACT.reveal = el => { document.getElementById("nl").classList.remove("hidden"); e
 ACT.introNext = () => { sess.xp += 5; addXP(5); nextEx(); };
 
 function optionsGrid(it, opts, mode) {
-  return `<div class="opts">${opts.map((o, i) => `<button class="opt" data-act="pickopt" data-i="${i}"><div class="e">${o.e}</div><div class="l hidden">${esc(o.nl)}</div></button>`).join("")}</div>`;
+  const long = opts.some(o => o.nl.length > 20);
+  return `<div class="opts ${long ? "one" : ""}">${opts.map((o, i) => `<button class="opt word" data-act="pickopt" data-i="${i}"><div class="e">${o.e}</div><div class="l">${esc(o.nl)}</div></button>`).join("")}</div>`;
 }
 function handlePick(ex, it, opts, after) {
   ACT.pickopt = el => {
     const i = +el.dataset.i, ok = opts[i].id === it.id;
-    app.querySelectorAll(".opt").forEach((b, j) => { b.disabled = true; b.querySelector(".l").classList.remove("hidden"); if (opts[j].id === it.id) b.classList.add("ok"); });
+    app.querySelectorAll(".opt").forEach((b, j) => { b.disabled = true; if (opts[j].id === it.id) b.classList.add("ok"); });
     if (!ok) el.classList.add("bad");
     answered(ok, ex);
     after && after(ok);
@@ -1199,10 +1211,8 @@ function exListen(ex) {
   const it = item(ex.id), opts = shuffle([it, ...distractors(it, 3)]);
   shell(`<div class="prompt">Luister… wat hoort erbij? 👂</div>
     <div class="row" style="justify-content:center;gap:14px"><button class="speaker" data-act="sayit">🔊</button><button class="speaker sm slow" data-act="sayslow">🐢</button></div>
-    ${optionsGrid(it, opts)}
-    <div class="center" style="margin-top:12px"><button class="btn ghost sm" data-act="hint">💡 Hint</button></div>`);
+    ${optionsGrid(it, opts)}`);
   ACT.sayit = () => say(it.zhFull); ACT.sayslow = () => say(it.zhFull, { slow: true });
-  ACT.hint = el => { app.querySelectorAll(".opt .l").forEach(l => l.classList.remove("hidden")); el.remove(); };
   handlePick(ex, it, opts);
   say(it.zhFull);
 }
@@ -1353,7 +1363,7 @@ function exMatch(ex) {
   const its = ids.map(item).filter(Boolean);
   for (const x of shuffle(introducedIds().map(item))) {
     if (its.length >= 5) break;
-    if (its.some(o => o.id === x.id || o.nl === x.nl || soundSim(o, x) >= SIMILAR)) continue;
+    if (its.some(o => o.id === x.id || o.nl === x.nl || meaningClash(o, x) || soundSim(o, x) >= SIMILAR)) continue;
     its.push(x);
   }
   if (its.length < 3) return nextEx();
