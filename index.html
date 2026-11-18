@@ -89,7 +89,7 @@ h2{font-size:20px;margin:18px 0 8px}
 .feedback.bad{background:var(--bad-bg);color:var(--red2)}
 .footer{margin-top:auto;padding-top:16px}
 .tiles{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;min-height:70px;padding:10px;border-radius:16px}
-.tiles.answer{background:var(--card);border:2px dashed var(--line);margin:12px 0}
+.tiles.answer{background:var(--card);border:2px dashed var(--line);margin:12px 0;min-height:86px;align-content:flex-start}
 .tile{background:var(--card);border-radius:12px;padding:8px 12px;box-shadow:0 3px 0 var(--line);text-align:center}
 .tile b{display:block;font-size:22px}
 .tile small{color:var(--red);font-size:13px}
@@ -135,12 +135,17 @@ input[type=range]{width:100%}
 .stage-badge{font-size:15px;font-weight:700;color:var(--red2)}
 .tonekey{display:flex;gap:6px;justify-content:center;font-size:12px;color:var(--muted);margin-top:8px}
 .tonekey b{font-weight:800}
+.tw{margin-top:12px;background:#eef6ff;border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.5;cursor:pointer}
+.note p{font-size:16px}
+.exline{background:var(--bg);border-radius:12px;padding:10px 12px;margin-top:8px;cursor:pointer}
+.bubble.story{max-width:100%;text-align:left}
 </style>
 </head>
 <body>
 <div id="app"></div>
 <div id="toast" class="toast"></div>
 <script src="data.js"></script>
+<script src="data2.js"></script>
 <script>
 "use strict";
 /* =========================================================
@@ -240,10 +245,29 @@ function lineOf(l) {
   }
   return l;
 }
+// woorden van meerdere lettergrepen (uit de lesstof), zodat pinyin in gesprekken als "Mǎkèsī" komt i.p.v. "Mǎ kè sī"
+const LEX = (() => {
+  const m = new Set();
+  UNITS.forEach(u => u.items.forEach(r => { if (!r.py) return; r.py.split("|").forEach(w => { const s = w.trim().split(/\s+/); if (s.length > 1 && !s.some(x => /^de5$/i.test(x))) m.add(s.join(" ").toLowerCase()); }); }));
+  return m;
+})();
+const NOJOIN = new Set(["duo1 da4", "kan4 shu1"]);
 function lineDerived(l) {
   l = lineOf(l);
-  const syls = l.py.trim().split(/\s+/);
-  return { s: l.s, zhFull: l.zh, pyText: syls.map(markSyl).join(" "), syls, nl: l.nl };
+  if (l.py.includes("|")) { // nieuwe lesstof: woorden al gegroepeerd
+    const syls = l.py.replace(/\|/g, " ").trim().split(/\s+/);
+    const words = l.py.split("|").map(w => joinWord(w.trim().split(/\s+/)));
+    return { s: l.s, zhFull: l.zh, pyText: words.join(" "), syls, nl: l.nl, e: l.e };
+  }
+  const syls = l.py.trim().split(/\s+/), words = [];
+  for (let i = 0; i < syls.length;) {
+    let len = Math.min(5, syls.length - i);
+    const age = numZh(S.age).py;
+    for (; len > 1; len--) { const k = syls.slice(i, i + len).join(" ").toLowerCase(); if ((LEX.has(k) && !NOJOIN.has(k)) || k === age) break; }
+    words.push(len > 1 ? joinWord(syls.slice(i, i + len)) : markSyl(syls[i]));
+    i += len;
+  }
+  return { s: l.s, zhFull: l.zh, pyText: words.join(" "), syls, nl: l.nl };
 }
 function allItemIds() { return UNITS.flatMap(u => u.items.map(i => i.id)); }
 
@@ -343,22 +367,47 @@ function onGoalMet() {
   }
   addXP(50, true);
   fx("win"); confetti(50);
-  toast("🎯 Dagdoel gehaald! +50 XP · 🔥 " + st.count + " dagen");
+  toast("🎯 Dagdoel gehaald! +50 XP · 🔥 " + st.count + (st.count === 1 ? " dag" : " dagen"));
   save();
 }
 function addXP(n, silent) { S.xp += n; dayData().xp += n; if (!silent) { const el = document.getElementById("xpnow"); if (el) el.textContent = "+" + sess.xp; } }
 
 /* ---------- leeftijd (= voortgang) ---------- */
 function unitsDone() { return UNITS.filter(u => S.units[u.id] && S.units[u.id].done).length; }
-function ageYears() { return unitsDone() * 0.5; }
+// leeftijd na n voltooide werelden: baby → kleuter (1–12), basisschool (13–30), tiener (31–48), volwassen (49–68)
+function ageAfter(n) {
+  if (n <= 12) return n * 0.5;
+  if (n <= 30) return 6 + (n - 12) / 3;
+  if (n <= 48) return 12 + (n - 30) / 3;
+  return Math.min(21, 18 + (n - 48) * 0.15);
+}
+function ageYears() { return ageAfter(unitsDone()); }
 function stage(age = ageYears()) {
   if (age < 1) return { name: "Baby", e: "👶" };
   if (age < 2) return { name: "Dreumes", e: "🍼" };
   if (age < 4) return { name: "Peuter", e: "🧸" };
   if (age < 6) return { name: "Kleuter", e: "🎒" };
-  return { name: "Schoolkind", e: "🏫" };
+  if (age < 12) return { name: "Schoolkind", e: "🏫" };
+  if (age < 18) return { name: "Tiener", e: "🧑‍🎓" };
+  return { name: "Volwassen", e: "🧑" };
 }
-function ageLabel(a = ageYears()) { const w = Math.floor(a), h = a - w >= .5; return (w === 0 && h ? "½" : w + (h ? "½" : "")) + " jaar"; }
+function ageLabel(a = ageYears()) {
+  if (a >= 6) return Math.floor(a + 1e-9) + " jaar";
+  const w = Math.floor(a), h = a - w >= .5; return (w === 0 && h ? "½" : w + (h ? "½" : "")) + " jaar";
+}
+function checkUnitDone(u) {
+  const st = unitState(u);
+  if (st.done) return false;
+  const allIntro = u.items.every(i => S.items[i.id] && S.items[i.id].intro);
+  if (allIntro && (!u.dialogue.length || st.dialogue) && (!u.story || st.story)) { st.done = true; return true; }
+  return false;
+}
+function twHTML(tw) {
+  if (!tw) return "";
+  if (!tw.zh) return `<div class="tw">🇹🇼 ${esc(tw.x)}</div>`;
+  const py = tw.py.split("|").map(w => joinWord(w.trim().split(/\s+/))).join(" ");
+  return `<div class="tw" data-act="saytw" data-zh="${esc(tw.zh)}">🇹🇼 In Taiwan ${esc(tw.x)}: <b class="hz">${esc(tw.zh)}</b> <span style="color:var(--red)">${esc(py)}</span> 🔊</div>`;
+}
 function currentUnitIndex() { const i = UNITS.findIndex(u => !(S.units[u.id] && S.units[u.id].done)); return i < 0 ? UNITS.length : i; }
 function unitState(u) { if (!S.units[u.id]) S.units[u.id] = { done: false, dialogue: false }; return S.units[u.id]; }
 function introducedIds() { return Object.keys(S.items).filter(id => S.items[id].intro && rawItem(id)); }
@@ -618,6 +667,7 @@ function speakWidget(host, it, onAttempt) {
       blobUrl = blob ? URL.createObjectURL(blob) : null;
       const res = analyse(frames, it.syls);
       q("result").classList.remove("hidden");
+      q("result").querySelector(".canvas-wrap").classList.remove("hidden");
       if (res.empty) {
         q("score").textContent = "🤔"; q("tip").textContent = "Ik hoorde niet genoeg. Praat iets harder of houd je telefoon dichterbij.";
         drawContour(q("result").querySelector("canvas"), { tgt: targetContour(it.syls) });
@@ -634,6 +684,7 @@ function speakWidget(host, it, onAttempt) {
       onAttempt && onAttempt(res.empty ? null : res.score, best);
     } catch (e) {
       q("result").classList.remove("hidden");
+      q("result").querySelector(".canvas-wrap").classList.add("hidden");
       q("score").textContent = "🎙️❌";
       q("tip").innerHTML = e && e.name === "NotAllowedError"
         ? "Microfoon geweigerd. Zet hem aan via iPhone-instellingen → Safari → Microfoon, of zet 'Ik kan nu niet praten' aan."
@@ -659,8 +710,8 @@ function exForReview(it) {
   const s = S.items[it.id] || { box: 0 };
   let types;
   if (s.box <= 1) types = ["listen", "listen", toneEligible(it) ? "tone" : "listen"];
-  else if (s.box <= 3) types = ["listen", "read", "speak", it.parts.length >= 3 ? "build" : "read", toneEligible(it) ? "tone" : "speak"];
-  else types = ["speak", "read", it.parts.length >= 3 ? "build" : "speak"];
+  else if (s.box <= 3) types = ["listen", "read", "hanzi", "speak", it.parts.length >= 3 ? "build" : "read", toneEligible(it) ? "tone" : "speak"];
+  else types = ["speak", "hanzi", "hanzi", it.parts.length >= 3 ? "build" : "speak"];
   if (quiet) types = types.filter(t => t !== "speak"); if (!types.length) types = ["listen"];
   return { type: pick(types), id: it.id };
 }
@@ -668,17 +719,21 @@ function buildLesson() {
   const q = [];
   // 1) herhaling van woorden die je bijna vergeet
   const due = introducedIds().filter(id => S.items[id].due <= todayNum())
-    .sort((a, b) => S.items[a].due - S.items[b].due || S.items[a].box - S.items[b].box).slice(0, 10);
+    .sort((a, b) => S.items[a].due - S.items[b].due || S.items[a].box - S.items[b].box).slice(0, 15);
   shuffle(due).forEach(id => q.push(exForReview(item(id))));
   // 2) nieuwe woorden uit de huidige wereld
   const ui = currentUnitIndex();
   if (ui < UNITS.length) {
     const u = UNITS[ui], st = unitState(u);
     const fresh = u.items.filter(i => !(S.items[i.id] && S.items[i.id].intro));
-    const batch = fresh.slice(0, fresh.length && fresh[0].zh && fresh[0].zh.includes("|") ? 3 : 4);
+    const big = ui >= 12; // vanaf de basisschool: hoger tempo
+    const batch = fresh.slice(0, fresh.length && fresh[0].zh && fresh[0].zh.includes("|") ? (big ? 4 : 3) : (big ? 6 : 4));
     if (batch.length) {
       const its = batch.map(b => item(b.id));
-      if (fresh.length === u.items.length) q.push({ type: "unitstart", unit: ui });
+      if (fresh.length === u.items.length) {
+        q.push({ type: "unitstart", unit: ui });
+        (u.notes || []).forEach((n, k) => q.push({ type: "note", unit: ui, n: k }));
+      }
       if (ui === 0 && fresh.length === u.items.length) q.push({ type: "toneintro" });
       its.forEach(it => q.push({ type: "intro", id: it.id }));
       shuffle(its).forEach(it => q.push({ type: "listen", id: it.id }));
@@ -692,7 +747,9 @@ function buildLesson() {
       shuffle(its).forEach(it => q.push({ type: "read", id: it.id }));
     }
     const remaining = fresh.length - batch.length;
-    if (remaining <= 0 && !st.dialogue) q.push({ type: "dialogue", unit: ui });
+    if (remaining <= 0 && u.story && !st.story) q.push({ type: "story", unit: ui });
+    if (remaining <= 0 && u.dialogue.length && !st.dialogue) q.push({ type: "dialogue", unit: ui });
+    if (remaining <= 0 && checkUnitDone(u)) save(); // veiligheidsnet: alles al gedaan
   }
   // 3) niets nieuw meer? dan extra herhaling
   if (q.length < 6) {
@@ -727,7 +784,7 @@ function answered(ok, ex, opts = {}) {
     sess.bad++; sess.combo = 0; fx("bad");
     // fout? later in deze les nog een keer
     const k = ex.type + ":" + (ex.id || "");
-    if (!sess.requeued.has(k) && ex.type !== "speak") { sess.requeued.add(k); sess.queue.push(Object.assign({}, ex, { retry: true })); }
+    if (!sess.requeued.has(k) && !["speak", "storyq", "story", "dialogue"].includes(ex.type)) { sess.requeued.add(k); sess.queue.push(Object.assign({}, ex, { retry: true })); }
   }
   if (ex.id && ok !== null && ex.type !== "intro") srs(ex.id, ok);
   save();
@@ -831,7 +888,7 @@ function renderPath() {
   const cur = currentUnitIndex();
   let lastStage = "";
   const rows = UNITS.map((u, i) => {
-    const st = stage(i * 0.5); const head = st.name !== lastStage ? `<h2>${st.e} ${st.name}</h2>` : ""; lastStage = st.name;
+    const st = stage(ageAfter(i)); const head = st.name !== lastStage ? `<h2>${st.e} ${st.name}</h2>` : ""; lastStage = st.name;
     const done = S.units[u.id] && S.units[u.id].done, locked = i > cur;
     return head + `<div class="card unitrow ${locked ? "lock" : ""}" ${locked ? "" : `data-act="unit" data-u="${i}"`}>
       <div class="ue">${u.emoji}</div><div style="flex:1"><b>${i + 1}. ${esc(u.title)}</b><div class="small muted">${u.items.length} woorden & zinnen</div></div>
@@ -845,14 +902,26 @@ function renderUnit(ui) {
   const u = UNITS[ui];
   const list = u.items.map(r => {
     const it = item(r.id), known = S.items[r.id] && S.items[r.id].intro;
-    return `<div class="list-item"><div class="e">${it.e}</div><div class="t"><b class="hz">${known ? esc(it.zhFull) : "？"}</b><div style="color:var(--red)">${known ? esc(it.pyText) : ""}</div><div class="muted">${known ? esc(it.nl) : "nog niet geleerd"}</div></div>
+    return `<div class="list-item"><div class="e">${it.e}</div><div class="t"><b class="hz">${known ? esc(it.zhFull) : "？"}</b><div style="color:var(--red)">${known ? esc(it.pyText) : ""}</div><div class="muted">${known ? esc(it.nl) : "nog niet geleerd"}</div>${known ? twHTML(it.tw) : ""}</div>
       ${known ? `<button class="speaker sm" data-act="sayid" data-id="${it.id}">🔊</button>` : ""}</div>`;
   }).join("");
-  const dlg = unitState(u).dialogue ? `<button class="btn" data-act="replaydlg" data-u="${ui}" style="margin-top:10px">💬 Gesprek opnieuw oefenen</button>` : "";
+  const st = unitState(u);
+  const notes = (u.notes || []).length && (st.done || u.items.some(i => S.items[i.id] && S.items[i.id].intro))
+    ? u.notes.map(n => noteCard(n)).join("") : "";
+  const dlg = st.dialogue ? `<button class="btn" data-act="replaydlg" data-u="${ui}" style="margin-top:10px">💬 Gesprek opnieuw oefenen</button>` : "";
+  const sty = u.story && st.story ? `<button class="btn" data-act="replaystory" data-u="${ui}" style="margin-top:10px">📖 Verhaaltje opnieuw lezen</button>` : "";
   app.innerHTML = `<div class="topbar"><button class="x" data-act="path">‹</button><b style="font-size:20px">${u.emoji} ${esc(u.title)}</b></div>
-    <div class="card">${list}</div>${dlg}`;
+    ${notes}<div class="card">${list}</div>${dlg}${sty}`;
   bind();
 }
+function noteCard(n) {
+  return `<div class="card note"><div class="small muted">💡 Uitleg</div><b style="font-size:18px">${esc(n.t)}</b>
+    <p style="line-height:1.5;margin:8px 0">${esc(n.x)}</p>
+    ${n.ex.map(e => { const d = lineDerived(e); return `<div class="exline" data-act="sayzh" data-zh="${esc(d.zhFull)}"><span class="hz" style="font-size:20px">${esc(d.zhFull)}</span> 🔊<div style="color:var(--red);font-size:14px">${esc(d.pyText)}</div><div class="small muted">${esc(e.nl)}</div></div>`; }).join("")}</div>`;
+}
+ACT.sayzh = el => say(el.dataset.zh);
+ACT.saytw = el => say(el.dataset.zh);
+ACT.replaystory = el => { sess = { kind: "dialogue", queue: [{ type: "story", unit: +el.dataset.u, replay: true }], idx: 0, ok: 0, bad: 0, combo: 0, maxCombo: 0, xp: 0, requeued: new Set(), startUnits: unitsDone() }; timing = true; renderEx(); };
 ACT.sayid = el => say(item(el.dataset.id).zhFull);
 ACT.replaydlg = el => { sess = { kind: "dialogue", queue: [{ type: "dialogue", unit: +el.dataset.u, replay: true }], idx: 0, ok: 0, bad: 0, combo: 0, maxCombo: 0, xp: 0, requeued: new Set(), startUnits: unitsDone() }; timing = true; renderEx(); };
 
@@ -934,11 +1003,16 @@ function renderEx() {
   const ex = sess.queue[sess.idx];
   touch();
   ({ unitstart: exUnitStart, toneintro: exToneIntro, intro: exIntro, listen: exListen, read: exRead, tone: exTone, drilltone: exDrillTone,
-     speak: exSpeak, drillspeak: exDrillSpeak, build: exBuild, dialogue: exDialogue }[ex.type] || nextEx)(ex);
+     speak: exSpeak, drillspeak: exDrillSpeak, build: exBuild, dialogue: exDialogue, note: exNote, story: exStory, hanzi: exHanzi }[ex.type] || nextEx)(ex);
 }
 
+function exNote(ex) {
+  const n = UNITS[ex.unit].notes[ex.n];
+  shell(noteCard(n) + `<div class="center small muted">Tik op een voorbeeld om het te horen</div>`,
+    { footer: `<button class="btn primary" data-act="next">Snap ik →</button>` });
+}
 function exUnitStart(ex) {
-  const u = UNITS[ex.unit], st = stage(ex.unit * 0.5);
+  const u = UNITS[ex.unit], st = stage(ageAfter(ex.unit));
   shell(`<div class="celebrate"><div class="huge">${u.emoji}</div><div class="small muted">Nieuwe wereld · ${st.e} ${st.name}</div><h1>${esc(u.title)}</h1>
     ${u.intro ? `<p style="font-size:17px;line-height:1.5">${esc(u.intro)}</p>` : `<p class="muted">Luister goed en raad wat het betekent, net als een kind.</p>`}</div>`,
     { footer: `<button class="btn primary" data-act="next">Let's go! →</button>` });
@@ -962,7 +1036,8 @@ function exIntro(ex) {
     <div class="row" style="justify-content:center;gap:14px;margin-top:14px">
       <button class="speaker sm" data-act="sayit">🔊</button><button class="speaker sm slow" data-act="sayslow">🐢</button></div>
     <div class="center" style="margin-top:14px"><button class="btn sm" data-act="reveal">👀 Wat betekent het?</button></div>
-    <div class="nl hidden" id="nl">${esc(it.nl)}</div>`,
+    <div class="nl hidden" id="nl">${esc(it.nl)}</div>
+    ${twHTML(it.tw)}`,
     { footer: `<button class="btn primary" data-act="introNext">Ik snap het →</button>` });
   ACT.sayit = () => say(it.zhFull); ACT.sayslow = () => say(it.zhFull, { slow: true });
   say(it.zhFull).then(() => new Promise(r => setTimeout(r, 500))).then(() => { if (sess && sess.queue[sess.idx] === ex) say(it.zhFull, { slow: true }); });
@@ -985,6 +1060,14 @@ function handlePick(ex, it, opts, after) {
       <button class="btn ${ok ? "green" : "primary"}" data-act="next" style="margin-top:10px">Verder →</button>`);
     say(it.zhFull);
   };
+}
+function exHanzi(ex) {
+  const it = item(ex.id), opts = shuffle([it, ...distractors(it, 3)]);
+  shell(`<div class="prompt">Lees zonder pinyin 🀄</div>
+    <div class="bighz hz" style="margin-top:24px;font-size:52px">${esc(it.zhFull)}</div>
+    <div class="center small muted">Wat betekent dit?</div>
+    ${optionsGrid(it, opts)}`);
+  handlePick(ex, it, opts);
 }
 function exListen(ex) {
   const it = item(ex.id), opts = shuffle([it, ...distractors(it, 3)]);
@@ -1083,12 +1166,13 @@ function exBuild(ex) {
 }
 
 /* ---------- gesprek ---------- */
+function whoA(u) { const w = u.who || { name: "Wang Ming", e: "🧑" }; return w.e + " " + w.name; }
 function exDialogue(ex) {
   const u = UNITS[ex.unit];
   const lines = u.dialogue.map(lineDerived);
   let playing = false;
   const bubbles = () => lines.map((l, i) => `<div class="bubble ${l.s}" data-act="line" data-i="${i}" id="b${i}">
-      <div class="who">${l.s === "A" ? "🧑 Wang Ming" : "🙋‍♂️ Jij"}</div><div class="h hz">${esc(l.zhFull)}</div><div class="p">${esc(l.pyText)}</div>
+      <div class="who">${l.s === "A" ? esc(whoA(u)) : "🙋‍♂️ Jij"}</div><div class="h hz">${esc(l.zhFull)}</div><div class="p">${esc(l.pyText)}</div>
       <div class="n hidden">${esc(l.nl)}</div></div>`).join("");
   shell(`<div class="prompt">💬 Gesprek: ${esc(u.title)}</div><div class="small muted">Luister eerst. Tik op een zin om hem opnieuw te horen en de betekenis te zien.</div>
     <div style="margin-top:10px">${bubbles()}</div>`,
@@ -1104,7 +1188,7 @@ function rolePlay(ex, lines, i) {
   const l = lines[i];
   if (l.s === "A") {
     shell(`<div class="prompt">🎭 Rollenspel (${i + 1}/${lines.length})</div>
-      <div class="bubble A playing"><div class="who">🧑 Wang Ming</div><div class="h hz">${esc(l.zhFull)}</div><div class="p">${esc(l.pyText)}</div><div class="n">${esc(l.nl)}</div></div>`,
+      <div class="bubble A playing"><div class="who">${esc(whoA(UNITS[ex.unit]))}</div><div class="h hz">${esc(l.zhFull)}</div><div class="p">${esc(l.pyText)}</div><div class="n">${esc(l.nl)}</div></div>`,
       { footer: `<button class="btn" data-act="again">🔊 Nog eens</button><button class="btn primary" data-act="rp" style="margin-top:10px">Jouw beurt →</button>` });
     ACT.again = () => say(l.zhFull, { pitch: 1.15 });
     ACT.rp = () => rolePlay(ex, lines, i + 1);
@@ -1121,22 +1205,60 @@ function rolePlay(ex, lines, i) {
   }
 }
 function finishDialogue(ex) {
-  const u = UNITS[ex.unit], st = unitState(u);
-  const wasDone = st.done;
-  st.dialogue = true;
-  const allIntro = u.items.every(i => S.items[i.id] && S.items[i.id].intro);
-  if (allIntro) st.done = true;
+  const u = UNITS[ex.unit];
+  unitState(u).dialogue = true;
   answered(true, ex, { xp: 30 });
+  afterUnitPart(ex);
+}
+function afterUnitPart(ex) {
+  const u = UNITS[ex.unit];
+  const justDone = !ex.replay && checkUnitDone(u);
   save();
-  if (st.done && !wasDone && !ex.replay) {
-    const a = ageYears(), sNew = stage(a), sOld = stage(a - 0.5);
-    fx("win"); confetti(60);
-    shell(`<div class="celebrate"><div class="huge">${sNew.e}</div>
-      <h1>Je bent nu ${ageLabel(a)}!</h1>
-      ${sNew.name !== sOld.name ? `<p style="font-size:18px">🎉 Je bent opgegroeid van <b>${sOld.name}</b> naar <b>${sNew.name}</b>!</p>` : `<p style="font-size:17px">Wereld "${esc(u.title)}" voltooid ✅</p>`}
-      ${UNITS[ex.unit + 1] ? `<p class="muted">Volgende wereld: ${UNITS[ex.unit + 1].emoji} ${esc(UNITS[ex.unit + 1].title)}</p>` : `<p>🏆 Alle werelden voltooid!</p>`}</div>`,
-      { footer: `<button class="btn primary" data-act="next">Verder →</button>` });
-  } else nextEx();
+  if (!justDone) return nextEx();
+  const n = unitsDone(), a = ageAfter(n), aOld = ageAfter(n - 1), sNew = stage(a), sOld = stage(aOld);
+  const older = ageLabel(a) !== ageLabel(aOld);
+  fx("win"); confetti(60);
+  shell(`<div class="celebrate"><div class="huge">${sNew.e}</div>
+    <h1>${older ? "Je bent nu " + ageLabel(a) + "!" : "Wereld voltooid!"}</h1>
+    ${sNew.name !== sOld.name ? `<p style="font-size:18px">🎉 Je bent opgegroeid van <b>${sOld.name}</b> naar <b>${sNew.name}</b>!</p>` : `<p style="font-size:17px">"${esc(u.title)}" ✅</p>`}
+    ${UNITS[ex.unit + 1] ? `<p class="muted">Volgende wereld: ${UNITS[ex.unit + 1].emoji} ${esc(UNITS[ex.unit + 1].title)}</p>` : `<p>🏆 Alle werelden voltooid! Je kunt nu echt een gesprek voeren.</p>`}</div>`,
+    { footer: `<button class="btn primary" data-act="next">Verder →</button>` });
+}
+
+/* ---------- luisterverhaaltje ---------- */
+function exStory(ex) {
+  const u = UNITS[ex.unit], sto = u.story;
+  const lines = sto.lines.map(lineDerived);
+  let playing = false, hidePy = false;
+  shell(`<div class="prompt">📖 Verhaaltje: ${esc(sto.title)}</div>
+    <div class="small muted">Luister en kijk naar de plaatjes. Tik op een zin om hem te horen en de vertaling te zien.</div>
+    <div class="row" style="justify-content:flex-end;margin-top:6px"><button class="btn sm" data-act="togglepy">👁️ Pinyin aan/uit</button></div>
+    <div id="story">${lines.map((l, i) => `<div class="bubble A story" data-act="sline" data-i="${i}" id="b${i}">
+      <div style="font-size:30px">${l.e || ""}</div><div class="h hz">${esc(l.zhFull)}</div><div class="p">${esc(l.pyText)}</div><div class="n hidden">${esc(l.nl)}</div></div>`).join("")}</div>`,
+    { footer: `<button class="btn" data-act="playstory">▶️ Speel het verhaal af</button>
+      <button class="btn primary" data-act="storyq" style="margin-top:10px">Vragen over het verhaal →</button>` });
+  const playLine = async i => { app.querySelectorAll(".bubble").forEach(b => b.classList.remove("playing")); const b = document.getElementById("b" + i); if (b) { b.classList.add("playing"); b.scrollIntoView({ block: "nearest", behavior: "smooth" }); } await say(lines[i].zhFull); if (b) b.classList.remove("playing"); };
+  ACT.sline = el => { el.querySelector(".n").classList.remove("hidden"); playLine(+el.dataset.i); };
+  ACT.togglepy = () => { hidePy = !hidePy; app.querySelectorAll("#story .p").forEach(p => p.classList.toggle("hidden", hidePy)); };
+  ACT.playstory = async () => { if (playing) return; playing = true; for (let i = 0; i < lines.length; i++) { if (!sess || sess.queue[sess.idx] !== ex) break; await playLine(i); await new Promise(r => setTimeout(r, 450)); } playing = false; };
+  ACT.storyq = () => { stopSay(); storyQuestion(ex, 0); };
+}
+function storyQuestion(ex, k) {
+  const sto = UNITS[ex.unit].story;
+  if (k >= sto.q.length) { unitState(UNITS[ex.unit]).story = true; answered(true, ex, { xp: 20 }); return afterUnitPart(ex); }
+  const q = sto.q[k], opts = shuffle(q.a.map((a, i) => ({ a, ok: i === 0 })));
+  shell(`<div class="prompt">📖 Vraag ${k + 1} van ${sto.q.length}</div>
+    <div class="card" style="font-size:19px;font-weight:700">${esc(q.q)}</div>
+    <div style="display:flex;flex-direction:column;gap:10px;margin-top:6px">${opts.map((o, i) => `<button class="opt text" style="min-height:58px;font-size:17px" data-act="sq" data-i="${i}">${esc(o.a)}</button>`).join("")}</div>`);
+  ACT.sq = el => {
+    const o = opts[+el.dataset.i];
+    app.querySelectorAll(".opt").forEach((b, j) => { b.disabled = true; if (opts[j].ok) b.classList.add("ok"); });
+    if (!o.ok) el.classList.add("bad");
+    answered(o.ok, { type: "storyq" }, { xp: 15 });
+    setFooter(`<div class="feedback ${o.ok ? "ok" : "bad"}">${o.ok ? "Goed begrepen! 👂✅" : "Niet helemaal. Het goede antwoord is groen."}</div>
+      <button class="btn ${o.ok ? "green" : "primary"}" data-act="sqnext" style="margin-top:10px">Verder →</button>`);
+    ACT.sqnext = () => storyQuestion(ex, k + 1);
+  };
 }
 
 /* ---------- einde les ---------- */

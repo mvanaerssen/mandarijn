@@ -1,0 +1,456 @@
+# ===================== BASISSCHOOL (HSK 1) =====================
+
+@ u13 | Familie & vrienden | 👨‍👩‍👦
+note: Mijn = 我的 :: 的 maakt bezit: 我的手机 = mijn telefoon. Bij familie en vrienden mag 的 vaak weg: 我妈妈 = mijn moeder. :: 我的手机=mijn telefoon ;; 我妈妈=mijn moeder
+w 家 | familie / thuis | 🏠
+w 和 | en | ➕ | tw=;In Taiwan hoor je 和 vaak uitgesproken als 'hàn' in plaats van 'hé'.
+w 哥哥 | oudere broer | 👦⬆️
+w 姐姐 | oudere zus | 👧⬆️
+w 弟弟 | jongere broer | 👦⬇️
+w 妹妹 | jongere zus | 👧⬇️
+w 有 | hebben / er is | 🤲
+w 没有 | niet hebben | 🙅
+w 他 | hij | 👨
+w 她 | zij | 👩
+w 我们 | wij | 👥
+w 几 | hoeveel (klein aantal) | 🔢❓
+w 兄弟姐妹 | broers en zussen | 👫
+s 你/家/有/几/口/人 | Hoeveel mensen zijn er in je gezin? | 🏠❓
+s 我/家/有/四/口/人 | Ons gezin bestaat uit 4 mensen | 👨‍👩‍👦‍👦
+s 你/有/兄弟姐妹/吗 | Heb je broers of zussen? | 👫❓
+s 他/是/我/的/好/朋友 | Hij is mijn goede vriend | 🤝⭐
+d A 你家有几口人？ | Hoeveel mensen zijn er in je gezin?
+d B 我家有四口人。你呢？ | Ons gezin bestaat uit vier mensen. En bij jou?
+d A 三口人：爸爸、妈妈和我。 | Drie: papa, mama en ik.
+d B 你没有兄弟姐妹吗？ | Heb je geen broers of zussen?
+d A 没有。 | Nee.
+
+@ u14 | Wonen in Amsterdam | 🏙️
+note: Wonen in = 住在 :: 住在 + plaats = wonen in. 有 betekent ook 'er is / er zijn': 阿姆斯特丹有很多自行车 = in Amsterdam zijn veel fietsen. :: 我住在阿姆斯特丹=ik woon in Amsterdam
+w 住 | wonen | 🏡
+w 城市 | stad | 🏙️
+w 房间 | kamer | 🛏️
+w 小 | klein | 🐭
+w 漂亮 | mooi | 🌷
+w 这 | dit / deze | 👇
+w 那 | dat / die | 👉
+w 很多 | veel | 🔝
+w 附近 | in de buurt | 📍🏘️
+w 自行车 | fiets | 🚲 | tw=脚踏车;zeggen ze vaak voor fiets
+s 你/住/在/哪里 | Waar woon je? | 🏠❓
+s 我/住/在/阿姆斯特丹 | Ik woon in Amsterdam | 🏙️🇳🇱
+s 阿姆斯特丹/很/漂亮 | Amsterdam is heel mooi | 🌷🏙️
+s 我/的/房间/很/小 | Mijn kamer is klein | 🛏️🤏
+s 阿姆斯特丹/有/很多/自行车 | In Amsterdam zijn heel veel fietsen | 🚲🚲
+d A 你住在哪里？ | Waar woon je?
+d B 我住在阿姆斯特丹。 | Ik woon in Amsterdam.
+d A 阿姆斯特丹漂亮吗？ | Is Amsterdam mooi?
+d B 很漂亮！阿姆斯特丹有很多自行车。 | Heel mooi! Er zijn heel veel fietsen in Amsterdam.
+
+@ u15 | Getallen tot 100 | 💯
+note: Twee = 二 of 两? :: Bij tellen zeg je 二 (一、二、三). Voor een aantal dingen zeg je 两: 两个人 = twee mensen. Tussen getal en ding staat altijd een telwoord, meestal 个. :: 两个人=twee mensen ;; 三个朋友=drie vrienden
+w 零 | nul | 0️⃣
+w 两 | twee (van iets) | ✌️
+w 个 | (telwoord, algemeen) | 🔹
+w 多少 | hoeveel | ❓🔢
+w 三十 | 30 | 3️⃣0️⃣
+w 四十五 | 45 | 4️⃣5️⃣
+w 九十九 | 99 | 9️⃣9️⃣
+w 一百 | 100 | 💯
+w 号码 | nummer | #️⃣
+w 手机 | mobiele telefoon | 📱
+s 两/个/人 | twee mensen | 🧍🧍
+s 你/的/手机/号码/是/多少 | Wat is je telefoonnummer? | 📱❓
+s 我/有/两/个/中国/朋友 | Ik heb twee Chinese vrienden | 🇨🇳🤝
+s 一/年/有/十二/个/月 | Een jaar heeft twaalf maanden | 📅1️⃣2️⃣
+d A 你的手机号码是多少？ | Wat is je telefoonnummer?
+d B 零六，八八，六六，五五，四四。 | 06-88-66-55-44.
+d A 好，谢谢！ | Oké, dank je!
+
+@ u16 | Dagen, maanden & verjaardag | 📅
+note: Datum: van groot naar klein :: Eerst het jaar, dan de maand, dan de dag: 二〇二六年十一月十八号. Maanden zijn gewoon getallen: 一月 = januari, 十二月 = december. Dagen van de week: 星期 + getal (星期一 = maandag), alleen zondag is 星期天. :: 今天是星期一=vandaag is het maandag ;; 十二月=december
+w 今天 | vandaag | 📅👇
+w 明天 | morgen | 📅➡️
+w 昨天 | gisteren | 📅⬅️
+w 星期 | week | 🗓️ | tw=礼拜;hoor je vaak voor 'week'
+w 星期一 | maandag | 1️⃣🗓️
+w 星期三 | woensdag | 3️⃣🗓️
+w 星期六 | zaterdag | 6️⃣🗓️
+w 星期天 | zondag | ☀️🗓️
+w 月 | maand | 🌙
+w 号 | dag (datum) | 📆
+w 年 | jaar | 🎆
+w 生日 | verjaardag | 🎂🎉
+w 快乐 | blij / gelukkig | 😊
+s 今天/星期/几 | Welke dag is het vandaag? | 🗓️❓
+s 今天/是/星期三 | Vandaag is het woensdag | 3️⃣📅
+s 你/的/生日/是/几/月/几/号 | Wanneer ben je jarig? | 🎂❓
+s 生日/快乐 | Gefeliciteerd! | 🎉🎂
+d A 今天星期几？ | Welke dag is het vandaag?
+d B 今天星期三。 | Woensdag.
+d A 你的生日是几月几号？ | Wanneer ben je jarig?
+d B 五月十号。你呢？ | Tien mei. En jij?
+d A 明天！ | Morgen!
+d B 真的吗？生日快乐！ | Echt? Gefeliciteerd!
+
+@ u17 | Hoe laat is het? | ⏰
+note: Klokkijken :: 点 = uur, 分 = minuut, 半 = half. Let op: 三点半 = 3:30 (dus 'half vier' in het Nederlands!). :: 三点半=half vier (3:30) ;; 八点十分=tien over acht
+w 现在 | nu | ⏱️
+w 点 | uur (op de klok) | 🕐
+w 分 | minuut | ⏲️
+w 半 | half | ◐
+w 早上 | ochtend | 🌅
+w 中午 | middag (12 uur) | 🌞
+w 下午 | middag | 🌤️
+w 晚上 | avond | 🌙
+w 时间 | tijd | ⌛
+w 小时 | uur (duur) | ⏳
+w 起床 | opstaan | 🛏️⬆️
+s 现在/几/点 | Hoe laat is het nu? | ⏰❓
+s 现在/三/点/半 | Het is nu half vier | 🕞
+s 我/早上/七/点/起床 | Ik sta 's ochtends om 7 uur op | 🌅⏰
+s 你/有/时间/吗 | Heb je tijd? | ⌛❓
+d A 现在几点？ | Hoe laat is het?
+d B 现在下午五点。 | Vijf uur 's middags.
+d A 你有时间吗？ | Heb je tijd?
+d B 有！ | Ja!
+
+@ u18 | Mijn dag | ☀️
+note: Tijd komt vooraan :: Wanneer je iets doet, staat vóór het werkwoord: 我 + 八点 + 吃早饭. Nooit achteraan zoals in het Nederlands. :: 我八点吃早饭=ik ontbijt om acht uur
+w 吃饭 | eten (maaltijd) | 🍚
+w 早饭 | ontbijt | 🥣
+w 睡觉 | slapen | 😴
+w 上课 | les hebben | 👨‍🏫
+w 回家 | naar huis gaan | 🏠⬅️
+w 去 | gaan | 🚶➡️
+w 每天 | elke dag | 🔁📅
+w 然后 | daarna | ➡️
+w 先 | eerst | 1️⃣
+w 洗澡 | douchen | 🚿
+s 我/每天/八/点/吃/早饭 | Ik ontbijt elke dag om 8 uur | 🥣⏰
+s 我/先/吃/早饭/然后/去/上课 | Eerst ontbijt ik, daarna ga ik naar college | 🥣➡️👨‍🏫
+s 我/晚上/十一/点/睡觉 | Ik ga om 11 uur 's avonds slapen | 😴🌙
+s 你/几/点/回家 | Hoe laat ga je naar huis? | 🏠❓
+d A 你每天几点起床？ | Hoe laat sta je elke dag op?
+d B 我七点起床。 | Om zeven uur.
+d A 然后呢？ | En dan?
+d B 我先洗澡，然后吃早饭。 | Eerst douche ik, daarna ontbijt ik.
+story: Mijn dag
+t 我叫马克斯，我住在阿姆斯特丹。 | Ik heet Max, ik woon in Amsterdam. | 🙋‍♂️🏙️
+t 我每天早上七点起床。 | Ik sta elke ochtend om zeven uur op. | ⏰
+t 我先洗澡，然后吃早饭。 | Eerst douche ik, dan ontbijt ik. | 🚿🥣
+t 九点我去大学上课。 | Om negen uur ga ik naar college. | 🏛️
+t 晚上我回家吃饭。 | 's Avonds ga ik naar huis en eet ik. | 🏠🍚
+t 我十一点睡觉。 | Om elf uur ga ik slapen. | 😴
+q Hoe laat staat Max op? | om 7 uur | om 9 uur | om 11 uur
+q Wat doet hij als eerste? | douchen | ontbijten | naar college gaan
+q Waar gaat hij om 9 uur heen? | naar de universiteit | naar huis | naar de sportschool
+
+@ u19 | Eten & drinken | 🍜
+w 吃 | eten | 🍽️
+w 喝 | drinken | 🥤
+w 水 | water | 💧
+w 茶 | thee | 🍵
+w 咖啡 | koffie | ☕
+w 米饭 | rijst | 🍚🥢
+w 面条 | noedels | 🍜
+w 鸡蛋 | ei | 🥚
+w 水果 | fruit | 🍎
+w 肉 | vlees | 🥩
+w 菜 | gerecht / groente | 🥬
+w 饿 | honger hebben | 😋🍽️
+w 渴 | dorst hebben | 🥵
+w 好吃 | lekker | 😋👍
+w 想 | willen / graag | 💭
+s 我/饿/了 | Ik heb honger | 😫🍽️
+s 你/想/喝/什么 | Wat wil je drinken? | 🥤❓
+s 我/想/喝/咖啡 | Ik wil koffie drinken | ☕💭
+s 中国/菜/很/好吃 | Chinees eten is erg lekker | 🥢😋
+d A 你饿了吗？ | Heb je honger?
+d B 饿了！ | Ja!
+d A 你想吃什么？ | Wat wil je eten?
+d B 我想吃面条。你呢？ | Ik wil noedels. En jij?
+d A 我想吃米饭。 | Ik wil rijst.
+
+@ u20 | In het restaurant | 🥢
+who: Ober | 🧑‍🍳
+w 饭馆 | restaurant | 🏮🍽️ | tw=餐厅;hoor je vaker voor restaurant
+w 服务员 | ober | 🧑‍🍳
+w 菜单 | menu | 📋
+w 要 | willen (bestellen) / moeten | 👉
+w 请 | alstublieft / uitnodigen | 🙏
+w 给 | geven / aan | 🫴
+w 杯 | glas / kop (telwoord) | 🥛
+w 碗 | kom (telwoord) | 🥣
+w 筷子 | stokjes | 🥢
+w 辣 | pittig | 🌶️
+w 太 | te (te veel) | ⚠️
+w 买单 | afrekenen | 💳 | tw=结帐;zeg je bij afrekenen
+s 请/给/我/菜单 | Mag ik de menukaart? | 📋🙏
+s 我/要/一/碗/面条 | Ik wil een kom noedels | 🍜🥣
+s 我/要/一/杯/水 | Ik wil een glas water | 💧🥛
+s 不/要/太/辣 | Niet te pittig | 🌶️🙅
+d A 你好！你要什么？ | Hallo! Wat wilt u?
+d B 我要一碗面条，不要太辣。 | Een kom noedels, niet te pittig.
+d A 喝什么？ | Wat wilt u drinken?
+d B 一杯茶，谢谢。 | Een kop thee, dank u.
+d A 好的。 | Prima.
+d B 服务员，买单！ | Ober, de rekening!
+
+@ u21 | Kleuren & kleding | 👕
+note: Beschrijven met 的 :: Een beschrijving komt vóór het ding, met 的 ertussen: 白色的鞋 = witte schoenen. :: 白色的鞋=witte schoenen ;; 我的衣服=mijn kleren
+w 颜色 | kleur | 🎨
+w 红色 | rood | 🔴
+w 蓝色 | blauw | 🔵
+w 黑色 | zwart | ⚫
+w 白色 | wit | ⚪
+w 绿色 | groen | 🟢
+w 黄色 | geel | 🟡
+w 衣服 | kleding | 👕
+w 裤子 | broek | 👖
+w 鞋 | schoen | 👟
+w 穿 | dragen (kleding) | 👔
+w 件 | (telwoord voor kleding) | 👕🔢
+w 好看 | mooi (om te zien) | 👀✨
+s 你/喜欢/什么/颜色 | Welke kleur vind je mooi? | 🎨❓
+s 我/喜欢/黑色 | Ik hou van zwart | ⚫❤️
+s 我/今天/穿/白色/的/鞋 | Ik draag vandaag witte schoenen | ⚪👟
+s 这/件/衣服/很/好看 | Dit kledingstuk is mooi | 👕✨
+d A 你喜欢什么颜色？ | Welke kleur vind je mooi?
+d B 我喜欢黑色和蓝色。 | Ik hou van zwart en blauw.
+d A 你的鞋很好看！ | Je schoenen zijn mooi!
+d B 谢谢！ | Dank je!
+
+@ u22 | Winkelen & geld | 💰
+who: Verkoper | 🧑‍💼
+note: Te duur! = 太…了 :: 太 + bijvoeglijk naamwoord + 了 = 'te …!' of 'zó …!': 太贵了 = te duur!, 太好了 = super! :: 太贵了=te duur! ;; 太好了=geweldig!
+w 买 | kopen | 🛒
+w 卖 | verkopen | 🏷️
+w 钱 | geld | 💰
+w 块 | yuan (spreektaal) | 💴
+w 贵 | duur | 💸
+w 便宜 | goedkoop | 🪙
+w 商店 | winkel | 🏪
+w 超市 | supermarkt | 🛒🏪
+w 可以 | mogen / kunnen | 👌
+w 一共 | in totaal | 🧾
+s 这/个/多少/钱 | Hoeveel kost dit? | 🏷️❓
+s 太/贵/了 | Te duur! | 💸😱
+s 便宜/一点/可以/吗 | Kan het iets goedkoper? | 🪙🙏
+s 我/去/超市/买/水果 | Ik ga naar de supermarkt om fruit te kopen | 🛒🍎
+s 一共/多少/钱 | Hoeveel is het in totaal? | 🧾❓
+d B 你好，这个多少钱？ | Hallo, hoeveel kost dit?
+d A 八十块。 | Tachtig yuan.
+d B 太贵了！便宜一点可以吗？ | Te duur! Kan het iets goedkoper?
+d A 好吧，六十块。 | Vooruit, zestig.
+d B 好，我买！ | Oké, ik koop het!
+
+@ u23 | Het weer | 🌦️
+w 天气 | weer | 🌦️
+w 冷 | koud | 🥶
+w 热 | warm / heet | 🥵☀️
+w 下雨 | regenen | 🌧️
+w 下雪 | sneeuwen | 🌨️
+w 风 | wind | 🌬️
+w 太阳 | zon | ☀️
+w 春天 | lente | 🌸
+w 夏天 | zomer | 🏖️
+w 秋天 | herfst | 🍂
+w 冬天 | winter | ⛄
+w 怎么样 | hoe (is het) | 🤔
+w 常常 | vaak | 🔁
+w 最 | meest | 🥇
+w 对 | klopt / juist | ✔️
+s 今天/天气/怎么样 | Hoe is het weer vandaag? | 🌦️❓
+s 今天/很/冷 | Het is erg koud vandaag | 🥶📅
+s 阿姆斯特丹/常常/下雨 | In Amsterdam regent het vaak | 🌧️🏙️
+s 我/最/喜欢/夏天 | Ik vind de zomer het leukst | 🏖️❤️
+d A 今天天气怎么样？ | Hoe is het weer vandaag?
+d B 很冷，还下雨了。 | Koud, en het regent ook.
+d A 阿姆斯特丹常常下雨吗？ | Regent het vaak in Amsterdam?
+d B 对，常常下雨！ | Ja, heel vaak!
+
+@ u24 | Je lichaam & hoe je je voelt | 🫀
+w 身体 | lichaam | 🧍
+w 头 | hoofd | 🙆
+w 手 | hand | ✋
+w 脚 | voet | 🦶
+w 眼睛 | ogen | 👀
+w 累 | moe | 😩
+w 生病 | ziek worden | 🤒
+w 疼 | pijn doen | 🤕
+w 舒服 | lekker / comfortabel | 😌
+w 开心 | blij | 😄
+w 有点 | een beetje (negatief) | 🤏
+w 怎么 | hoe / waarom | 🤔❔
+w 休息 | rusten | 🛋️
+s 你/怎么/了 | Wat is er met je? | 😟❓
+s 我/有点/累 | Ik ben een beetje moe | 😩🤏
+s 我/头/疼 | Ik heb hoofdpijn | 🤕🙆
+s 我/今天/很/开心 | Ik ben vandaag erg blij | 😄📅
+s 我/身体/不/舒服 | Ik voel me niet lekker | 🤒😣
+d A 你怎么了？ | Wat is er?
+d B 我有点累，头也疼。 | Ik ben een beetje moe, en ik heb ook hoofdpijn.
+d A 你要多休息！ | Je moet meer rusten!
+d B 谢谢，我回家睡觉。 | Dank je, ik ga naar huis om te slapen.
+
+@ u25 | Gym & hardlopen | 🏋️
+note: Hoe vaak en afgerond :: Hoe vaak: werkwoord + aantal + 次 (去四次 = vier keer gaan). 了 direct na het werkwoord = afgerond: 我跑了十公里 = ik heb 10 km gelopen. :: 我去了四次=ik ben vier keer gegaan ;; 我跑了十公里=ik heb tien kilometer gelopen
+w 健身 | fitness / sporten | 🏋️
+w 健身房 | sportschool | 🏋️🏢
+w 锻炼 | trainen | 💪
+w 公里 | kilometer | 📏
+w 跑 | rennen | 🏃‍♂️
+w 快 | snel | ⚡
+w 慢 | langzaam | 🐢
+w 比赛 | wedstrijd | 🏅
+w 次 | keer | 🔂
+w 每 | elk(e) | 🔁🔢
+s 我/每/个/星期/去/健身房/四/次 | Ik ga vier keer per week naar de sportschool | 🏋️4️⃣
+s 我/今天/跑/了/十/公里 | Ik heb vandaag 10 km gelopen | 🏃🔟
+s 你/喜欢/运动/吗 | Hou je van sporten? | 🏋️❓
+s 下/个/月/我/有/一/个/比赛 | Volgende maand heb ik een wedstrijd | 🏅📅
+d A 你喜欢运动吗？ | Hou je van sporten?
+d B 很喜欢！我每个星期去健身房四次。 | Heel erg! Ik ga vier keer per week naar de sportschool.
+d A 你也跑步吗？ | Loop je ook hard?
+d B 对，我今天跑了十公里。 | Ja, vandaag heb ik tien kilometer gelopen.
+d A 你太厉害了！ | Jij bent echt goed!
+
+@ u26 | Piano & muziek | 🎹
+note: Bezig zijn met = 在 :: 在 + werkwoord = ermee bezig zijn: 我在学钢琴 = ik ben piano aan het leren. Ook handig: 好听 = mooi om te horen, 好看 = mooi om te zien, 好吃 = lekker. :: 我在学钢琴=ik ben piano aan het leren
+w 弹 | spelen (piano, gitaar) | 🎹👆
+w 钢琴 | piano | 🎹
+w 吉他 | gitaar | 🎸
+w 歌 | lied | 🎶
+w 唱歌 | zingen | 🎤
+w 听 | luisteren | 🎧
+w 学 | leren | 📚
+w 开始 | beginnen | ▶️
+w 练习 | oefenen | 🔁🎹
+w 好听 | mooi (om te horen) | 👂✨
+w 首 | (telwoord voor liedjes) | 🎶🔢
+s 我/会/弹/钢琴 | Ik kan piano spelen | 🎹🙋‍♂️
+s 我/在/学/弹/钢琴 | Ik ben piano aan het leren | 🎹📚
+s 我/每天/练习/半/个/小时 | Ik oefen elke dag een half uur | 🎹⏳
+s 这/首/歌/很/好听 | Dit liedje is erg mooi | 🎶✨
+s 你/喜欢/听/什么/音乐 | Naar wat voor muziek luister je graag? | 🎧❓
+d A 你会弹钢琴吗？ | Kun je piano spelen?
+d B 会一点。我在学。 | Een beetje. Ik ben het aan het leren.
+d A 你每天练习吗？ | Oefen je elke dag?
+d B 对，每天半个小时。 | Ja, elke dag een half uur.
+
+@ u27 | Films kijken | 🎬
+note: Laten we… = 吧 :: 吧 aan het eind van een zin maakt er een voorstel van: 我们走吧 = laten we gaan. :: 我们一起去吧=laten we samen gaan
+w 电影 | film | 🎬
+w 电影院 | bioscoop | 🍿
+w 看 | kijken / lezen | 👀
+w 电视 | televisie | 📺
+w 电视剧 | tv-serie | 📺🎞️ | tw=影集;zeggen ze ook voor een serie
+w 演员 | acteur | 🎭
+w 无聊 | saai | 🥱
+w 有名 | beroemd | 🌟
+w 部 | (telwoord voor films) | 🎬🔢
+w 一起 | samen | 👫
+w 吧 | (voorstel: laten we) | 💡
+s 我们/一起/去/看/电影/吧 | Laten we samen naar de film gaan | 🍿👫
+s 你/喜欢/看/什么/电影 | Wat voor films kijk je graag? | 🎬❓
+s 这/部/电影/很/有意思 | Deze film is heel interessant | 🎬✨
+s 那/部/电视剧/很/无聊 | Die serie is erg saai | 📺🥱
+d A 星期六你有时间吗？ | Heb je zaterdag tijd?
+d B 有，怎么了？ | Ja, hoezo?
+d A 我们一起去看电影吧！ | Laten we samen naar de film gaan!
+d B 好啊！看什么电影？ | Leuk! Welke film?
+story: Zaterdag
+t 今天是星期六。 | Vandaag is het zaterdag. | 🗓️
+t 早上我去健身房锻炼。 | 's Ochtends ga ik trainen in de sportschool. | 🏋️
+t 中午我和朋友一起吃饭。 | 's Middags eet ik samen met een vriend. | 🍜👫
+t 我们吃了面条，很好吃！ | We aten noedels, heel lekker! | 🍜😋
+t 下午我在家弹钢琴。 | 's Middags speel ik thuis piano. | 🎹
+t 晚上我们去电影院看电影。 | 's Avonds gaan we naar de bioscoop. | 🍿
+t 那部电影很有意思。 | Die film was heel interessant. | 🎬✨
+q Wat doet Max 's ochtends? | trainen in de sportschool | piano spelen | naar de film
+q Wat eten ze 's middags? | noedels | rijst | dumplings
+q Hoe was de film? | interessant | saai | eng
+
+@ u28 | Vervoer | 🚲
+note: Hoe ga je ergens heen? :: 坐 + bus/trein/vliegtuig, 骑 + fiets, 开 + auto. De manier komt vóór het werkwoord: 我骑自行车去 = ik ga met de fiets. Afstand: A 离 B 很近 = A is dichtbij B. :: 我坐火车去=ik ga met de trein ;; 大学离我家很近=de uni is dichtbij mijn huis
+w 骑 | rijden (fiets) | 🚴
+w 开车 | autorijden | 🚗
+w 坐 | zitten / nemen (bus, trein) | 💺
+w 公共汽车 | bus | 🚌 | tw=公车;zeg je voor bus
+w 地铁 | metro | 🚇 | tw=捷运;heet de metro in Taipei (de MRT)
+w 火车 | trein | 🚆
+w 飞机 | vliegtuig | ✈️
+w 出租车 | taxi | 🚕 | tw=计程车;heet een taxi
+w 远 | ver | 🛣️
+w 近 | dichtbij | 🤏📍
+w 离 | (afstand) van | ↔️
+w 走路 | lopen (te voet) | 🚶
+s 你/怎么/去/大学 | Hoe ga je naar de universiteit? | 🏛️❓
+s 我/骑/自行车/去 | Ik ga met de fiets | 🚴🏛️
+s 坐/火车/去/很/快 | Met de trein gaan is snel | 🚆⚡
+s 大学/离/我/家/不/远 | De universiteit is niet ver van mijn huis | 🏛️📍
+d A 你怎么去大学？ | Hoe ga je naar de uni?
+d B 我骑自行车去。 | Met de fiets.
+d A 远吗？ | Is het ver?
+d B 不远，十五分钟。 | Niet ver, een kwartier.
+
+@ u29 | De stad | 🌆
+note: Waar is iets? :: A 在 B 旁边 = A is naast B. Ook: 前面 (voor), 后面 (achter). 这里 = hier, 那里 = daar. :: 银行在超市旁边=de bank is naast de supermarkt
+w 地方 | plaats / plek | 📍
+w 银行 | bank | 🏦
+w 医院 | ziekenhuis | 🏥
+w 火车站 | treinstation | 🚉
+w 公园 | park | 🌳
+w 图书馆 | bibliotheek | 📚🏢
+w 咖啡馆 | café (koffie) | ☕🏠
+w 酒吧 | bar | 🍻
+w 学校 | school | 🏫
+w 旁边 | naast | ↔️🏠
+w 前面 | voor | ⬆️
+w 后面 | achter | ⬇️
+w 这里 | hier | 👇📍
+w 那里 | daar | 👉📍
+s 银行/在/超市/旁边 | De bank is naast de supermarkt | 🏦🛒
+s 我/家/附近/有/一/个/公园 | Bij mij in de buurt is een park | 🌳🏠
+s 我/常常/去/咖啡馆/学习 | Ik ga vaak naar een café om te studeren | ☕📚
+d A 你家附近有什么？ | Wat is er bij jou in de buurt?
+d B 有一个公园和一个超市。 | Een park en een supermarkt.
+d A 有咖啡馆吗？ | Is er een café?
+d B 有！我常常去那里学习。 | Ja! Daar ga ik vaak studeren.
+
+@ u30 | De weg vragen | 🧭
+who: Voorbijganger | 🧑
+w 请问 | mag ik iets vragen | 🙋❓
+w 往 | richting / naar | 🧭
+w 左 | links | ⬅️
+w 右 | rechts | ➡️
+w 一直 | rechtdoor / steeds | ⬆️⬆️
+w 走 | lopen / gaan | 🚶‍♂️
+w 拐 | afslaan | ↪️ | tw=转;zeggen ze vaak voor afslaan
+w 路口 | kruispunt | ✖️🛣️
+w 到 | aankomen / tot | 🏁
+w 第一 | eerste | 🥇
+w 知道 | weten | 💡
+w 问 | vragen | ❓
+w 对不起 | sorry | 🙇
+s 请问/火车站/在/哪里 | Pardon, waar is het station? | 🚉❓
+s 一直/往/前/走 | Ga rechtdoor | ⬆️🚶
+s 在/路口/往/左/拐 | Sla bij het kruispunt linksaf | ↩️
+s 走路/要/十/分钟 | Het is tien minuten lopen | 🚶⏲️
+s 我/不/知道 | Ik weet het niet | 🤷
+d B 请问，火车站在哪里？ | Pardon, waar is het station?
+d A 一直往前走，在第二个路口往右拐。 | Ga rechtdoor en sla bij het tweede kruispunt rechtsaf.
+d B 远吗？ | Is het ver?
+d A 不远，走路五分钟。 | Niet ver, vijf minuten lopen.
+d B 谢谢！ | Dank u!
+story: Naar het station
+t 马克斯想去火车站。 | Max wil naar het station. | 🚉
+t 可是他不知道火车站在哪里。 | Maar hij weet niet waar het station is. | 🤷
+t 他问一个人：“请问，火车站在哪里？” | Hij vraagt iemand: "Pardon, waar is het station?" | 🙋
+t 那个人说：“一直往前走，然后往左拐。” | Die persoon zegt: "Ga rechtdoor, en dan linksaf." | ⬆️↩️
+t 马克斯走了十分钟。 | Max loopt tien minuten. | 🚶⏲️
+t 他到了火车站！ | Hij is bij het station! | 🏁🚉
+q Waar wil Max heen? | het station | het ziekenhuis | de bank
+q Welke kant moet hij op? | rechtdoor, dan links | rechts, dan rechtdoor | links, dan rechts
+q Hoe lang loopt hij? | tien minuten | vijf minuten | een half uur

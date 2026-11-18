@@ -1,0 +1,508 @@
+# ===================== VOLWASSEN (HSK 3) =====================
+
+@ u49 | Hoe lang al? | ⏱️
+note: Pas en al: 才 en 就 :: 才 = pas (later dan verwacht): 他十点才起床 = hij stond pas om tien uur op. 就 = al (eerder dan verwacht): 我七点就起床了 = ik was al om zeven uur op. :: 他十点才起床=hij stond pas om tien uur op ;; 我七点就起床了=ik was al om zeven uur op
+w 才 | pas (laat) | 🐢⏰
+w 就 | al (vroeg) / meteen | ⚡⏰
+w 刚 | net | ⏪✨
+w 以前 | vroeger / voor | ⏮️
+w 的时候 | toen / wanneer | 🕰️
+w 小时候 | als kind | 🧒🕰️
+w 终于 | eindelijk | 🎉⏳
+w 马上 | meteen | ⚡
+w 最近 | de laatste tijd | 📆🔙
+w 明白 | begrijpen | 🧠💡
+s 好久/不/见 | Lang niet gezien! | 👋⏳
+s 我/刚/到 | Ik ben er net | 🏁⏪
+s 他/十/点/才/起床 | Hij stond pas om 10 uur op | 😴⏰
+s 我/七/点/就/起床/了 | Ik was al om 7 uur op | ⚡🌅
+s 小时候/我/不/喜欢/吃/菜 | Als kind lustte ik geen groente | 🥬🧒
+s 我/终于/明白/了 | Eindelijk snap ik het! | 💡🎉
+d A 好久不见！你最近怎么样？ | Lang niet gezien! Hoe gaat het de laatste tijd?
+d B 很好！我终于考完试了。 | Goed! Eindelijk ben ik klaar met mijn examens.
+d A 太好了！ | Super!
+d B 我马上要去台湾了！ | En ik ga binnenkort naar Taiwan!
+
+@ u50 | Bezig zijn met… | 🔄
+note: Bezig zijn en toestand :: 正在 + werkwoord (+ 呢) = nu bezig met: 我正在做饭 = ik ben aan het koken. 着 = een toestand die voortduurt: 门开着 = de deur staat open. :: 我正在做饭=ik ben aan het koken ;; 门开着=de deur staat open
+w 正在 | bezig met | 🔄
+w 着 | (toestand: staat, ligt) | ⏸️
+w 开 | open / aan | 🔓
+w 关 | dicht / uit | 🔒
+w 门 | deur | 🚪
+w 灯 | lamp / licht | 🔦
+w 躺 | liggen | 🛌
+w 打扫 | schoonmaken | 🧹
+w 洗衣服 | de was doen | 🧺
+w 喂 | hallo (telefoon) | 📞👋 | py=wei2
+s 你/在/做/什么/呢 | Waar ben je mee bezig? | 🔄❓
+s 我/正在/做饭 | Ik ben aan het koken | 🍳🔄
+s 门/开/着 | De deur staat open | 🚪🔓
+s 他/躺/着/看/电视 | Hij ligt tv te kijken | 🛌📺
+s 别/忘/了/关/灯 | Vergeet niet het licht uit te doen | 🔦🔒
+d A 喂，你在做什么呢？ | Hallo, waar ben je mee bezig?
+d B 我正在打扫房间。 | Ik ben mijn kamer aan het opruimen.
+d A 打扫完了来我家吧！ | Kom naar mij als je klaar bent!
+d B 好，半个小时以后到。 | Goed, over een half uur ben ik er.
+
+@ u51 | Gelukt of niet? | ✅
+note: Werkwoord + resultaat :: Het resultaat plak je achter het werkwoord: 听懂 (luisteren → begrijpen), 看完 (kijken → uit), 找到 (zoeken → gevonden). Niet gelukt: 没 ervoor: 我没听懂. :: 我看完了=ik heb het uitgekeken ;; 我没找到=ik heb het niet gevonden
+w 懂 | begrijpen | 🧠✔️
+w 完 | klaar / af | 🏁✅
+w 找到 | vinden | 🔍✅
+w 听见 | horen | 👂✅
+w 学会 | (aan)leren | 🎓✅
+w 错 | fout | ❌✍️
+w 清楚 | duidelijk | 🔎✨
+w 记住 | onthouden | 🧠📌
+s 你/听/懂/了/吗 | Heb je het verstaan? | 👂❓
+s 我/没/听/懂 | Ik heb het niet verstaan | 👂😕
+s 我/看/完/了/这/部/电视剧 | Ik heb deze serie uitgekeken | 📺🏁
+s 我/找到/了/我/的/钥匙 | Ik heb mijn sleutels gevonden | 🔑✅
+s 我/学会/了/很多/汉字 | Ik heb veel karakters geleerd | 🀄🎓
+s 你/说/错/了 | Je zegt het verkeerd | ❌🗣️
+d A 你的作业做完了吗？ | Ben je klaar met je huiswerk?
+d B 还没做完。有一个问题我没看懂。 | Nog niet. Er is een vraag die ik niet snap.
+d A 哪个问题？我帮你看看。 | Welke? Ik kijk even mee.
+d B 太好了，谢谢！ | Top, dank je!
+
+@ u52 | Richting: komen & gaan | 🔀
+note: Richting met 来 en 去 :: 来 = naar de spreker toe, 去 = van de spreker af. Dus: 进来 = binnenkomen (naar mij), 出去 = naar buiten gaan (van mij weg), 回来 = terugkomen. :: 请进来=kom binnen ;; 我们出去吧=laten we naar buiten gaan
+w 进 | binnengaan | 🚪➡️
+w 出 | uitgaan | 🚪⬅️
+w 进来 | binnenkomen | 🚪👋
+w 出去 | naar buiten gaan | 🚶🌳
+w 上去 | naar boven gaan | ⬆️🚶
+w 下来 | naar beneden komen | ⬇️🚶
+w 回去 | teruggaan | ↩️🚶
+w 拿 | pakken | 🤲📦
+w 送 | brengen / geven | 🚚🎁
+w 什么时候 | wanneer | 🕰️❓
+s 请/进来 | Kom binnen! | 🙏🚪
+s 你/什么时候/回来 | Wanneer kom je terug? | ↩️❓
+s 我们/出去/吃/饭/吧 | Laten we uit eten gaan | 🍽️🌆
+s 我/下/楼/去/拿/东西 | Ik ga naar beneden om iets te pakken | ⬇️📦
+d A 你在家吗？ | Ben je thuis?
+d B 在，你上来吧！ | Ja, kom maar naar boven!
+d A 门开着吗？ | Staat de deur open?
+d B 开着，请进来！ | Ja, kom binnen!
+story: Een gewone dinsdag
+t 今天是星期二，我七点就起床了。 | Het is dinsdag, ik was al om zeven uur op. | 🌅
+t 我先去健身房锻炼了一个小时。 | Eerst ben ik een uur gaan trainen. | 🏋️
+t 然后我骑车去大学上课。 | Daarna fietste ik naar college. | 🚲🏛️
+t 下课以后，我在图书馆学了两个小时中文。 | Na de les heb ik twee uur Chinees gestudeerd in de bibliotheek. | 📚🀄
+t 晚上我的朋友给我打电话。 | 's Avonds belde mijn vriend me. | 📞
+t 我们用中文聊了十分钟！ | We hebben tien minuten in het Chinees gekletst! | 💬🀄
+t 他说我的声调越来越好了。 | Hij zei dat mijn tonen steeds beter worden. | 🎵📈
+q Wat deed Max als eerste? | trainen in de sportschool | naar college | Chinees studeren
+q Hoe lang studeerde hij Chinees in de bibliotheek? | twee uur | tien minuten | een uur
+q Wat zei zijn vriend? | zijn tonen worden beter | hij praat te snel | hij moet meer oefenen
+
+@ u53 | Als…, hoewel… | 🔗
+note: Lange zinnen bouwen :: 如果…就… = als… dan…. 虽然…但是… = hoewel… (toch)…. 不但…而且… = niet alleen… maar ook…. In het Chinees gebruik je beide delen. :: 如果下雨，我就不去=als het regent, ga ik niet ;; 虽然很难，但是我喜欢=hoewel het moeilijk is, vind ik het leuk
+w 如果 | als (voorwaarde) | ❓➡️
+w 虽然 | hoewel | 🤔🔀
+w 不但 | niet alleen | ➕1️⃣
+w 而且 | bovendien | ➕➕
+w 只要 | zolang / als maar | ✅🔁
+w 还是 | of (in een vraag) | 🔀❓
+w 或者 | of (keuze) | 🅰️🅱️
+w 除了 | behalve | ➖🧍
+w 越来越 | steeds meer | 📈
+s 如果/明天/下雨/我/就/不/去 | Als het morgen regent, ga ik niet | 🌧️➡️🙅
+s 虽然/中文/很/难/但是/我/很/喜欢 | Hoewel Chinees moeilijk is, vind ik het leuk | 🧗❤️
+s 我/的/中文/越来越/好 | Mijn Chinees wordt steeds beter | 📈🀄
+s 你/喝/茶/还是/咖啡 | Drink je thee of koffie? | 🍵☕
+s 他/不但/会/说/中文/而且/会/写/汉字 | Hij kan niet alleen Chinees spreken, maar ook karakters schrijven | 🗣️➕✍️
+d A 你的中文越来越好了！ | Je Chinees wordt steeds beter!
+d B 谢谢！虽然很难，但是我每天练习。 | Dank je! Hoewel het moeilijk is, oefen ik elke dag.
+d A 如果你有问题，就问我吧。 | Als je vragen hebt, vraag het mij maar.
+d B 好，太谢谢你了！ | Oké, heel erg bedankt!
+
+@ u54 | Bij de dokter | 🏥
+who: Dokter | 👨‍⚕️
+w 看病 | naar de dokter gaan | 🏥👨‍⚕️
+w 感冒 | verkouden | 🤧
+w 发烧 | koorts | 🌡️🔥
+w 咳嗽 | hoesten | 😷
+w 肚子 | buik | 🫃
+w 嗓子 | keel | 🗣️🔥
+w 吃药 | medicijn innemen | 💊😮
+w 严重 | ernstig | ⚠️
+w 度 | graad | 🌡️🔢
+s 我/感冒/了 | Ik ben verkouden | 🤧🙋‍♂️
+s 我/发烧/了/三十八/度 | Ik heb 38 graden koorts | 🌡️3️⃣8️⃣
+s 我/肚子/疼 | Ik heb buikpijn | 🫃🤕
+s 不/严重/多/喝/水/多/休息 | Niet ernstig, drink veel en rust veel | 💧🛋️
+s 一/天/吃/三/次/药 | Neem de medicijnen drie keer per dag | 💊3️⃣
+d A 你哪里不舒服？ | Wat zijn uw klachten?
+d B 我嗓子疼，还有点发烧。 | Ik heb keelpijn en een beetje koorts.
+d A 你感冒了，不严重。 | U bent verkouden, niet ernstig.
+d A 多喝水，多休息。 | Drink veel en rust veel.
+d B 要吃药吗？ | Moet ik medicijnen nemen?
+d A 要，一天三次。 | Ja, drie keer per dag.
+
+@ u55 | Toekomst & werk | 💼
+w 找工作 | werk zoeken | 🔍💼
+w 工程师 | ingenieur | 👷💻
+w 经验 | ervaring | 📈🧠
+w 工资 | salaris | 💶
+w 面试 | sollicitatiegesprek | 🤝📝
+w 实习 | stage lopen | 🧑‍💼📚
+w 创业 | een bedrijf starten | 🚀🏢
+w 成功 | succes / slagen | 🏆
+w 努力 | je best doen | 💪🔥
+w 机会 | kans | 🍀
+w 当 | worden / werken als | 🎭➡️
+w 自己 | zelf | 🪞
+s 毕业/以后/我/想/当/工程师 | Na mijn studie wil ik ingenieur worden | 👷🎓
+s 我/想/自己/创业 | Ik wil zelf een bedrijf starten | 🚀💭
+s 我/明天/有/一/个/面试 | Morgen heb ik een sollicitatiegesprek | 🤝📝
+s 只要/努力/就/会/成功 | Als je je best doet, lukt het | 💪🏆
+s 这/是/一/个/好/机会 | Dit is een goede kans | 🍀👍
+d A 毕业以后你想做什么？ | Wat wil je doen na je studie?
+d B 我想当人工智能工程师，或者自己创业。 | Ik wil AI-engineer worden, of zelf een bedrijf starten.
+d A 很酷！ | Gaaf!
+d B 我会努力的！ | Ik ga mijn best doen!
+
+@ u56 | Tech & internet | 💻
+w 网上 | online | 🌐
+w 软件 | software / app | 📲 | tw=;In Taiwan zegt men vaak gewoon 'APP' voor een app.
+w 程序 | programma | 👨‍💻 | tw=程式;heet een computerprogramma
+w 写代码 | programmeren | ⌨️
+w 数据 | data | 📊
+w 机器人 | robot | 🤖🔧
+w 聪明 | slim | 🧠✨
+w 方便 | handig | 👍🛠️
+w 科技 | technologie | 🔬💻
+w 下载 | downloaden | ⬇️📲
+w 都 | allemaal / altijd | ✅✅
+s 我/每天/都/写代码 | Ik programmeer elke dag | ⌨️🔁
+s 人工智能/越来越/聪明 | AI wordt steeds slimmer | 🤖📈
+s 这/个/软件/很/方便 | Deze app is erg handig | 📲👍
+s 我/在/网上/买/东西 | Ik koop dingen online | 🌐🛒
+s 你/用/什么/手机 | Welke telefoon gebruik je? | 📱❓
+d A 你的专业是人工智能，对吧？ | Je studeert AI, toch?
+d B 对！我每天都写代码。 | Ja! Ik programmeer elke dag.
+d A 你觉得人工智能以后会怎么样？ | Hoe denk je dat AI zich gaat ontwikkelen?
+d B 我觉得会越来越聪明，也越来越方便。 | Ik denk dat het steeds slimmer en handiger wordt.
+
+@ u57 | Een film bespreken | 🍿
+w 故事 | verhaal | 📖✨
+w 主角 | hoofdpersoon | 🦸
+w 结局 | einde (van een verhaal) | 🎬🏁
+w 感人 | ontroerend | 🥲
+w 可怕 | eng | 😱👻
+w 好笑 | grappig | 😂
+w 推荐 | aanraden | 👍📣
+w 导演 | regisseur | 🎬🧑
+w 科幻 | sciencefiction | 🚀👽
+w 爱情 | liefde | 💕
+w 字幕 | ondertiteling | 💬🎬
+w 讲 | vertellen / gaan over | 🗣️📖
+s 这/部/电影/讲/的/是/什么 | Waar gaat deze film over? | 🎬❓
+s 我/最/喜欢/科幻/电影 | Ik hou het meest van sciencefictionfilms | 🚀🎬
+s 结局/很/感人 | Het einde is ontroerend | 🥲🏁
+s 我/推荐/你/看/这/部/电影 | Ik raad je deze film aan | 👍🎬
+s 我/看/电影/要/看/字幕 | Ik heb ondertiteling nodig bij films | 💬👀
+d A 你最近看了什么电影？ | Welke film heb je onlangs gezien?
+d B 我又看了《星际穿越》，我最喜欢的电影。 | Ik heb Interstellar weer gekeken, mijn favoriete film.
+d A 讲的是什么？ | Waar gaat het over?
+d B 讲的是宇航员去太空找新的家。故事很感人，音乐也特别好听。 | Over astronauten die de ruimte in gaan om een nieuw thuis te zoeken. Het verhaal is ontroerend en de muziek is bijzonder mooi.
+d A 我也想看！ | Die wil ik ook zien!
+d B 我推荐你看！ | Ik raad hem je aan!
+
+@ u58 | Over eten praten | 🍽️
+w 新鲜 | vers | 🥬✨
+w 健康 | gezond | 🥦💪
+w 油 | olie / vet | 🫗
+w 外卖 | bezorgeten | 🛵🍱
+w 点菜 | eten bestellen | 📋🍽️
+w 饱 | vol (gegeten) | 😮‍💨
+w 口味 | smaak (voorkeur) | 👅❤️
+w 西餐 | westers eten | 🍝
+w 中餐 | Chinees eten | 🥢🍚
+s 我/吃/饱/了 | Ik zit vol | 😮‍💨🍽️
+s 你/喜欢/中餐/还是/西餐 | Hou je meer van Chinees of westers eten? | 🥢🍝
+s 健身/以后/我/要/吃/很多/肉 | Na het sporten moet ik veel vlees eten | 🏋️🥩
+s 我们/点/外卖/吧 | Laten we eten bestellen | 🛵🍱
+s 这/家/饭馆/的/菜/很/新鲜 | Het eten in dit restaurant is heel vers | 🥬✨
+d A 你喜欢中餐还是西餐？ | Hou je meer van Chinees of westers eten?
+d B 都喜欢！可是中餐更好吃。 | Allebei! Maar Chinees is lekkerder.
+d A 你最喜欢什么菜？ | Wat is je favoriete gerecht?
+d B 火锅和饺子！ | Hotpot en dumplings!
+d A 我们今天晚上吃火锅吧！ | Laten we vanavond hotpot eten!
+d B 好啊！ | Goed idee!
+story: Hotpotavond
+t 星期五晚上，我和朋友们一起吃火锅。 | Vrijdagavond eet ik hotpot met vrienden. | 🍲👫
+t 我们点了很多菜：牛肉、豆腐、面条。 | We bestellen veel: rundvlees, tofu, noedels. | 🥩⬜🍜
+t 火锅很辣，我喝了很多水。 | De hotpot is erg pittig, ik drink veel water. | 🌶️💧
+t 我的朋友用中文给服务员点菜。 | Mijn vriend bestelt in het Chinees bij de ober. | 🗣️🧑‍🍳
+t 服务员说他的中文很好。 | De ober zegt dat zijn Chinees heel goed is. | 👍
+t 最后我们都吃得很饱。 | Uiteindelijk zitten we allemaal helemaal vol. | 😮‍💨
+q Wat aten ze? | hotpot | dumplings | pizza
+q Waarom dronk Max veel water? | het was erg pittig | het was warm | hij had gesport
+q Wie bestelde in het Chinees? | zijn vriend | Max | niemand
+
+@ u59 | Feesten & tradities | 🧧
+w 春节 | Chinees Nieuwjaar | 🧧🐉
+w 中秋节 | Midherfstfeest | 🌕
+w 圣诞节 | Kerstmis | 🎄
+w 节日 | feestdag | 🎊
+w 礼物 | cadeau | 🎁
+w 红包 | rode envelop (met geld) | 🧧💴
+w 放假 | vrij hebben / vakantie | 🏖️📅
+w 庆祝 | vieren | 🥂
+w 月饼 | maancake | 🥮
+w 传统 | traditie | 📜
+w 大家 | iedereen | 👨‍👩‍👧‍👦
+w 孩子 | kind | 🧒
+s 新年/快乐 | Gelukkig nieuwjaar! | 🎆🎉
+s 春节/的/时候/大家/吃/饺子 | Met Chinees Nieuwjaar eet iedereen dumplings | 🧧🥟
+s 在/荷兰/我们/过/圣诞节 | In Nederland vieren we Kerstmis | 🇳🇱🎄
+s 十二月/五/号/荷兰/人/送/礼物 | Op 5 december geven Nederlanders cadeaus | 🎁🇳🇱
+s 中秋节/的/时候/吃/月饼 | Met Midherfst eet je maancakes | 🥮🌕
+d A 春节快乐！ | Gelukkig Chinees Nieuwjaar!
+d B 春节快乐！你们春节做什么？ | Gelukkig nieuwjaar! Wat doen jullie met Nieuwjaar?
+d A 我们吃饺子，给孩子红包。 | We eten dumplings en geven de kinderen rode enveloppen.
+d B 在荷兰，十二月五号我们送礼物。 | In Nederland geven we op 5 december cadeaus.
+d A 真有意思！ | Wat interessant!
+
+@ u60 | Nederland uitleggen | 🇳🇱
+w 荷兰语 | Nederlands (taal) | 🇳🇱🗣️
+w 国王 | koning | 👑
+w 奶酪 | kaas | 🧀 | tw=起司;zeggen ze voor kaas
+w 郁金香 | tulp | 🌷🌷
+w 风车 | windmolen | 🌀🏠
+w 运河 | gracht | 🛶
+w 平 | vlak | ➖🏞️
+w 直接 | direct | 🎯
+w 安全 | veilig | 🛡️
+w 上班 | naar je werk gaan | 💼🚶
+w 听说 | ik heb gehoord dat | 👂📰
+s 荷兰/人/很/直接 | Nederlanders zijn erg direct | 🇳🇱🎯
+s 荷兰/很/平/没有/山 | Nederland is vlak, er zijn geen bergen | ➖⛰️❌
+s 很多/荷兰/人/骑/自行车/上班 | Veel Nederlanders fietsen naar hun werk | 🚲💼
+s 阿姆斯特丹/有/很多/运河 | Amsterdam heeft veel grachten | 🛶🏙️
+s 荷兰/的/奶酪/很/有名 | Nederlandse kaas is beroemd | 🧀🌟
+d A 荷兰是什么样的国家？ | Wat voor land is Nederland?
+d B 荷兰很小，很平，没有山。 | Nederland is klein en vlak, zonder bergen.
+d A 听说荷兰人都骑自行车？ | Ik heb gehoord dat alle Nederlanders fietsen?
+d B 对！我每天也骑车。 | Klopt! Ik fiets ook elke dag.
+d A 荷兰人会说英文吗？ | Spreken Nederlanders Engels?
+d B 大部分人会说，而且说得很好！ | De meeste wel, en ook nog heel goed!
+
+@ u61 | Natuur & dieren | 🐼
+w 动物 | dier | 🐾
+w 狗 | hond | 🐶
+w 猫 | kat | 🐱
+w 熊猫 | panda | 🐼
+w 鸟 | vogel | 🐦
+w 树 | boom | 🌲
+w 花 | bloem | 🌼
+w 河 | rivier | 🌊
+w 草 | gras | 🌱
+w 天空 | lucht | ☁️
+w 宠物 | huisdier | 🐕‍🦺
+w 养 | (een dier) houden | 🏡🐾
+w 可爱 | schattig | 🥰
+s 你/养/宠物/吗 | Heb je een huisdier? | 🐾❓
+s 熊猫/很/可爱 | Panda's zijn schattig | 🐼🥰
+s 我/喜欢/在/公园/跑步 | Ik ren graag in het park | 🌳🏃
+s 今天/天空/很/蓝 | De lucht is vandaag heel blauw | ☁️🔵
+s 我/更/喜欢/狗 | Ik hou meer van honden | 🐶❤️
+d A 你养宠物吗？ | Heb je een huisdier?
+d B 没有，可是我很喜欢狗。你呢？ | Nee, maar ik ben gek op honden. Jij?
+d A 我养了一只猫，很可爱！ | Ik heb een kat, heel schattig!
+d B 给我看看照片吧！ | Laat eens een foto zien!
+
+@ u62 | Wonen & verhuizen | 🏠
+w 搬家 | verhuizen | 📦🚚
+w 租 | huren | 🔑💶
+w 房租 | huur | 💶🏠
+w 房子 | huis | 🏠🧱
+w 公寓 | appartement | 🏢🏠
+w 厨房 | keuken | 🍳🏠
+w 卧室 | slaapkamer | 🛏️🌙
+w 客厅 | woonkamer | 🛋️
+w 厕所 | wc | 🚽
+w 家具 | meubels | 🪑
+w 邻居 | buren | 🏘️👋
+w 安静 | rustig | 🤫
+w 吵 | lawaaierig | 📢
+s 我/想/搬家 | Ik wil verhuizen | 📦💭
+s 在/阿姆斯特丹/租/房子/很/贵 | In Amsterdam is huren erg duur | 🏙️💸
+s 我/的/公寓/有/两/个/房间 | Mijn appartement heeft twee kamers | 🏢✌️
+s 我/的/邻居/很/吵 | Mijn buren zijn erg luidruchtig | 🏘️📢
+s 厨房/虽然/小/但是/很/干净 | De keuken is klein maar wel schoon | 🍳✨
+d A 你住的地方怎么样？ | Hoe is je woning?
+d B 很小，可是很方便。 | Klein, maar wel handig.
+d A 房租贵吗？ | Is de huur duur?
+d B 很贵！阿姆斯特丹的房租太贵了。 | Heel duur! De huren in Amsterdam zijn veel te hoog.
+d A 你想搬家吗？ | Wil je verhuizen?
+d B 想，可是很难找到房子。 | Ja, maar het is moeilijk om een huis te vinden.
+
+@ u63 | Online shoppen | 📦
+note: Details over het verleden: 是…的 :: Wil je weten wáár, wanneer of hoe iets gebeurd is, dan zet je 是…的 eromheen: 你(是)在哪里买的? = waar heb je het gekocht? 是 mag je vaak weglaten. :: 在哪里买的=waar heb je het gekocht? ;; 我是坐飞机来的=ik ben met het vliegtuig gekomen
+w 网购 | online winkelen | 🛒🌐
+w 快递 | pakketje | 📬
+w 订单 | bestelling | 🧾📦
+w 退货 | retourneren | ↩️📦
+w 质量 | kwaliteit | ⭐🔍
+w 大小 | maat / grootte | 📏👕
+w 合适 | passend | ✅👕
+w 双 | paar (telwoord) | 👟👟
+w 收到 | ontvangen | 📥
+w 付钱 | betalen | 💳💰
+s 我/在/网上/买/了/一/双/鞋 | Ik heb online een paar schoenen gekocht | 👟🌐
+s 快递/明天/送到 | Het pakketje wordt morgen bezorgd | 📬📅
+s 衣服/太/大/了/我/要/退货 | De kleren zijn te groot, ik wil ze terugsturen | 👕↩️
+s 我/还/没/收到 | Ik heb het nog niet ontvangen | 📥❌
+s 这/双/鞋/的/质量/很/好 | De kwaliteit van deze schoenen is erg goed | ⭐👍
+d A 你的鞋真好看！在哪里买的？ | Wat een mooie schoenen! Waar heb je die gekocht?
+d B 在网上买的，很便宜。 | Online, heel goedkoop.
+d A 质量怎么样？ | Hoe is de kwaliteit?
+d B 质量很好，大小也合适。 | Goede kwaliteit, en ze passen ook goed.
+
+@ u64 | Karakter beschrijven | 🧩
+w 性格 | karakter / persoonlijkheid | 🧩
+w 友好 | vriendelijk | 😊🤝
+w 幽默 | humoristisch | 🎭😄
+w 认真 | serieus / ijverig | 🧐📚
+w 懒 | lui | 🦥
+w 害羞 | verlegen | 😳
+w 耐心 | geduldig | 🧘
+w 自信 | zelfverzekerd | 😎
+w 外向 | extravert | 🗣️🎉
+w 内向 | introvert | 🤫📖
+w 比较 | vrij / nogal | ⚖️🤏
+s 你/是/什么/样/的/人 | Wat voor iemand ben jij? | 🧩❓
+s 我/的/朋友/很/幽默 | Mijn vriend is heel grappig | 🎭🤝
+s 我/比较/外向 | Ik ben vrij extravert | 🗣️🙋‍♂️
+s 他/学习/很/认真 | Hij studeert heel serieus | 🧐✍️
+s 我/有时候/有点/懒 | Soms ben ik een beetje lui | 🦥🎲
+d A 你的好朋友是什么样的人？ | Wat voor iemand is je beste vriend?
+d B 他很幽默，也很聪明。 | Hij is heel grappig en ook heel slim.
+d A 他中文好吗？ | Is zijn Chinees goed?
+d B 很好！他在台湾学了一年。 | Heel goed! Hij heeft een jaar in Taiwan gestudeerd.
+d A 你们性格一样吗？ | Hebben jullie hetzelfde karakter?
+d B 不一样，我比较外向，他比较内向。 | Nee, ik ben meer extravert, hij meer introvert.
+story: Mijn vriend
+t 我有一个好朋友，他也是荷兰人。 | Ik heb een goede vriend, hij is ook Nederlander. | 🤝🇳🇱
+t 他很聪明，也很幽默。 | Hij is slim en ook heel grappig. | 🧠😄
+t 以前他在台湾学了一年中文。 | Vroeger heeft hij een jaar Chinees gestudeerd in Taiwan. | 🇹🇼📚
+t 他说台湾人很热情，小吃也特别好吃。 | Hij zegt dat Taiwanezen heel hartelijk zijn en het streetfood superlekker. | 🤗🍢
+t 现在他常常教我说中文。 | Nu leert hij mij vaak Chinees spreken. | 🧑‍🏫🀄
+t 他是一个很有耐心的老师，可是我的声调还不太好。 | Hij is een geduldige leraar, maar mijn tonen zijn nog niet zo goed. | 🧘🎵
+t 我们打算明年一起去台北！ | We zijn van plan volgend jaar samen naar Taipei te gaan! | ✈️🏙️
+q Hoe lang heeft zijn vriend in Taiwan gestudeerd? | een jaar | een maand | drie jaar
+q Wat doet zijn vriend nu vaak? | Max Chinees leren | in Taiwan wonen | als ober werken
+q Waar is Max nog niet goed in? | de tonen | karakters lezen | tellen
+
+@ u65 | Uiterlijk beschrijven | 🪞
+note: Eén karakter, twee uitspraken: 长 :: 长 cháng = lang (长头发 = lang haar). 长 zhǎng = groeien, en 长得 = eruitzien: 他长得很帅 = hij ziet er knap uit. :: 他长得很高=hij is lang (van postuur) ;; 长头发=lang haar
+w 长 | lang (lengte) | ↕️ | py=chang2
+w 短 | kort | 🤏📏
+w 头发 | haar | 💇
+w 胖 | dik | 🐻
+w 瘦 | dun | 🦴
+w 帅 | knap (man) | 🕺✨
+w 戴 | dragen (bril, hoed) | 🕶️
+w 眼镜 | bril | 👓
+w 个子 | lengte (postuur) | 📐🧍
+w 长得 | eruitzien | 🪞
+w 年轻 | jong | 🧑‍🦱✨
+w 像 | lijken op | 👯‍♂️
+s 他/长得/很/帅 | Hij ziet er knap uit | 🕺😎
+s 她/有/长/头发 | Ze heeft lang haar | 💇‍♀️
+s 我/个子/很/高 | Ik ben lang | 🦒🙋‍♂️
+s 他/戴/眼镜 | Hij draagt een bril | 👓🧍
+s 你/长得/很/像/你/妈妈 | Je lijkt veel op je moeder | 👩👯
+d A 你的朋友长什么样？ | Hoe ziet je vriend eruit?
+d B 他个子很高，戴眼镜。 | Hij is lang en draagt een bril.
+d A 帅吗？ | Is hij knap?
+d B 很帅！哈哈。 | Heel knap! Haha.
+
+@ u66 | Discussiëren | 🗣️
+w 看法 | mening | 👁️💭
+w 意见 | opinie / bezwaar | 🗳️
+w 不同意 | het oneens zijn | 🙅🤝
+w 其实 | eigenlijk | 🤫💡
+w 比如 | bijvoorbeeld | 👉📋
+w 首先 | ten eerste | 1️⃣📌
+w 另外 | daarnaast | ➕📌
+w 总之 | kortom | 🧾✅
+w 重要 | belangrijk | ❗⭐
+w 好处 | voordeel | 👍➕
+w 坏处 | nadeel | 👎➖
+w 有用 | nuttig | 🛠️✅
+s 我/不同意/你/的/看法 | Ik ben het niet eens met je mening | 🙅💭
+s 其实/我/觉得/你/说/得/对 | Eigenlijk vind ik dat je gelijk hebt | 🤫✔️
+s 学/中文/有/很多/好处 | Chinees leren heeft veel voordelen | 🀄👍
+s 首先/很/有意思/另外/很/有用 | Ten eerste is het interessant, daarnaast nuttig | 1️⃣✨➕
+s 对/我/来说/健康/最/重要 | Voor mij is gezondheid het belangrijkst | 🥦❗
+d A 你觉得人工智能好不好？ | Vind je AI goed of niet?
+d B 我觉得有很多好处。比如，学习更方便了。 | Ik vind dat het veel voordelen heeft. Studeren wordt bijvoorbeeld makkelijker.
+d A 我不同意，坏处也很多。 | Daar ben ik het niet mee eens, er zijn ook veel nadelen.
+d B 你说得对，可是总之我觉得好处更多。 | Je hebt gelijk, maar kortom vind ik dat de voordelen zwaarder wegen.
+
+@ u67 | Een verhaal vertellen | 📖
+note: Een verhaal opbouwen :: Begin met 有一天 (op een dag). Gebruik 先 (eerst), 然后 (daarna), 后来 (later) en 最后 (uiteindelijk). Voor spanning: 突然 (plotseling). 原来 = het bleek dat. :: 有一天…=op een dag… ;; 原来是他=het bleek hem te zijn
+w 有一天 | op een dag | 📖☀️
+w 突然 | plotseling | ⚡😮
+w 最后 | uiteindelijk / tot slot | 🏁
+w 后来 | later / daarna | ⏩
+w 发生 | gebeuren | 💥❓
+w 记得 | zich herinneren | 🧠🖼️
+w 一开始 | in het begin | ▶️1️⃣
+w 原来 | het bleek dat | 😲
+w 包 | tas | 👜
+w 笑 | lachen | 😆
+w 只 | (telwoord voor dieren) | 🐾🔢 | py=zhi1
+s 有一天/我/在/路上/看见/一/只/猫 | Op een dag zag ik een kat op straat | 🐱🛣️
+s 突然/下雨/了 | Plotseling begon het te regenen | ⚡🌧️
+s 你/记得/那/天/发生/了/什么/吗 | Weet je nog wat er die dag gebeurde? | 🧠❓
+s 一开始/很/难/后来/越来越/容易 | In het begin was het moeilijk, later steeds makkelijker | 🧗➡️🍰
+s 原来/他/是/我/朋友/的/哥哥 | Het bleek de broer van mijn vriend te zijn | 😲👦
+d A 你记得我们第一次见面吗？ | Weet je nog dat we elkaar voor het eerst ontmoetten?
+d B 记得！在大学的图书馆。 | Ja! In de universiteitsbibliotheek.
+d A 对！一开始我觉得你很害羞。 | Klopt! In het begin vond ik je heel verlegen.
+d B 哈哈，后来呢？ | Haha, en later?
+d A 后来我发现你特别幽默！ | Later ontdekte ik dat je juist heel grappig bent!
+story: De verloren sleutels
+t 有一天晚上，我回家的时候找不到钥匙了。 | Op een avond kon ik bij thuiskomst mijn sleutels niet vinden. | 🌙🔑❓
+t 我先找了我的包，没有。 | Eerst zocht ik in mijn tas, niets. | 👜❌
+t 然后我给朋友打电话。 | Daarna belde ik een vriend. | 📞
+t 他说：“别着急，我来帮你！” | Hij zei: "Rustig maar, ik kom je helpen!" | 🤝
+t 我们一起找了半个小时。 | We hebben samen een half uur gezocht. | ⏳🔍
+t 突然，我的朋友笑了。 | Plotseling begon mijn vriend te lachen. | 😆
+t 原来钥匙在门上！ | De sleutels zaten gewoon in de deur! | 🔑🚪
+q Wat was Max kwijt? | zijn sleutels | zijn telefoon | zijn paspoort
+q Hoe lang zochten ze? | een half uur | vijf minuten | twee uur
+q Waar waren de sleutels? | in de deur | in zijn tas | bij zijn vriend
+
+@ u68 | Het grote gesprek met je vriend | 🏆
+who: Je vriend | 🧑
+intro: Dit is het: een echt gesprek in het Chinees met je vriend. Alles wat je geleerd hebt komt samen.
+w 聊天 | kletsen | 💬😄
+w 进步 | vooruitgang / vooruitgaan | 📈⭐
+w 介绍 | voorstellen / introduceren | 🙋‍♂️📢
+w 平时 | normaal gesproken | 📆🔁
+w 跟 | met | 🤝➕
+s 我/的/中文/进步/了/很多 | Mijn Chinees is veel vooruitgegaan | 📈🀄
+s 我们/用/中文/聊天/吧 | Laten we in het Chinees kletsen | 💬🀄
+s 你/说/的/我/都/听/得/懂 | Ik versta alles wat je zegt | 👂✅🎉
+s 我们/一起/去/台湾/吧 | Laten we samen naar Taiwan gaan | 👫🇹🇼
+s 一言为定 | Afgesproken! | 🤝✅
+d A 好久不见！你的中文怎么样了？ | Lang niet gezien! Hoe staat het met je Chinees?
+d B 我学了半年了，现在我们可以用中文聊天了！ | Ik leer het nu een half jaar, nu kunnen we in het Chinees kletsen!
+d A 真的吗？那你介绍一下你自己吧。 | Echt? Stel jezelf dan maar eens voor.
+d B 我叫马克斯，我住在阿姆斯特丹，在大学学人工智能。 | Ik heet Max, ik woon in Amsterdam en ik studeer AI aan de universiteit.
+d A 你平时喜欢做什么？ | Wat doe je normaal graag?
+d B 我喜欢健身、跑步和弹钢琴。周末我常常看电影。 | Ik hou van fitness, hardlopen en piano spelen. In het weekend kijk ik vaak films.
+d A 你为什么学中文？ | Waarom leer je Chinees?
+d B 因为你！你在台湾学了中文，我也想跟你用中文聊天。 | Door jou! Jij hebt in Taiwan Chinees geleerd, en ik wil ook met jou in het Chinees kunnen praten.
+d A 哈哈，你的声调比以前好多了！ | Haha, je tonen zijn veel beter dan vroeger!
+d B 谢谢！虽然还有很多不懂，但是我每天都练习。 | Dank je! Hoewel ik nog veel niet begrijp, oefen ik elke dag.
+d A 明年我们一起去台湾吧！我带你去夜市吃小吃。 | Laten we volgend jaar samen naar Taiwan gaan! Ik neem je mee naar de nachtmarkt.
+d B 太好了！一言为定！ | Super! Afgesproken!

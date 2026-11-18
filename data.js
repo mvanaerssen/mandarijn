@@ -61,9 +61,9 @@ window.UNITS = [
       { id: "nine", zh: "你|呢", py: "ni3|ne5", nl: "En jij?", e: "👉🤔" }
     ],
     dialogue: [
-      { s: "A", zh: "你好！我叫马克斯。", py: "ni3 hao3 wo3 jiao4 Ma3 ke4 si1", nl: "Hallo! Ik heet Max." },
+      { s: "A", zh: "你好！我叫王明。", py: "ni3 hao3 wo3 jiao4 Wang2 Ming2", nl: "Hallo! Ik heet Wang Ming." },
       { s: "A", zh: "你叫什么名字？", py: "ni3 jiao4 shen2 me5 ming2 zi5", nl: "Hoe heet jij?" },
-      { s: "B", zh: "我叫王明。你好，马克斯！", py: "wo3 jiao4 Wang2 Ming2 ni3 hao3 Ma3 ke4 si1", nl: "Ik heet Wang Ming. Hallo, Max!" }
+      { s: "B", zh: "你好，王明！我叫马克斯。", py: "ni3 hao3 Wang2 Ming2 wo3 jiao4 Ma3 ke4 si1", nl: "Hallo, Wang Ming! Ik heet Max." }
     ]
   },
   {
@@ -194,7 +194,7 @@ window.UNITS = [
   {
     id: "u11", title: "Hoe gaat het?", emoji: "😄",
     items: [
-      { id: "ma", zh: "吗", py: "ma5", nl: "vraagwoordje (maakt er een ja/nee-vraag van)", e: "❓" },
+      { id: "ma", zh: "吗", py: "ma5", nl: "vraagwoordje (maakt er een ja/nee-vraag van)", e: "✅❓" },
       { id: "nihaoma", zh: "你|好|吗", py: "ni3|hao3|ma5", nl: "Hoe gaat het?", e: "👋❓" },
       { id: "wohenhao", zh: "我|很|好", py: "wo3|hen3|hao3", nl: "Het gaat goed met me", e: "😄👍" },
       { id: "bu", zh: "不", py: "bu4", nl: "niet / nee", e: "❌" },

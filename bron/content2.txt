@@ -1,0 +1,425 @@
+# ===================== TIENER (HSK 2) =====================
+
+@ u31 | Wat deed je gisteren? | ⏮️
+note: Verleden tijd met 了 :: Chinees heeft geen vervoegingen. 了 na het werkwoord betekent: het is gebeurd. 我吃了 = ik heb gegeten. Ontkennen doe je met 没 en dan zonder 了: 我没吃 = ik heb niet gegeten. :: 我看了一部电影=ik heb een film gekeken ;; 我没去=ik ben niet gegaan
+w 了 | (gebeurd / afgerond) | ✅⏮️
+w 没 | niet (verleden) | ❌⏮️
+w 上个星期 | vorige week | 🗓️⬅️
+w 周末 | weekend | 🎉🗓️
+w 看见 | zien | 👁️
+w 见面 | elkaar ontmoeten | 🤝
+w 已经 | al | ✔️⏱️
+w 还 | nog | ⏳
+w 做饭 | koken | 🍳
+s 你/昨天/做/了/什么 | Wat heb je gisteren gedaan? | 📅❓
+s 我/昨天/看/了/一/部/电影 | Ik heb gisteren een film gekeken | 🎬⏮️
+s 我/已经/吃/饭/了 | Ik heb al gegeten | 🍚✔️
+s 我/还/没/吃 | Ik heb nog niet gegeten | 🍚❌
+s 周末/我/和/朋友/见面/了 | In het weekend heb ik met vrienden afgesproken | 🤝🎉
+s 我/做/了/中国/菜 | Ik heb Chinees eten gekookt | 🍳🥢
+d A 你周末做了什么？ | Wat heb je dit weekend gedaan?
+d B 我去了健身房，还看了一部电影。 | Ik ben naar de sportschool geweest en heb een film gekeken.
+d A 什么电影？ | Welke film?
+d B 一部中国电影，很有意思！ | Een Chinese film, heel interessant!
+
+@ u32 | Ben je ooit…? | 🌍
+note: Ervaring met 过 :: 过 na het werkwoord = 'ooit gedaan': 我去过台湾 = ik ben in Taiwan geweest. Ontkennen: 没 + werkwoord + 过 = nog nooit. :: 我去过台湾=ik ben in Taiwan geweest ;; 我没吃过饺子=ik heb nog nooit dumplings gegeten
+w 过 | (ooit, ervaring) | 🌍✔️
+w 台湾 | Taiwan | 🇹🇼
+w 台北 | Taipei | 🏙️🇹🇼
+w 北京 | Beijing | 🏯
+w 上海 | Shanghai | 🌆
+w 国家 | land | 🗺️
+w 旅游 | reizen (toerisme) | 🧳
+w 第一次 | de eerste keer | 1️⃣🔂
+w 可是 | maar | 🔀
+s 你/去/过/中国/吗 | Ben je ooit in China geweest? | 🇨🇳❓
+s 我/没/去/过/中国 | Ik ben nog nooit in China geweest | 🇨🇳❌
+s 我/的/朋友/去/过/台湾 | Mijn vriend is in Taiwan geweest | 🇹🇼🤝
+s 你/吃/过/中国/菜/吗 | Heb je ooit Chinees eten gegeten? | 🥢❓
+s 这/是/我/第一次/学/中文 | Dit is de eerste keer dat ik Chinees leer | 1️⃣🀄
+d A 你去过中国吗？ | Ben je ooit in China geweest?
+d B 没去过，可是我很想去。 | Nee, maar ik wil heel graag.
+d A 你的朋友呢？ | En je vriend?
+d B 他去过台湾，在那里学了中文。 | Hij is in Taiwan geweest en heeft daar Chinees geleerd.
+
+@ u33 | Plannen & dromen | 🔮
+note: Plannen maken :: Toekomst zeg je met 想 (willen), 要 (gaan / willen) of 打算 (van plan zijn) + werkwoord. De tijd staat weer vooraan: 明年我打算去台湾. :: 明年我打算去台湾=volgend jaar ben ik van plan naar Taiwan te gaan
+w 打算 | van plan zijn | 📝
+w 明年 | volgend jaar | 🎆➡️
+w 以后 | later / daarna | 🔮
+w 希望 | hopen | 🤞
+w 梦想 | droom | 💭✨
+w 计划 | plan | 🗒️
+w 下个月 | volgende maand | 📅➡️
+w 准备 | voorbereiden | 🎒
+w 东西 | ding / spullen | 📦
+s 明年/我/打算/去/台湾 | Volgend jaar ben ik van plan naar Taiwan te gaan | 🇹🇼✈️
+s 我/希望/以后/能/说/好/中文 | Ik hoop later goed Chinees te kunnen spreken | 🤞🗣️
+s 你/的/梦想/是/什么 | Wat is jouw droom? | 💭❓
+s 我/想/去/很多/国家/旅游 | Ik wil naar veel landen reizen | 🗺️🧳
+d A 明年你有什么计划？ | Wat zijn je plannen voor volgend jaar?
+d B 我打算去台湾旅游。 | Ik ben van plan naar Taiwan te reizen.
+d A 太好了！你想去哪里？ | Super! Waar wil je heen?
+d B 我想去台北，还想去夜市吃东西。 | Naar Taipei, en ik wil op een nachtmarkt eten.
+
+@ u34 | Kunnen & mogen | 🙆
+note: Drie keer 'kunnen' :: 会 = kunnen omdat je het geleerd hebt (我会说中文). 能 = kunnen omdat het mogelijk is (今天我不能去). 可以 = mogen (可以吗?). :: 我会游泳=ik kan zwemmen ;; 今天我不能去=vandaag kan ik niet ;; 可以吗=mag dat?
+w 会 | kunnen (aangeleerd) | 🎓👌
+w 能 | kunnen (in staat) | 💪
+w 游泳 | zwemmen | 🏊
+w 写 | schrijven | ✍️
+w 读 | lezen (hardop) | 📖🗣️
+w 汉字 | Chinees karakter | 🀄✍️
+w 帮 | helpen | 🤝🙋
+w 问题 | vraag / probleem | ❓❗
+w 当然 | natuurlijk | 👌✨
+w 一些 | een paar / wat | 🤏🔢
+s 你/会/游泳/吗 | Kun je zwemmen? | 🏊❓
+s 我/不/会/写/汉字 | Ik kan geen karakters schrijven | ✍️❌
+s 我/可以/问/你/一/个/问题/吗 | Mag ik je een vraag stellen? | 🙋❓
+s 当然/可以 | Natuurlijk mag dat | 👌✅
+s 今天/我/不/能/去 | Vandaag kan ik niet | 🙅📅
+s 你/能/帮/我/吗 | Kun je me helpen? | 🤝❓
+d A 你会写汉字吗？ | Kun je karakters schrijven?
+d B 不会写，可是我认识一些。 | Schrijven niet, maar ik herken er wel een paar.
+d A 我可以帮你！ | Ik kan je helpen!
+d B 太好了，谢谢！ | Super, dank je!
+
+@ u35 | Vergelijken | ⚖️
+note: Vergelijken met 比 :: A 比 B + bijvoeglijk naamwoord = A is …er dan B: 我比他高 = ik ben langer dan hij. 最 = het meest. 一样 = hetzelfde. :: 我比他高=ik ben langer dan hij ;; 我们一样高=we zijn even lang
+w 比 | dan (vergelijken) | ⚖️
+w 高 | lang / hoog | 🦒
+w 矮 | klein (van postuur) | 🧒
+w 更 | nog (meer) | ⬆️➕
+w 一样 | hetzelfde | 👯
+w 多 | veel / meer | ➕
+w 少 | weinig | ➖
+w 难 | moeilijk | 🧗
+w 容易 | makkelijk | 🍰
+w 新 | nieuw | 🆕
+w 旧 | oud (dingen) | 🏚️
+w 英文 | Engels | 🇬🇧
+w 声调 | toon (in een taal) | 🎵
+s 中文/比/英文/难 | Chinees is moeilijker dan Engels | 🀄⚖️🇬🇧
+s 我/比/我/朋友/高 | Ik ben langer dan mijn vriend | 🦒🙋‍♂️
+s 跑步/比/游泳/容易 | Hardlopen is makkelijker dan zwemmen | 🏃🍰
+s 我们/一样/大 | We zijn even oud | 👯🎂
+d A 中文难吗？ | Is Chinees moeilijk?
+d B 很难！比英文难多了。 | Heel moeilijk! Veel moeilijker dan Engels.
+d A 汉字最难吗？ | Zijn karakters het moeilijkst?
+d B 对，可是声调也很难！ | Ja, maar de tonen zijn ook lastig!
+
+@ u36 | Studie & uni | 🎓
+w 大学生 | (universiteits)student | 🎓🧑
+w 专业 | studierichting | 🎓📘
+w 课 | les / vak | 📘
+w 考试 | examen | 📝
+w 作业 | huiswerk | 📒
+w 同学 | medestudent | 🧑‍🤝‍🧑
+w 老师 | docent | 👨‍🏫
+w 学期 | semester | 📆🎓
+w 数学 | wiskunde | ➗
+w 电脑 | computer | 💻
+w 用 | gebruiken | 🛠️
+w 忙 | druk | 🏃‍♂️💨
+w 毕业 | afstuderen | 🎓🎉
+s 你/学/什么/专业 | Wat studeer je? | 🎓❓
+s 我/的/专业/是/人工智能 | Mijn studierichting is AI | 🤖🎓
+s 下/个/星期/我/有/考试 | Volgende week heb ik een examen | 📝📅
+s 这/个/学期/我/很/忙 | Dit semester heb ik het erg druk | 🏃‍♂️📆
+s 数学/很/难/可是/很/有意思 | Wiskunde is moeilijk, maar interessant | ➗✨
+d A 你学什么专业？ | Wat studeer je?
+d B 我学人工智能。 | AI.
+d A 难吗？ | Is het moeilijk?
+d B 有点难，数学很多。可是我很喜欢！ | Een beetje, er is veel wiskunde. Maar ik vind het heel leuk!
+story: Max en Chinees
+t 我是大学生，我学人工智能。 | Ik ben student, ik studeer AI. | 🎓🤖
+t 我的好朋友会说中文。 | Mijn goede vriend spreekt Chinees. | 🤝🀄
+t 他在台湾学过中文。 | Hij heeft in Taiwan Chinees gestudeerd. | 🇹🇼📚
+t 我也想学中文，所以我每天练习。 | Ik wil ook Chinees leren, dus ik oefen elke dag. | 🔁
+t 中文很难，可是很有意思。 | Chinees is moeilijk, maar heel interessant. | 🧗✨
+t 明年我打算和他一起去台湾！ | Volgend jaar ben ik van plan met hem naar Taiwan te gaan! | ✈️🇹🇼
+q Waar heeft zijn vriend Chinees geleerd? | in Taiwan | in China | in Amsterdam
+q Hoe vaak oefent Max? | elke dag | elke week | in het weekend
+q Wat is Max van plan? | met zijn vriend naar Taiwan | naar Beijing verhuizen | Chinese les geven
+
+@ u37 | Afspreken met vrienden | 🤝
+w 有空 | tijd hebben / vrij zijn | 🆓
+w 等 | wachten | ⏳🧍
+w 来 | komen | 👋➡️
+w 晚 | laat | 🌙⏰
+w 早 | vroeg | 🌅⏰
+w 见 | zien / ontmoeten | 👀🤝
+w 聚会 | feestje | 🥳
+w 迟到 | te laat komen | ⏰😬
+w 没问题 | geen probleem | 👍👌
+s 你/今天/晚上/有空/吗 | Heb je vanavond tijd? | 🆓🌙
+s 我们/几/点/见 | Hoe laat zien we elkaar? | ⏰🤝
+s 七/点/在/咖啡馆/见 | Om 7 uur bij het café | ☕7️⃣
+s 对不起/我/迟到/了 | Sorry, ik ben te laat | 😬🙇
+s 等/我/一下 | Wacht even op me | ⏳🙏
+s 明天/见 | Tot morgen! | 👋📅
+d A 你今天晚上有空吗？ | Heb je vanavond tijd?
+d B 有空！怎么了？ | Ja! Hoezo?
+d A 我们一起吃饭吧！ | Laten we samen eten!
+d B 好！几点见？ | Goed! Hoe laat?
+d A 七点在饭馆见。 | Om zeven uur bij het restaurant.
+d B 没问题，晚上见！ | Geen probleem, tot vanavond!
+
+@ u38 | Bellen & appen | 📱
+w 打电话 | bellen | 📞
+w 发 | sturen | 📤
+w 消息 | bericht | 💬
+w 微信 | WeChat | 💚💬 | tw=;In Taiwan gebruikt bijna iedereen LINE in plaats van WeChat.
+w 照片 | foto | 📸
+w 视频 | video | 🎥
+w 回 | terug / beantwoorden | ↩️
+w 忘 | vergeten | 🧠❌
+w 上网 | internetten | 🌐
+w 加 | toevoegen | ➕👤
+s 我/给/你/打电话 | Ik bel je | 📞🙋‍♂️
+s 你/有/微信/吗 | Heb je WeChat? | 💚❓
+s 我/加/你/微信/吧 | Ik voeg je toe op WeChat | ➕💚
+s 我/给/你/发/照片 | Ik stuur je een foto | 📸📤
+s 对不起/我/忘/了/回/你 | Sorry, ik ben vergeten je terug te sturen | 🧠↩️
+d A 你有微信吗？ | Heb je WeChat?
+d B 有，我加你吧。 | Ja, ik voeg je toe.
+d A 好！晚上我给你发照片。 | Top! Vanavond stuur ik je de foto's.
+d B 没问题！ | Prima!
+
+@ u39 | Hoe vaak & hoe lang | ⏳
+note: Hoe lang iets duurt :: De duur komt ná het werkwoord: 我学了两个月 = ik heb twee maanden geleerd. Vraag: 多长时间? Met 了 aan het eind betekent het 'al': 我学了两个月了 = ik leer het al twee maanden. :: 我学了两个月了=ik leer het al twee maanden
+w 多长时间 | hoe lang | ⏳❓
+w 分钟 | minuut (duur) | ⏲️🔢
+w 天 | dag | ☀️🗓️
+w 经常 | vaak | 🔂🔁
+w 有时候 | soms | 🎲
+w 从来不 | nooit | 🚫
+w 每次 | elke keer | 🔁🔢
+s 你/学/中文/多长时间/了 | Hoe lang leer je al Chinees? | 🀄⏳
+s 我/学/了/两/个/月/了 | Ik leer het al twee maanden | 2️⃣🌙
+s 我/每天/跑步/半/个/小时 | Ik ren elke dag een half uur | 🏃⏳
+s 我/有时候/去/酒吧 | Soms ga ik naar een bar | 🍻🎲
+s 我/从来不/喝/酒 | Ik drink nooit alcohol | 🍷🚫
+d A 你学中文多长时间了？ | Hoe lang leer je al Chinees?
+d B 两个月了。 | Twee maanden.
+d A 你每天练习多长时间？ | Hoe lang oefen je per dag?
+d B 半个小时，有时候一个小时。 | Een half uur, soms een uur.
+
+@ u40 | Je mening geven | 💬
+note: Mening en reden :: 我觉得… = ik vind…. 因为…所以… = omdat… daarom…. In het Chinees gebruik je vaak allebei in één zin. :: 我觉得很好=ik vind het goed ;; 因为下雨，所以我不去=omdat het regent ga ik niet
+w 觉得 | vinden (mening) | 💭
+w 认为 | menen / vinden | 🧠
+w 所以 | dus / daarom | ➡️💡
+w 但是 | maar | 🔀❗
+w 同意 | het eens zijn | 🤝✅
+w 可能 | misschien / mogelijk | 🤔🎲
+w 一定 | zeker | 💯✔️
+w 真的 | echt | 😮
+s 我/觉得/中文/很/有意思 | Ik vind Chinees heel interessant | 💭🀄
+s 你/觉得/怎么样 | Wat vind jij ervan? | 💭❓
+s 因为/下雨/所以/我/不/去 | Omdat het regent, ga ik niet | 🌧️🙅
+s 我/同意/你 | Ik ben het met je eens | 🙋‍♂️🤝
+s 你/说/得/对 | Je hebt gelijk | ✔️🗣️
+d A 你觉得这部电影怎么样？ | Wat vind je van deze film?
+d B 我觉得很好看。你呢？ | Ik vind hem heel goed. En jij?
+d A 我觉得有点无聊。 | Ik vind hem een beetje saai.
+d B 真的吗？ | Echt?
+
+@ u41 | Chinees eten | 🥟
+note: Zowel… als… = 又…又… :: 又 + eigenschap + 又 + eigenschap: 又辣又好吃 = pittig én lekker. :: 又便宜又好吃=goedkoop én lekker
+w 饺子 | dumplings | 🥟
+w 包子 | gestoomd broodje | 🥯
+w 火锅 | hotpot | 🍲
+w 豆腐 | tofu | ⬜🫘
+w 鸡肉 | kip | 🍗
+w 牛肉 | rundvlees | 🐄🥩
+w 猪肉 | varkensvlees | 🐷
+w 鱼 | vis | 🐟
+w 甜 | zoet | 🍬
+w 酸 | zuur | 🍋
+w 咸 | zout | 🧂
+w 又 | (zowel…) als / weer | 🔁➕
+w 奶茶 | melkthee / bubble tea | 🧋 | tw=珍珠奶茶;heet de echte bubble tea (daar uitgevonden!)
+s 我/最/喜欢/吃/饺子 | Dumplings eet ik het liefst | 🥟❤️
+s 火锅/又/辣/又/好吃 | Hotpot is pittig én lekker | 🍲🌶️
+s 这/个/菜/有点/咸 | Dit gerecht is een beetje zout | 🧂🤏
+s 我/想/喝/奶茶 | Ik wil bubble tea | 🧋💭
+d A 你吃过火锅吗？ | Heb je ooit hotpot gegeten?
+d B 没吃过。好吃吗？ | Nee. Is het lekker?
+d A 又辣又好吃！ | Pittig én lekker!
+d B 那我们去吃吧！ | Laten we dan gaan!
+
+@ u42 | Reis voorbereiden | ✈️
+note: Niet doen! = 别 :: 别 + werkwoord = doe het niet: 别忘了 = vergeet het niet. :: 别忘了=vergeet het niet ;; 别担心=maak je geen zorgen
+w 机票 | vliegticket | 🎫✈️
+w 护照 | paspoort | 🛂
+w 签证 | visum | 📄🛂
+w 行李 | bagage | 🧳
+w 机场 | vliegveld | 🛫
+w 订 | reserveren / boeken | 📲
+w 出发 | vertrekken | 🛫➡️
+w 到达 | aankomen | 🛬
+w 带 | meenemen | 🎒
+w 换钱 | geld wisselen | 💱
+w 别 | niet doen! | ✋
+w 放心 | gerust zijn | 😌✔️
+s 我/订/了/去/台北/的/机票 | Ik heb een ticket naar Taipei geboekt | 🎫🇹🇼
+s 别/忘/了/带/护照 | Vergeet je paspoort niet | 🛂⚠️
+s 我们/几/点/出发 | Hoe laat vertrekken we? | 🛫❓
+s 飞机/下午/三/点/到达 | Het vliegtuig komt om drie uur 's middags aan | 🛬🕒
+d A 你订机票了吗？ | Heb je je ticket geboekt?
+d B 订了！下个月出发。 | Ja! Volgende maand vertrek ik.
+d A 别忘了带护照！ | Vergeet je paspoort niet!
+d B 放心，我都准备好了。 | Maak je geen zorgen, ik heb alles klaar.
+
+@ u43 | In het hotel | 🏨
+who: Receptie | 🛎️
+w 酒店 | hotel | 🏨 | tw=饭店;heet een hotel vaak
+w 预订 | reservering | 📋✅
+w 钥匙 | sleutel | 🔑
+w 楼 | verdieping / gebouw | 🏢🔢
+w 电梯 | lift | 🛗
+w 早餐 | ontbijt (formeel) | 🍳☕
+w 空调 | airco | ❄️
+w 坏 | kapot | 🔧💥
+w 干净 | schoon | ✨🧼
+w 晚上 | avond / nacht | 🌙🛏️
+s 我/有/预订 | Ik heb een reservering | 🙋‍♂️📋
+s 我/要/住/三/个/晚上 | Ik blijf drie nachten | 🌙3️⃣
+s 早餐/几/点/开始 | Hoe laat begint het ontbijt? | 🍳⏰
+s 我/的/房间/在/几/楼 | Op welke verdieping is mijn kamer? | 🏢❓
+s 空调/坏/了 | De airco is kapot | ❄️💥
+d B 你好，我有预订，我叫马克斯。 | Hallo, ik heb een reservering, mijn naam is Max.
+d A 好的，你住三个晚上，对吗？ | Prima, u blijft drie nachten, klopt dat?
+d B 对。早餐几点开始？ | Ja. Hoe laat begint het ontbijt?
+d A 七点。这是你的钥匙，房间在八楼。 | Om zeven uur. Hier is uw sleutel, de kamer is op de achtste verdieping.
+d B 谢谢！ | Dank u!
+
+@ u44 | Taxi & metro | 🚕
+who: Chauffeur | 🚖
+w 司机 | chauffeur | 🧑‍✈️
+w 师傅 | meneer (chauffeur, vakman) | 👨‍🔧
+w 地址 | adres | 📮
+w 站 | halte / station | 🚏
+w 下车 | uitstappen | 🚪⬇️
+w 上车 | instappen | 🚪⬆️
+w 换 | overstappen / wisselen | 🔄
+w 票 | kaartje | 🎟️
+w 停 | stoppen | 🛑
+w 堵车 | file | 🚗🚗
+w 没关系 | geeft niet | 🙂👌
+s 师傅/去/这/个/地址 | Meneer, naar dit adres graag | 🚕📮
+s 请/在/这里/停 | Stop hier alstublieft | 🛑🙏
+s 我/在/下/一/站/下车 | Ik stap bij de volgende halte uit | 🚏⬇️
+s 去/机场/要/多长时间 | Hoe lang duurt het naar het vliegveld? | 🛫⏳
+s 现在/堵车/了 | Er staat nu file | 🚗🚗🚗
+d A 你好，去哪里？ | Goedendag, waar wilt u heen?
+d B 师傅，去这个地址。 | Meneer, naar dit adres graag.
+d A 好。现在有点堵车。 | Goed. Er staat nu wel wat file.
+d B 没关系。 | Geeft niet.
+d B 请在这里停，谢谢！ | Hier stoppen graag, dank u!
+
+@ u45 | Bezienswaardigheden | 🏯
+w 博物馆 | museum | 🏛️🖼️
+w 寺庙 | tempel | 🛕
+w 山 | berg | ⛰️
+w 海边 | aan zee / strand | 🏖️🌊
+w 风景 | landschap / uitzicht | 🏞️
+w 美 | mooi | 😍
+w 拍照 | foto's maken | 📸👆
+w 门票 | toegangskaartje | 🎟️🏛️
+w 参观 | bezichtigen | 👀🏛️
+w 长城 | de Chinese Muur | 🧱🇨🇳
+w 故宫 | de Verboden Stad | 🏯🇨🇳
+s 这里/的/风景/太/美/了 | Het uitzicht hier is prachtig! | 🏞️😍
+s 我/可以/在/这里/拍照/吗 | Mag ik hier foto's maken? | 📸❓
+s 门票/多少/钱 | Hoeveel kost een kaartje? | 🎟️❓
+s 我/想/去/长城 | Ik wil naar de Chinese Muur | 🧱💭
+s 台北/有/很多/有名/的/地方 | Taipei heeft veel bekende plekken | 🏙️🌟
+d A 你去过长城吗？ | Ben je ooit op de Chinese Muur geweest?
+d B 还没有。你呢？ | Nog niet. Jij?
+d A 去过！风景太美了。 | Ja! Het uitzicht is prachtig.
+d B 我以后一定要去！ | Ik moet er later zeker heen!
+
+@ u46 | Nachtmarkt & afdingen | 🏮
+who: Verkoper | 🧑‍🍳
+w 夜市 | nachtmarkt | 🏮🌙
+w 小吃 | snack / streetfood | 🍢
+w 尝 | proeven | 👅
+w 再 | nog een keer / nog meer | 🔁➕
+w 份 | portie | 🍽️🔢
+w 臭豆腐 | stinkende tofu | 🤢🧀
+w 排队 | in de rij staan | 🧍🧍🧍
+w 现金 | contant geld | 💵
+w 刷卡 | pinnen | 💳👆
+w 味道 | smaak | 👅✨
+w 奇怪 | raar | 😵‍💫
+s 我/想/尝/一下 | Ik wil het even proeven | 👅🙏
+s 再/便宜/一点/吧 | Doe nog iets goedkoper | 🪙🙏
+s 可以/刷卡/吗 | Kan ik pinnen? | 💳❓
+s 我/要/两/份 | Ik wil twee porties | 🍽️✌️
+s 夜市/的/小吃/很/好吃 | Het eten op de nachtmarkt is heerlijk | 🏮😋
+d A 来来来，尝一下！ | Kom kom kom, proef maar!
+d B 这个多少钱？ | Hoeveel kost dit?
+d A 一份五十块。 | Vijftig per portie.
+d B 我要两份，八十块可以吗？ | Ik wil er twee, mag het voor tachtig?
+d A 好吧，八十块！ | Vooruit, tachtig!
+story: Op de nachtmarkt
+t 晚上，马克斯和朋友去夜市。 | 's Avonds gaan Max en zijn vriend naar de nachtmarkt. | 🏮👫
+t 夜市里人很多。 | Het is heel druk op de markt. | 🧍🧍🧍
+t 他们买了很多小吃。 | Ze kopen heel veel streetfood. | 🍢
+t 马克斯第一次吃臭豆腐。 | Max eet voor het eerst stinkende tofu. | 🤢🧀
+t 他觉得味道很奇怪，可是很好吃！ | Hij vindt de smaak raar, maar wel lekker! | 😵‍💫😋
+t 然后他们喝了珍珠奶茶。 | Daarna drinken ze bubble tea. | 🧋
+t 一共只花了两百块。 | In totaal gaven ze maar tweehonderd uit. | 💰
+q Wat at Max voor het eerst? | stinkende tofu | dumplings | hotpot
+q Wat vond hij ervan? | raar maar lekker | vies | te pittig
+q Hoeveel gaven ze in totaal uit? | 200 | 20 | 2000
+
+@ u47 | Hulp nodig op reis | 🆘
+note: Wel of niet verstaan :: 听懂 = luisterend begrijpen. 听不懂 = niet verstaan. 听得懂 = wel kunnen verstaan. Super handig met je vriend! :: 我听不懂=ik versta het niet ;; 你听得懂吗=kun je het verstaan?
+w 帮忙 | helpen | 🆘🤝
+w 丢 | kwijtraken | 😱❓
+w 找 | zoeken | 🔍
+w 迷路 | verdwalen | 🗺️😵
+w 警察 | politie | 👮
+w 医生 | dokter | 👨‍⚕️
+w 药 | medicijn | 💊
+w 担心 | zich zorgen maken | 😟
+w 听不懂 | niet verstaan | 👂❌
+w 遍 | keer (van begin tot eind) | 🔁📜
+s 我/迷路/了 | Ik ben verdwaald | 🗺️😵
+s 我/的/护照/丢/了 | Ik ben mijn paspoort kwijt | 🛂😱
+s 你/能/帮/我/一下/吗 | Kunt u me even helpen? | 🆘🙏
+s 对不起/我/听不懂 | Sorry, ik versta het niet | 👂❌🙇
+s 请/说/慢/一点 | Wilt u iets langzamer praten? | 🐢🗣️
+s 请/再/说/一/遍 | Wilt u het nog een keer zeggen? | 🔁🗣️
+s 别/担心 | Maak je geen zorgen | 😌✋
+d B 请问，你能帮我一下吗？我迷路了。 | Pardon, kunt u me helpen? Ik ben verdwaald.
+d A 别担心。你想去哪里？ | Geen zorgen. Waar wilt u heen?
+d B 我想去火车站。 | Naar het station.
+d A 往前走，然后往右拐，再走五分钟就到了。 | Loop rechtdoor, dan rechtsaf, en na vijf minuten bent u er.
+d B 对不起，我听不懂。请说慢一点。 | Sorry, ik versta het niet. Kunt u iets langzamer praten?
+
+@ u48 | Vertel over je reis | 🗺️
+w 好玩 | leuk (om te doen) | 🎢✨
+w 玩 | plezier maken / spelen | 🎢
+w 难忘 | onvergetelijk | 🌟💭
+w 热情 | hartelijk / gastvrij | 🤗
+w 感觉 | gevoel / voelen | 💓
+w 回来 | terugkomen | ↩️🏠
+w 印象 | indruk | 🖼️💭
+w 特别 | bijzonder / speciaal | ⭐
+s 你/在/台湾/玩/了/几/天 | Hoeveel dagen was je in Taiwan? | 🇹🇼🗓️
+s 我/玩/了/十/天 | Ik was er tien dagen | 🔟🗓️
+s 台湾/人/很/热情 | Taiwanezen zijn erg gastvrij | 🤗🇹🇼
+s 这/次/旅游/很/难忘 | Deze reis was onvergetelijk | 🌟🧳
+s 我/还/想/再/去 | Ik wil nog een keer gaan | 🔁✈️
+d A 你回来了！台湾怎么样？ | Je bent terug! Hoe was Taiwan?
+d B 太好玩了！我玩了十天。 | Super leuk! Ik was er tien dagen.
+d A 你最喜欢什么？ | Wat vond je het leukst?
+d B 夜市！台湾人也很热情。 | De nachtmarkten! En Taiwanezen zijn heel gastvrij.
+d A 你还想再去吗？ | Wil je nog een keer gaan?
+d B 当然！ | Natuurlijk!
