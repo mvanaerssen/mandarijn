@@ -1,5 +1,1140 @@
-// Werelden 13–68 (gegenereerd door build.py; pinyin automatisch gecontroleerd)
+// Alle werelden (gegenereerd door bron/build.py; pinyin automatisch gecontroleerd)
 window.UNITS.push(...[
+{
+"id": "u1",
+"title": "Hallo!",
+"emoji": "👋",
+"items": [
+{
+"id": "u1_1",
+"zh": "你好",
+"nl": "hallo",
+"e": "👋",
+"py": "ni3 hao3"
+},
+{
+"id": "u1_2",
+"zh": "谢谢",
+"nl": "dank je",
+"e": "🙏",
+"py": "xie4 xie5"
+},
+{
+"id": "u1_3",
+"zh": "再见",
+"nl": "tot ziens / doei",
+"e": "🚪👋",
+"py": "zai4 jian4"
+},
+{
+"id": "u1_4",
+"zh": "我",
+"nl": "ik",
+"e": "🙋‍♂️",
+"py": "wo3"
+},
+{
+"id": "u1_5",
+"zh": "你",
+"nl": "jij",
+"e": "👉",
+"py": "ni3"
+},
+{
+"id": "u1_6",
+"zh": "是",
+"nl": "zijn (ben / is)",
+"e": "🟰",
+"py": "shi4"
+},
+{
+"id": "u1_7",
+"zh": "我|是|马克斯",
+"nl": "Ik ben Max",
+"e": "🙋‍♂️📛",
+"py": "wo3|shi4|Ma3 ke4 si1"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "你好！",
+"py": "ni3|hao3",
+"nl": "Hallo!"
+},
+{
+"s": "B",
+"zh": "你好！我是马克斯。",
+"py": "ni3|hao3|wo3|shi4|Ma3 ke4 si1",
+"nl": "Hallo! Ik ben Max."
+},
+{
+"s": "A",
+"zh": "我是王明。",
+"py": "wo3|shi4|Wang2|Ming2",
+"nl": "Ik ben Wang Ming."
+},
+{
+"s": "B",
+"zh": "谢谢！再见！",
+"py": "xie4 xie5|zai4 jian4",
+"nl": "Dank je! Doei!"
+},
+{
+"s": "A",
+"zh": "再见！",
+"py": "zai4 jian4",
+"nl": "Doei!"
+}
+],
+"intro": "Je eerste Chinese woorden. Na deze wereld kun je jezelf al voorstellen!",
+"notes": [
+{
+"t": "Geen vervoegingen",
+"x": "In het Chinees verandert een werkwoord nooit: 我是 = ik ben, 你是 = jij bent. 是 blijft altijd 是.",
+"ex": [
+{
+"zh": "我是马克斯",
+"py": "wo3|shi4|Ma3 ke4 si1",
+"nl": "ik ben Max"
+},
+{
+"zh": "你是王明",
+"py": "ni3|shi4|Wang2|Ming2",
+"nl": "jij bent Wang Ming"
+}
+]
+}
+]
+},
+{
+"id": "u2",
+"title": "Hoe heet je?",
+"emoji": "📛",
+"items": [
+{
+"id": "u2_1",
+"zh": "叫",
+"nl": "heten",
+"e": "🏷️",
+"py": "jiao4"
+},
+{
+"id": "u2_2",
+"zh": "什么",
+"nl": "wat",
+"e": "❓",
+"py": "shen2 me5"
+},
+{
+"id": "u2_3",
+"zh": "名字",
+"nl": "naam",
+"e": "📛",
+"py": "ming2 zi5"
+},
+{
+"id": "u2_4",
+"zh": "你|叫|什么|名字",
+"nl": "Hoe heet je?",
+"e": "🙋❓",
+"py": "ni3|jiao4|shen2 me5|ming2 zi5"
+},
+{
+"id": "u2_5",
+"zh": "我|叫|马克斯",
+"nl": "Ik heet Max",
+"e": "🙋‍♂️🏷️",
+"py": "wo3|jiao4|Ma3 ke4 si1"
+},
+{
+"id": "u2_6",
+"zh": "你|呢",
+"nl": "En jij?",
+"e": "👉🤔",
+"py": "ni3|ne5"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "你好！我叫王明。",
+"py": "ni3|hao3|wo3|jiao4|Wang2|Ming2",
+"nl": "Hallo! Ik heet Wang Ming."
+},
+{
+"s": "A",
+"zh": "你叫什么名字？",
+"py": "ni3|jiao4|shen2 me5|ming2 zi5",
+"nl": "Hoe heet jij?"
+},
+{
+"s": "B",
+"zh": "你好，王明！我叫马克斯。",
+"py": "ni3|hao3|Wang2|Ming2|wo3|jiao4|Ma3 ke4 si1",
+"nl": "Hallo, Wang Ming! Ik heet Max."
+}
+],
+"notes": [
+{
+"t": "Vraagwoorden blijven op hun plek",
+"x": "In het Chinees zet je het vraagwoord gewoon op de plek van het antwoord: 你叫什么名字? = letterlijk 'jij heet wat naam?'. Antwoord: 我叫马克斯.",
+"ex": [
+{
+"zh": "你叫什么名字",
+"py": "ni3|jiao4|shen2 me5|ming2 zi5",
+"nl": "hoe heet je?"
+},
+{
+"zh": "我叫马克斯",
+"py": "wo3|jiao4|Ma3 ke4 si1",
+"nl": "ik heet Max"
+}
+]
+}
+]
+},
+{
+"id": "u3",
+"title": "Hoe gaat het?",
+"emoji": "😄",
+"items": [
+{
+"id": "u3_1",
+"zh": "好",
+"nl": "goed",
+"e": "👍",
+"py": "hao3"
+},
+{
+"id": "u3_2",
+"zh": "吗",
+"nl": "(maakt een ja/nee-vraag)",
+"e": "✅❓",
+"py": "ma5"
+},
+{
+"id": "u3_3",
+"zh": "很",
+"nl": "heel / erg",
+"e": "💯",
+"py": "hen3"
+},
+{
+"id": "u3_4",
+"zh": "也",
+"nl": "ook",
+"e": "➕",
+"py": "ye3"
+},
+{
+"id": "u3_5",
+"zh": "不客气",
+"nl": "graag gedaan",
+"e": "😊",
+"py": "bu2 ke4 qi5"
+},
+{
+"id": "u3_6",
+"zh": "你|好|吗",
+"nl": "Hoe gaat het?",
+"e": "👋❓",
+"py": "ni3|hao3|ma5"
+},
+{
+"id": "u3_7",
+"zh": "我|很|好",
+"nl": "Het gaat goed met me",
+"e": "😄👍",
+"py": "wo3|hen3|hao3"
+},
+{
+"id": "u3_8",
+"zh": "我|也|很|好",
+"nl": "Met mij gaat het ook goed",
+"e": "😄➕",
+"py": "wo3|ye3|hen3|hao3"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "你好吗？",
+"py": "ni3|hao3|ma5",
+"nl": "Hoe gaat het?"
+},
+{
+"s": "B",
+"zh": "我很好，谢谢！你呢？",
+"py": "wo3|hen3|hao3|xie4 xie5|ni3|ne5",
+"nl": "Goed, dank je! En met jou?"
+},
+{
+"s": "A",
+"zh": "我也很好。",
+"py": "wo3|ye3|hen3|hao3",
+"nl": "Ook goed."
+},
+{
+"s": "B",
+"zh": "谢谢！",
+"py": "xie4 xie5",
+"nl": "Dank je!"
+},
+{
+"s": "A",
+"zh": "不客气！",
+"py": "bu2|ke4 qi5",
+"nl": "Graag gedaan!"
+}
+],
+"notes": [
+{
+"t": "Ja/nee-vraag met 吗",
+"x": "Zet 吗 achter een gewone zin en het wordt een ja/nee-vraag: 你好 = hallo, 你好吗? = gaat het goed met je?",
+"ex": [
+{
+"zh": "你好吗",
+"py": "ni3|hao3|ma5",
+"nl": "hoe gaat het?"
+},
+{
+"zh": "你是马克斯吗",
+"py": "ni3|shi4|Ma3 ke4 si1|ma5",
+"nl": "ben jij Max?"
+}
+]
+}
+]
+},
+{
+"id": "u4",
+"title": "Waar kom je vandaan?",
+"emoji": "🌍",
+"items": [
+{
+"id": "u4_1",
+"zh": "人",
+"nl": "mens / persoon",
+"e": "🧍",
+"py": "ren2"
+},
+{
+"id": "u4_2",
+"zh": "荷兰",
+"nl": "Nederland",
+"e": "🇳🇱",
+"py": "He2 lan2"
+},
+{
+"id": "u4_3",
+"zh": "中国",
+"nl": "China",
+"e": "🇨🇳",
+"py": "Zhong1 guo2"
+},
+{
+"id": "u4_4",
+"zh": "中国人",
+"nl": "Chinees (persoon)",
+"e": "🇨🇳🧍",
+"py": "Zhong1 guo2 ren2"
+},
+{
+"id": "u4_5",
+"zh": "你|是|哪|国|人",
+"nl": "Uit welk land kom je?",
+"e": "🌍❓",
+"py": "ni3|shi4|na3|guo2|ren2"
+},
+{
+"id": "u4_6",
+"zh": "我|是|荷兰|人",
+"nl": "Ik ben Nederlander",
+"e": "🙋‍♂️🇳🇱",
+"py": "wo3|shi4|He2 lan2|ren2"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "你是哪国人？",
+"py": "ni3|shi4|na3|guo2 ren2",
+"nl": "Uit welk land kom je?"
+},
+{
+"s": "B",
+"zh": "我是荷兰人。你呢？",
+"py": "wo3|shi4|He2 lan2 ren2|ni3|ne5",
+"nl": "Ik ben Nederlander. En jij?"
+},
+{
+"s": "A",
+"zh": "我是中国人。",
+"py": "wo3|shi4|Zhong1 guo2|ren2",
+"nl": "Ik ben Chinees."
+}
+],
+"notes": [
+{
+"t": "Land + 人",
+"x": "Land + 人 (persoon) = iemand uit dat land: 荷兰人 = Nederlander, 中国人 = Chinees.",
+"ex": [
+{
+"zh": "我是荷兰人",
+"py": "wo3|shi4|He2 lan2 ren2",
+"nl": "ik ben Nederlander"
+},
+{
+"zh": "他是中国人",
+"py": "ta1|shi4|Zhong1 guo2|ren2",
+"nl": "hij is Chinees"
+}
+]
+}
+]
+},
+{
+"id": "u5",
+"title": "Tellen 1–5",
+"emoji": "🔢",
+"items": [
+{
+"id": "u5_1",
+"zh": "一",
+"nl": "1",
+"e": "1️⃣",
+"py": "yi1"
+},
+{
+"id": "u5_2",
+"zh": "二",
+"nl": "2",
+"e": "2️⃣",
+"py": "er4"
+},
+{
+"id": "u5_3",
+"zh": "三",
+"nl": "3",
+"e": "3️⃣",
+"py": "san1"
+},
+{
+"id": "u5_4",
+"zh": "四",
+"nl": "4",
+"e": "4️⃣",
+"py": "si4"
+},
+{
+"id": "u5_5",
+"zh": "五",
+"nl": "5",
+"e": "5️⃣",
+"py": "wu3"
+},
+{
+"id": "u5_6",
+"zh": "两",
+"nl": "twee (van iets)",
+"e": "✌️",
+"py": "liang3"
+},
+{
+"id": "u5_7",
+"zh": "个",
+"nl": "(telwoord, algemeen)",
+"e": "🔹",
+"py": "ge4"
+},
+{
+"id": "u5_8",
+"zh": "三|个|人",
+"nl": "drie mensen",
+"e": "🧍🧍🧍",
+"py": "san1|ge4|ren2"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "一、二、三！",
+"py": "yi1|er4|san1",
+"nl": "Eén, twee, drie!"
+},
+{
+"s": "B",
+"zh": "四、五！",
+"py": "si4|wu3",
+"nl": "Vier, vijf!"
+},
+{
+"s": "A",
+"zh": "很好！",
+"py": "hen3|hao3",
+"nl": "Heel goed!"
+}
+],
+"notes": [
+{
+"t": "Getal + 个 + ding",
+"x": "Tussen een getal en een ding staat een telwoord, meestal 个: 三个人 = drie mensen. Twee van iets is 两 (niet 二): 两个人.",
+"ex": [
+{
+"zh": "三个人",
+"py": "san1 ge4|ren2",
+"nl": "drie mensen"
+},
+{
+"zh": "两个人",
+"py": "liang3 ge5|ren2",
+"nl": "twee mensen"
+}
+]
+}
+]
+},
+{
+"id": "u6",
+"title": "Tellen 6–10 & je leeftijd",
+"emoji": "🎂",
+"items": [
+{
+"id": "u6_1",
+"zh": "六",
+"nl": "6",
+"e": "6️⃣",
+"py": "liu4"
+},
+{
+"id": "u6_2",
+"zh": "七",
+"nl": "7",
+"e": "7️⃣",
+"py": "qi1"
+},
+{
+"id": "u6_3",
+"zh": "八",
+"nl": "8",
+"e": "8️⃣",
+"py": "ba1"
+},
+{
+"id": "u6_4",
+"zh": "九",
+"nl": "9",
+"e": "9️⃣",
+"py": "jiu3"
+},
+{
+"id": "u6_5",
+"zh": "十",
+"nl": "10",
+"e": "🔟",
+"py": "shi2"
+},
+{
+"id": "u6_6",
+"zh": "二十",
+"nl": "20 (twee-tien)",
+"e": "2️⃣0️⃣",
+"py": "er4 shi2"
+},
+{
+"id": "u6_7",
+"zh": "岁",
+"nl": "jaar (oud)",
+"e": "🎂",
+"py": "sui4"
+},
+{
+"id": "u6_8",
+"zh": "你|多大|了",
+"nl": "Hoe oud ben je?",
+"e": "🤔🎂",
+"py": "ni3|duo1 da4|le5"
+},
+{
+"id": "myage",
+"personal": "age",
+"nl": "Ik ben … jaar",
+"e": "🙋‍♂️🎂"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "你多大了？",
+"py": "ni3|duo1|da4|le5",
+"nl": "Hoe oud ben je?"
+},
+{
+"s": "B",
+"personal": "age_nine"
+},
+{
+"s": "A",
+"zh": "我二十五岁。",
+"py": "wo3|er4 shi2 wu3 sui4",
+"nl": "Ik ben 25."
+}
+],
+"notes": [
+{
+"t": "Leeftijd met 岁",
+"x": "Je leeftijd zeg je met getal + 岁: 我二十一岁 = ik ben 21. Je hebt hier geen 是 nodig. Getallen boven 10: 二十 = 'twee-tien' = 20, 二十一 = 21.",
+"ex": [
+{
+"zh": "我二十一岁",
+"py": "wo3|er4 shi2 yi1 sui4",
+"nl": "ik ben 21 jaar"
+},
+{
+"zh": "你多大了",
+"py": "ni3|duo1|da4|le5",
+"nl": "hoe oud ben je?"
+}
+]
+}
+]
+},
+{
+"id": "u7",
+"title": "Ik studeer",
+"emoji": "🎓",
+"items": [
+{
+"id": "u7_1",
+"zh": "学生",
+"nl": "student",
+"e": "🎓",
+"py": "xue2 sheng5"
+},
+{
+"id": "u7_2",
+"zh": "大学",
+"nl": "universiteit",
+"e": "🏛️",
+"py": "da4 xue2"
+},
+{
+"id": "u7_3",
+"zh": "学习",
+"nl": "studeren / leren",
+"e": "📚",
+"py": "xue2 xi2"
+},
+{
+"id": "u7_4",
+"zh": "人工智能",
+"nl": "AI (kunstmatige intelligentie)",
+"e": "🤖",
+"py": "ren2 gong1 zhi4 neng2"
+},
+{
+"id": "u7_5",
+"zh": "在",
+"nl": "in / op (een plek)",
+"e": "📍",
+"py": "zai4"
+},
+{
+"id": "u7_6",
+"zh": "我|是|学生",
+"nl": "Ik ben student",
+"e": "🙋‍♂️🎓",
+"py": "wo3|shi4|xue2 sheng5"
+},
+{
+"id": "u7_7",
+"zh": "我|学习|人工智能",
+"nl": "Ik studeer AI",
+"e": "📚🤖",
+"py": "wo3|xue2 xi2|ren2 gong1 zhi4 neng2"
+},
+{
+"id": "u7_8",
+"zh": "我|在|阿姆斯特丹|上|大学",
+"nl": "Ik studeer in Amsterdam",
+"e": "🏛️🇳🇱",
+"py": "wo3|zai4|A1 mu3 si1 te4 dan1|shang4|da4 xue2"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "你是学生吗？",
+"py": "ni3|shi4|xue2 sheng5|ma5",
+"nl": "Ben je student?"
+},
+{
+"s": "B",
+"zh": "是，我是学生。我学习人工智能。",
+"py": "shi4|wo3|shi4|xue2 sheng5|wo3|xue2 xi2|ren2 gong1 zhi4 neng2",
+"nl": "Ja, ik ben student. Ik studeer AI."
+},
+{
+"s": "B",
+"zh": "我在阿姆斯特丹上大学。",
+"py": "wo3|zai4|A1 mu3 si1 te4 dan1|shang4|da4 xue2",
+"nl": "Ik studeer in Amsterdam."
+}
+]
+},
+{
+"id": "u8",
+"title": "Wat vind je leuk?",
+"emoji": "❤️",
+"items": [
+{
+"id": "u8_1",
+"zh": "喜欢",
+"nl": "leuk vinden / houden van",
+"e": "❤️",
+"py": "xi3 huan5"
+},
+{
+"id": "u8_2",
+"zh": "运动",
+"nl": "sporten",
+"e": "🏋️",
+"py": "yun4 dong4"
+},
+{
+"id": "u8_3",
+"zh": "跑步",
+"nl": "hardlopen",
+"e": "🏃",
+"py": "pao3 bu4"
+},
+{
+"id": "u8_4",
+"zh": "音乐",
+"nl": "muziek",
+"e": "🎵",
+"py": "yin1 yue4"
+},
+{
+"id": "u8_5",
+"zh": "看书",
+"nl": "lezen",
+"e": "📖",
+"py": "kan4 shu1"
+},
+{
+"id": "u8_6",
+"zh": "你|喜欢|什么",
+"nl": "Wat vind jij leuk?",
+"e": "❤️❓",
+"py": "ni3|xi3 huan5|shen2 me5"
+},
+{
+"id": "u8_7",
+"zh": "我|喜欢|跑步",
+"nl": "Ik hou van hardlopen",
+"e": "🙋‍♂️❤️🏃",
+"py": "wo3|xi3 huan5|pao3 bu4"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "你喜欢什么？",
+"py": "ni3|xi3 huan5|shen2 me5",
+"nl": "Wat vind jij leuk?"
+},
+{
+"s": "B",
+"zh": "我喜欢运动。我也喜欢音乐。你呢？",
+"py": "wo3|xi3 huan5|yun4 dong4|wo3|ye3|xi3 huan5|yin1 yue4|ni3|ne5",
+"nl": "Ik hou van sporten. Ik hou ook van muziek. En jij?"
+},
+{
+"s": "A",
+"zh": "我喜欢看书。",
+"py": "wo3|xi3 huan5|kan4 shu1",
+"nl": "Ik lees graag."
+}
+]
+},
+{
+"id": "u9",
+"title": "Waarom Chinees?",
+"emoji": "🀄",
+"items": [
+{
+"id": "u9_1",
+"zh": "中文",
+"nl": "Chinees (de taal)",
+"e": "🀄",
+"py": "Zhong1 wen2"
+},
+{
+"id": "u9_2",
+"zh": "为什么",
+"nl": "waarom",
+"e": "🤔",
+"py": "wei4 shen2 me5"
+},
+{
+"id": "u9_3",
+"zh": "因为",
+"nl": "omdat",
+"e": "👉💡",
+"py": "yin1 wei4"
+},
+{
+"id": "u9_4",
+"zh": "朋友",
+"nl": "vriend",
+"e": "🤝",
+"py": "peng2 you5"
+},
+{
+"id": "u9_5",
+"zh": "有意思",
+"nl": "interessant / leuk",
+"e": "✨",
+"py": "you3 yi4 si5"
+},
+{
+"id": "u9_6",
+"zh": "你|为什么|学|中文",
+"nl": "Waarom leer je Chinees?",
+"e": "🤔🀄",
+"py": "ni3|wei4 shen2 me5|xue2|Zhong1 wen2"
+},
+{
+"id": "u9_7",
+"zh": "因为|中文|很|有意思",
+"nl": "Omdat Chinees heel interessant is",
+"e": "🀄✨",
+"py": "yin1 wei4|Zhong1 wen2|hen3|you3 yi4 si5"
+},
+{
+"id": "u9_8",
+"zh": "我|的|朋友|会|说|中文",
+"nl": "Mijn vriend spreekt Chinees",
+"e": "🤝🗣️🀄",
+"py": "wo3|de5|peng2 you5|hui4|shuo1|Zhong1 wen2"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "你为什么学中文？",
+"py": "ni3|wei4 shen2 me5|xue2|Zhong1 wen2",
+"nl": "Waarom leer je Chinees?"
+},
+{
+"s": "B",
+"zh": "因为中文很有意思。",
+"py": "yin1 wei4|Zhong1 wen2|hen3|you3 yi4 si5",
+"nl": "Omdat Chinees heel interessant is."
+},
+{
+"s": "B",
+"zh": "我的朋友也会说中文。",
+"py": "wo3|de5|peng2 you5|ye3|hui4|shuo1|Zhong1 wen2",
+"nl": "Mijn vriend spreekt ook Chinees."
+}
+],
+"notes": [
+{
+"t": "Omdat = 因为",
+"x": "为什么 = waarom, 因为 = omdat. Het antwoord begint gewoon met 因为: 因为中文很有意思 = omdat Chinees heel interessant is.",
+"ex": [
+{
+"zh": "你为什么学中文",
+"py": "ni3|wei4 shen2 me5|xue2|Zhong1 wen2",
+"nl": "waarom leer je Chinees?"
+},
+{
+"zh": "因为很有意思",
+"py": "yin1 wei4|hen3|you3 yi4 si5",
+"nl": "omdat het interessant is"
+}
+]
+}
+]
+},
+{
+"id": "u10",
+"title": "Ja & nee",
+"emoji": "✅",
+"items": [
+{
+"id": "u10_1",
+"zh": "不",
+"nl": "niet / nee",
+"e": "❌",
+"py": "bu4"
+},
+{
+"id": "u10_2",
+"zh": "不是",
+"nl": "is niet / nee",
+"e": "🚫🟰",
+"py": "bu2 shi4"
+},
+{
+"id": "u10_3",
+"zh": "好的",
+"nl": "oké",
+"e": "👌",
+"py": "hao3 de5"
+},
+{
+"id": "u10_4",
+"zh": "你|是|中国人|吗",
+"nl": "Ben jij Chinees?",
+"e": "🇨🇳❓",
+"py": "ni3|shi4|Zhong1 guo2 ren2|ma5"
+},
+{
+"id": "u10_5",
+"zh": "我|不|是|中国人",
+"nl": "Ik ben geen Chinees",
+"e": "🙅🇨🇳",
+"py": "wo3|bu2|shi4|Zhong1 guo2 ren2"
+},
+{
+"id": "u10_6",
+"zh": "你|是|学生|吗",
+"nl": "Ben je student?",
+"e": "🎓❓",
+"py": "ni3|shi4|xue2 sheng5|ma5"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "你是中国人吗？",
+"py": "ni3|shi4|Zhong1 guo2|ren2|ma5",
+"nl": "Ben jij Chinees?"
+},
+{
+"s": "B",
+"zh": "不是，我是荷兰人。",
+"py": "bu2 shi4|wo3|shi4|He2 lan2 ren2",
+"nl": "Nee, ik ben Nederlander."
+},
+{
+"s": "A",
+"zh": "你是学生吗？",
+"py": "ni3|shi4|xue2 sheng5|ma5",
+"nl": "Ben je student?"
+},
+{
+"s": "B",
+"zh": "是，我是学生。",
+"py": "shi4|wo3|shi4|xue2 sheng5",
+"nl": "Ja, ik ben student."
+},
+{
+"s": "A",
+"zh": "好的！",
+"py": "hao3|de5",
+"nl": "Oké!"
+}
+],
+"notes": [
+{
+"t": "Nee zeggen met 不",
+"x": "不 voor een werkwoord maakt het ontkennend: 我不是中国人 = ik ben geen Chinees. Op een ja/nee-vraag antwoord je vaak door het werkwoord te herhalen: 是 (ja) of 不是 (nee).",
+"ex": [
+{
+"zh": "我不是中国人",
+"py": "wo3|bu2 shi4|Zhong1 guo2|ren2",
+"nl": "ik ben geen Chinees"
+},
+{
+"zh": "我不喜欢",
+"py": "wo3|bu4|xi3 huan5",
+"nl": "ik vind het niet leuk"
+}
+]
+}
+]
+},
+{
+"id": "u11",
+"title": "Leuk je te ontmoeten",
+"emoji": "🤝",
+"items": [
+{
+"id": "u11_1",
+"zh": "认识",
+"nl": "kennen / leren kennen",
+"e": "🤝👀",
+"py": "ren4 shi5"
+},
+{
+"id": "u11_2",
+"zh": "高兴",
+"nl": "blij",
+"e": "😃",
+"py": "gao1 xing4"
+},
+{
+"id": "u11_3",
+"zh": "会",
+"nl": "kunnen (aangeleerd)",
+"e": "🎓👌",
+"py": "hui4"
+},
+{
+"id": "u11_4",
+"zh": "说",
+"nl": "spreken / zeggen",
+"e": "🗣️",
+"py": "shuo1"
+},
+{
+"id": "u11_5",
+"zh": "一点",
+"nl": "een beetje",
+"e": "🤏",
+"py": "yi4 dian3"
+},
+{
+"id": "u11_6",
+"zh": "认识|你|很|高兴",
+"nl": "Leuk je te ontmoeten",
+"e": "🤝😃",
+"py": "ren4 shi5|ni3|hen3|gao1 xing4"
+},
+{
+"id": "u11_7",
+"zh": "我|会|说|一点|中文",
+"nl": "Ik spreek een beetje Chinees",
+"e": "🗣️🤏🀄",
+"py": "wo3|hui4|shuo1|yi4 dian3|Zhong1 wen2"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "认识你很高兴！",
+"py": "ren4 shi5|ni3|hen3|gao1 xing4",
+"nl": "Leuk je te ontmoeten!"
+},
+{
+"s": "B",
+"zh": "我也很高兴！",
+"py": "wo3|ye3|hen3|gao1 xing4",
+"nl": "Ik ook!"
+},
+{
+"s": "A",
+"zh": "你会说中文吗？",
+"py": "ni3|hui4|shuo1|Zhong1 wen2|ma5",
+"nl": "Spreek je Chinees?"
+},
+{
+"s": "B",
+"zh": "我会说一点中文。",
+"py": "wo3|hui4|shuo1|yi4 dian3|Zhong1 wen2",
+"nl": "Ik spreek een beetje Chinees."
+}
+]
+},
+{
+"id": "u12",
+"title": "Het eerste grote gesprek",
+"emoji": "🏆",
+"items": [
+{
+"id": "u12_1",
+"zh": "加油",
+"nl": "zet 'm op! / hup!",
+"e": "💪",
+"py": "jia1 you2"
+},
+{
+"id": "u12_2",
+"zh": "下次见",
+"nl": "tot de volgende keer",
+"e": "👋📅",
+"py": "xia4 ci4 jian4"
+}
+],
+"dialogue": [
+{
+"s": "A",
+"zh": "你好！你叫什么名字？",
+"py": "ni3|hao3|ni3|jiao4|shen2 me5|ming2 zi5",
+"nl": "Hallo! Hoe heet je?"
+},
+{
+"s": "B",
+"zh": "你好！我叫马克斯。你呢？",
+"py": "ni3|hao3|wo3|jiao4|Ma3 ke4 si1|ni3|ne5",
+"nl": "Hallo! Ik heet Max. En jij?"
+},
+{
+"s": "A",
+"zh": "我叫王明。你是哪国人？",
+"py": "wo3|jiao4|Wang2|Ming2|ni3|shi4|na3|guo2 ren2",
+"nl": "Ik heet Wang Ming. Uit welk land kom je?"
+},
+{
+"s": "B",
+"zh": "我是荷兰人。",
+"py": "wo3|shi4|He2 lan2 ren2",
+"nl": "Ik ben Nederlander."
+},
+{
+"s": "A",
+"zh": "你多大了？",
+"py": "ni3|duo1|da4|le5",
+"nl": "Hoe oud ben je?"
+},
+{
+"s": "B",
+"personal": "age"
+},
+{
+"s": "A",
+"zh": "你是学生吗？",
+"py": "ni3|shi4|xue2 sheng5|ma5",
+"nl": "Ben je student?"
+},
+{
+"s": "B",
+"zh": "是，我是学生。我学习人工智能。",
+"py": "shi4|wo3|shi4|xue2 sheng5|wo3|xue2 xi2|ren2 gong1 zhi4 neng2",
+"nl": "Ja, ik ben student. Ik studeer AI."
+},
+{
+"s": "A",
+"zh": "你为什么学中文？",
+"py": "ni3|wei4 shen2 me5|xue2|Zhong1 wen2",
+"nl": "Waarom leer je Chinees?"
+},
+{
+"s": "B",
+"zh": "因为中文很有意思。我的朋友会说中文。",
+"py": "yin1 wei4|Zhong1 wen2|hen3|you3 yi4 si5|wo3|de5|peng2 you5|hui4|shuo1|Zhong1 wen2",
+"nl": "Omdat Chinees heel interessant is. Mijn vriend spreekt Chinees."
+},
+{
+"s": "A",
+"zh": "你的中文很好！加油！",
+"py": "ni3|de5|Zhong1 wen2|hen3|hao3|jia1 you2",
+"nl": "Je Chinees is heel goed! Zet 'm op!"
+},
+{
+"s": "B",
+"zh": "谢谢！认识你很高兴。下次见！",
+"py": "xie4 xie5|ren4 shi5|ni3|hen3|gao1 xing4|xia4 ci4|jian4",
+"nl": "Dank je! Leuk je te ontmoeten. Tot de volgende keer!"
+}
+],
+"intro": "Alles wat je tot nu toe hebt geleerd, in één gesprek. Jij bent 'Jij'!"
+},
 {
 "id": "u13",
 "title": "Familie & vrienden",
@@ -14,6 +1149,20 @@ window.UNITS.push(...[
 },
 {
 "id": "u13_2",
+"zh": "妈妈",
+"nl": "mama",
+"e": "👩",
+"py": "ma1 ma5"
+},
+{
+"id": "u13_3",
+"zh": "爸爸",
+"nl": "papa",
+"e": "👨",
+"py": "ba4 ba5"
+},
+{
+"id": "u13_4",
 "zh": "和",
 "nl": "en",
 "e": "➕",
@@ -25,105 +1174,105 @@ window.UNITS.push(...[
 "py": "he2"
 },
 {
-"id": "u13_3",
+"id": "u13_5",
 "zh": "哥哥",
 "nl": "oudere broer",
 "e": "👦⬆️",
 "py": "ge1 ge5"
 },
 {
-"id": "u13_4",
+"id": "u13_6",
 "zh": "姐姐",
 "nl": "oudere zus",
 "e": "👧⬆️",
 "py": "jie3 jie5"
 },
 {
-"id": "u13_5",
+"id": "u13_7",
 "zh": "弟弟",
 "nl": "jongere broer",
 "e": "👦⬇️",
 "py": "di4 di5"
 },
 {
-"id": "u13_6",
+"id": "u13_8",
 "zh": "妹妹",
 "nl": "jongere zus",
 "e": "👧⬇️",
 "py": "mei4 mei5"
 },
 {
-"id": "u13_7",
+"id": "u13_9",
 "zh": "有",
 "nl": "hebben / er is",
 "e": "🤲",
 "py": "you3"
 },
 {
-"id": "u13_8",
+"id": "u13_10",
 "zh": "没有",
 "nl": "niet hebben",
 "e": "🙅",
 "py": "mei2 you3"
 },
 {
-"id": "u13_9",
+"id": "u13_11",
 "zh": "他",
 "nl": "hij",
 "e": "👨",
 "py": "ta1"
 },
 {
-"id": "u13_10",
+"id": "u13_12",
 "zh": "她",
 "nl": "zij",
 "e": "👩",
 "py": "ta1"
 },
 {
-"id": "u13_11",
+"id": "u13_13",
 "zh": "我们",
 "nl": "wij",
 "e": "👥",
 "py": "wo3 men5"
 },
 {
-"id": "u13_12",
+"id": "u13_14",
 "zh": "几",
 "nl": "hoeveel (klein aantal)",
 "e": "🔢❓",
 "py": "ji3"
 },
 {
-"id": "u13_13",
+"id": "u13_15",
 "zh": "兄弟姐妹",
 "nl": "broers en zussen",
 "e": "👫",
 "py": "xiong1 di4 jie3 mei4"
 },
 {
-"id": "u13_14",
+"id": "u13_16",
 "zh": "你|家|有|几|口|人",
 "nl": "Hoeveel mensen zijn er in je gezin?",
 "e": "🏠❓",
 "py": "ni3|jia1|you3|ji3|kou3|ren2"
 },
 {
-"id": "u13_15",
+"id": "u13_17",
 "zh": "我|家|有|四|口|人",
 "nl": "Ons gezin bestaat uit 4 mensen",
 "e": "👨‍👩‍👦‍👦",
 "py": "wo3|jia1|you3|si4|kou3|ren2"
 },
 {
-"id": "u13_16",
+"id": "u13_18",
 "zh": "你|有|兄弟姐妹|吗",
 "nl": "Heb je broers of zussen?",
 "e": "👫❓",
 "py": "ni3|you3|xiong1 di4 jie3 mei4|ma5"
 },
 {
-"id": "u13_17",
+"id": "u13_19",
 "zh": "他|是|我|的|好|朋友",
 "nl": "Hij is mijn goede vriend",
 "e": "🤝⭐",
@@ -209,48 +1358,62 @@ window.UNITS.push(...[
 },
 {
 "id": "u14_4",
+"zh": "大",
+"nl": "groot",
+"e": "🐘",
+"py": "da4"
+},
+{
+"id": "u14_5",
 "zh": "小",
 "nl": "klein",
 "e": "🐭",
 "py": "xiao3"
 },
 {
-"id": "u14_5",
+"id": "u14_6",
+"zh": "哪里",
+"nl": "waar",
+"e": "📍❓",
+"py": "na3 li3"
+},
+{
+"id": "u14_7",
 "zh": "漂亮",
 "nl": "mooi",
 "e": "🌷",
 "py": "piao4 liang5"
 },
 {
-"id": "u14_6",
+"id": "u14_8",
 "zh": "这",
 "nl": "dit / deze",
 "e": "👇",
 "py": "zhe4"
 },
 {
-"id": "u14_7",
+"id": "u14_9",
 "zh": "那",
 "nl": "dat / die",
 "e": "👉",
 "py": "na4"
 },
 {
-"id": "u14_8",
+"id": "u14_10",
 "zh": "很多",
 "nl": "veel",
 "e": "🔝",
 "py": "hen3 duo1"
 },
 {
-"id": "u14_9",
+"id": "u14_11",
 "zh": "附近",
 "nl": "in de buurt",
 "e": "📍🏘️",
 "py": "fu4 jin4"
 },
 {
-"id": "u14_10",
+"id": "u14_12",
 "zh": "自行车",
 "nl": "fiets",
 "e": "🚲",
@@ -262,35 +1425,35 @@ window.UNITS.push(...[
 "py": "zi4 xing2 che1"
 },
 {
-"id": "u14_11",
+"id": "u14_13",
 "zh": "你|住|在|哪里",
 "nl": "Waar woon je?",
 "e": "🏠❓",
 "py": "ni3|zhu4|zai4|na3 li3"
 },
 {
-"id": "u14_12",
+"id": "u14_14",
 "zh": "我|住|在|阿姆斯特丹",
 "nl": "Ik woon in Amsterdam",
 "e": "🏙️🇳🇱",
 "py": "wo3|zhu4|zai4|A1 mu3 si1 te4 dan1"
 },
 {
-"id": "u14_13",
+"id": "u14_15",
 "zh": "阿姆斯特丹|很|漂亮",
 "nl": "Amsterdam is heel mooi",
 "e": "🌷🏙️",
 "py": "A1 mu3 si1 te4 dan1|hen3|piao4 liang5"
 },
 {
-"id": "u14_14",
+"id": "u14_16",
 "zh": "我|的|房间|很|小",
 "nl": "Mijn kamer is klein",
 "e": "🛏️🤏",
 "py": "wo3|de5|fang2 jian1|hen3|xiao3"
 },
 {
-"id": "u14_15",
+"id": "u14_17",
 "zh": "阿姆斯特丹|有|很多|自行车",
 "nl": "In Amsterdam zijn heel veel fietsen",
 "e": "🚲🚲",
@@ -351,90 +1514,76 @@ window.UNITS.push(...[
 },
 {
 "id": "u15_2",
-"zh": "两",
-"nl": "twee (van iets)",
-"e": "✌️",
-"py": "liang3"
-},
-{
-"id": "u15_3",
-"zh": "个",
-"nl": "(telwoord, algemeen)",
-"e": "🔹",
-"py": "ge4"
-},
-{
-"id": "u15_4",
 "zh": "多少",
 "nl": "hoeveel",
 "e": "❓🔢",
 "py": "duo1 shao3"
 },
 {
-"id": "u15_5",
+"id": "u15_3",
 "zh": "三十",
 "nl": "30",
 "e": "3️⃣0️⃣",
 "py": "san1 shi2"
 },
 {
-"id": "u15_6",
+"id": "u15_4",
 "zh": "四十五",
 "nl": "45",
 "e": "4️⃣5️⃣",
 "py": "si4 shi2 wu3"
 },
 {
-"id": "u15_7",
+"id": "u15_5",
 "zh": "九十九",
 "nl": "99",
 "e": "9️⃣9️⃣",
 "py": "jiu3 shi2 jiu3"
 },
 {
-"id": "u15_8",
+"id": "u15_6",
 "zh": "一百",
 "nl": "100",
 "e": "💯",
 "py": "yi1 bai3"
 },
 {
-"id": "u15_9",
+"id": "u15_7",
 "zh": "号码",
 "nl": "nummer",
 "e": "#️⃣",
 "py": "hao4 ma3"
 },
 {
-"id": "u15_10",
+"id": "u15_8",
 "zh": "手机",
 "nl": "mobiele telefoon",
 "e": "📱",
 "py": "shou3 ji1"
 },
 {
-"id": "u15_11",
+"id": "u15_9",
 "zh": "两|个|人",
 "nl": "twee mensen",
 "e": "🧍🧍",
 "py": "liang3|ge5|ren2"
 },
 {
-"id": "u15_12",
+"id": "u15_10",
 "zh": "你|的|手机|号码|是|多少",
 "nl": "Wat is je telefoonnummer?",
 "e": "📱❓",
 "py": "ni3|de5|shou3 ji1|hao4 ma3|shi4|duo1 shao3"
 },
 {
-"id": "u15_13",
+"id": "u15_11",
 "zh": "我|有|两|个|中国|朋友",
 "nl": "Ik heb twee Chinese vrienden",
 "e": "🇨🇳🤝",
 "py": "wo3|you3|liang3|ge5|Zhong1 guo2|peng2 you5"
 },
 {
-"id": "u15_14",
+"id": "u15_12",
 "zh": "一|年|有|十二|个|月",
 "nl": "Een jaar heeft twaalf maanden",
 "e": "📅1️⃣2️⃣",
@@ -3227,48 +4376,55 @@ window.UNITS.push(...[
 },
 {
 "id": "u31_9",
+"zh": "做",
+"nl": "doen / maken",
+"e": "🛠️",
+"py": "zuo4"
+},
+{
+"id": "u31_10",
 "zh": "做饭",
 "nl": "koken",
 "e": "🍳",
 "py": "zuo4 fan4"
 },
 {
-"id": "u31_10",
+"id": "u31_11",
 "zh": "你|昨天|做|了|什么",
 "nl": "Wat heb je gisteren gedaan?",
 "e": "📅❓",
 "py": "ni3|zuo2 tian1|zuo4|le5|shen2 me5"
 },
 {
-"id": "u31_11",
+"id": "u31_12",
 "zh": "我|昨天|看|了|一|部|电影",
 "nl": "Ik heb gisteren een film gekeken",
 "e": "🎬⏮️",
 "py": "wo3|zuo2 tian1|kan4|le5|yi2|bu4|dian4 ying3"
 },
 {
-"id": "u31_12",
+"id": "u31_13",
 "zh": "我|已经|吃|饭|了",
 "nl": "Ik heb al gegeten",
 "e": "🍚✔️",
 "py": "wo3|yi3 jing1|chi1|fan4|le5"
 },
 {
-"id": "u31_13",
+"id": "u31_14",
 "zh": "我|还|没|吃",
 "nl": "Ik heb nog niet gegeten",
 "e": "🍚❌",
 "py": "wo3|hai2|mei2|chi1"
 },
 {
-"id": "u31_14",
+"id": "u31_15",
 "zh": "周末|我|和|朋友|见面|了",
 "nl": "In het weekend heb ik met vrienden afgesproken",
 "e": "🤝🎉",
 "py": "zhou1 mo4|wo3|he2|peng2 you5|jian4 mian4|le5"
 },
 {
-"id": "u31_15",
+"id": "u31_16",
 "zh": "我|做|了|中国|菜",
 "nl": "Ik heb Chinees eten gekookt",
 "e": "🍳🥢",
@@ -3613,111 +4769,104 @@ window.UNITS.push(...[
 "items": [
 {
 "id": "u34_1",
-"zh": "会",
-"nl": "kunnen (aangeleerd)",
-"e": "🎓👌",
-"py": "hui4"
-},
-{
-"id": "u34_2",
 "zh": "能",
 "nl": "kunnen (in staat)",
 "e": "💪",
 "py": "neng2"
 },
 {
-"id": "u34_3",
+"id": "u34_2",
 "zh": "游泳",
 "nl": "zwemmen",
 "e": "🏊",
 "py": "you2 yong3"
 },
 {
-"id": "u34_4",
+"id": "u34_3",
 "zh": "写",
 "nl": "schrijven",
 "e": "✍️",
 "py": "xie3"
 },
 {
-"id": "u34_5",
+"id": "u34_4",
 "zh": "读",
 "nl": "lezen (hardop)",
 "e": "📖🗣️",
 "py": "du2"
 },
 {
-"id": "u34_6",
+"id": "u34_5",
 "zh": "汉字",
 "nl": "Chinees karakter",
 "e": "🀄✍️",
 "py": "han4 zi4"
 },
 {
-"id": "u34_7",
+"id": "u34_6",
 "zh": "帮",
 "nl": "helpen",
 "e": "🤝🙋",
 "py": "bang1"
 },
 {
-"id": "u34_8",
+"id": "u34_7",
 "zh": "问题",
 "nl": "vraag / probleem",
 "e": "❓❗",
 "py": "wen4 ti2"
 },
 {
-"id": "u34_9",
+"id": "u34_8",
 "zh": "当然",
 "nl": "natuurlijk",
 "e": "👌✨",
 "py": "dang1 ran2"
 },
 {
-"id": "u34_10",
+"id": "u34_9",
 "zh": "一些",
 "nl": "een paar / wat",
 "e": "🤏🔢",
 "py": "yi4 xie1"
 },
 {
-"id": "u34_11",
+"id": "u34_10",
 "zh": "你|会|游泳|吗",
 "nl": "Kun je zwemmen?",
 "e": "🏊❓",
 "py": "ni3|hui4|you2 yong3|ma5"
 },
 {
-"id": "u34_12",
+"id": "u34_11",
 "zh": "我|不|会|写|汉字",
 "nl": "Ik kan geen karakters schrijven",
 "e": "✍️❌",
 "py": "wo3|bu2|hui4|xie3|han4 zi4"
 },
 {
-"id": "u34_13",
+"id": "u34_12",
 "zh": "我|可以|问|你|一|个|问题|吗",
 "nl": "Mag ik je een vraag stellen?",
 "e": "🙋❓",
 "py": "wo3|ke3 yi3|wen4|ni3|yi2|ge4|wen4 ti2|ma5"
 },
 {
-"id": "u34_14",
+"id": "u34_13",
 "zh": "当然|可以",
 "nl": "Natuurlijk mag dat",
 "e": "👌✅",
 "py": "dang1 ran2|ke3 yi3"
 },
 {
-"id": "u34_15",
+"id": "u34_14",
 "zh": "今天|我|不|能|去",
 "nl": "Vandaag kan ik niet",
 "e": "🙅📅",
 "py": "jin1 tian1|wo3|bu4|neng2|qu4"
 },
 {
-"id": "u34_16",
+"id": "u34_15",
 "zh": "你|能|帮|我|吗",
 "nl": "Kun je me helpen?",
 "e": "🤝❓",
@@ -7047,118 +8196,125 @@ window.UNITS.push(...[
 "items": [
 {
 "id": "u55_1",
+"zh": "工作",
+"nl": "werk / werken",
+"e": "💼",
+"py": "gong1 zuo4"
+},
+{
+"id": "u55_2",
 "zh": "找工作",
 "nl": "werk zoeken",
 "e": "🔍💼",
 "py": "zhao3 gong1 zuo4"
 },
 {
-"id": "u55_2",
+"id": "u55_3",
 "zh": "工程师",
 "nl": "ingenieur",
 "e": "👷💻",
 "py": "gong1 cheng2 shi1"
 },
 {
-"id": "u55_3",
+"id": "u55_4",
 "zh": "经验",
 "nl": "ervaring",
 "e": "📈🧠",
 "py": "jing1 yan4"
 },
 {
-"id": "u55_4",
+"id": "u55_5",
 "zh": "工资",
 "nl": "salaris",
 "e": "💶",
 "py": "gong1 zi1"
 },
 {
-"id": "u55_5",
+"id": "u55_6",
 "zh": "面试",
 "nl": "sollicitatiegesprek",
 "e": "🤝📝",
 "py": "mian4 shi4"
 },
 {
-"id": "u55_6",
+"id": "u55_7",
 "zh": "实习",
 "nl": "stage lopen",
 "e": "🧑‍💼📚",
 "py": "shi2 xi2"
 },
 {
-"id": "u55_7",
+"id": "u55_8",
 "zh": "创业",
 "nl": "een bedrijf starten",
 "e": "🚀🏢",
 "py": "chuang4 ye4"
 },
 {
-"id": "u55_8",
+"id": "u55_9",
 "zh": "成功",
 "nl": "succes / slagen",
 "e": "🏆",
 "py": "cheng2 gong1"
 },
 {
-"id": "u55_9",
+"id": "u55_10",
 "zh": "努力",
 "nl": "je best doen",
 "e": "💪🔥",
 "py": "nu3 li4"
 },
 {
-"id": "u55_10",
+"id": "u55_11",
 "zh": "机会",
 "nl": "kans",
 "e": "🍀",
 "py": "ji1 hui4"
 },
 {
-"id": "u55_11",
+"id": "u55_12",
 "zh": "当",
 "nl": "worden / werken als",
 "e": "🎭➡️",
 "py": "dang1"
 },
 {
-"id": "u55_12",
+"id": "u55_13",
 "zh": "自己",
 "nl": "zelf",
 "e": "🪞",
 "py": "zi4 ji3"
 },
 {
-"id": "u55_13",
+"id": "u55_14",
 "zh": "毕业|以后|我|想|当|工程师",
 "nl": "Na mijn studie wil ik ingenieur worden",
 "e": "👷🎓",
 "py": "bi4 ye4|yi3 hou4|wo3|xiang3|dang1|gong1 cheng2 shi1"
 },
 {
-"id": "u55_14",
+"id": "u55_15",
 "zh": "我|想|自己|创业",
 "nl": "Ik wil zelf een bedrijf starten",
 "e": "🚀💭",
 "py": "wo3|xiang3|zi4 ji3|chuang4 ye4"
 },
 {
-"id": "u55_15",
+"id": "u55_16",
 "zh": "我|明天|有|一|个|面试",
 "nl": "Morgen heb ik een sollicitatiegesprek",
 "e": "🤝📝",
 "py": "wo3|ming2 tian1|you3|yi2|ge4|mian4 shi4"
 },
 {
-"id": "u55_16",
+"id": "u55_17",
 "zh": "只要|努力|就|会|成功",
 "nl": "Als je je best doet, lukt het",
 "e": "💪🏆",
 "py": "zhi3 yao4|nu3 li4|jiu4|hui4|cheng2 gong1"
 },
 {
-"id": "u55_17",
+"id": "u55_18",
 "zh": "这|是|一|个|好|机会",
 "nl": "Dit is een goede kans",
 "e": "🍀👍",

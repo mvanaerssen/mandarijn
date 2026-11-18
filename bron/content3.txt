@@ -143,6 +143,7 @@ d B 要吃药吗？ | Moet ik medicijnen nemen?
 d A 要，一天三次。 | Ja, drie keer per dag.
 
 @ u55 | Toekomst & werk | 💼
+w 工作 | werk / werken | 💼
 w 找工作 | werk zoeken | 🔍💼
 w 工程师 | ingenieur | 👷💻
 w 经验 | ervaring | 📈🧠

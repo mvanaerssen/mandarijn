@@ -1,6 +1,6 @@
 # 学中文 – Chinees met Max
 
-Een persoonlijke app om Mandarijn te leren zoals een kind een taal leert: eerst luisteren, dan nazeggen, daarna lezen.
+Een persoonlijke app om Mandarijn te leren, in korte lessen zoals Duolingo: nuttige zinnen vanaf les 1, koppelen, vertalen met woordblokjes, invullen en luisteren. Woorden die op elkaar lijken komen nooit samen voor.
 
 **Live:** https://mvanaerssen.github.io/mandarijn/ (open de link in Safari en kies Deel → Zet op beginscherm)
 
@@ -19,8 +19,8 @@ Een persoonlijke app om Mandarijn te leren zoals een kind een taal leert: eerst 
 | Bestand | Wat |
 |---|---|
 | `index.html` | De hele app (opmaak en logica) |
-| `data.js` | Lesstof werelden 1–12 |
-| `data2.js` | Lesstof werelden 13–68 (gegenereerd, met automatisch gecontroleerde pinyin) |
+| `data.js` | Lettergrepen voor de Toon-gym |
+| `data2.js` | Alle lesstof, werelden 1–68 (gegenereerd uit `bron/`, pinyin automatisch gecontroleerd) |
 | `manifest.json`, `icon-*.png` | Zorgt dat hij als app op je beginscherm staat |
 | `sw.js` | Laat de app ook offline werken |
 

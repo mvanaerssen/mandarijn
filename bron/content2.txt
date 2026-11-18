@@ -10,6 +10,7 @@ w 看见 | zien | 👁️
 w 见面 | elkaar ontmoeten | 🤝
 w 已经 | al | ✔️⏱️
 w 还 | nog | ⏳
+w 做 | doen / maken | 🛠️
 w 做饭 | koken | 🍳
 s 你/昨天/做/了/什么 | Wat heb je gisteren gedaan? | 📅❓
 s 我/昨天/看/了/一/部/电影 | Ik heb gisteren een film gekeken | 🎬⏮️

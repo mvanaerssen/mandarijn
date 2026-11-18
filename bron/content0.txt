@@ -1,0 +1,170 @@
+# ===================== BABY → KLEUTER: jezelf voorstellen =====================
+# Geen toondrills: je leert tonen gewoon per woord. Woorden die op elkaar lijken staan niet samen.
+
+@ u1 | Hallo! | 👋
+intro: Je eerste Chinese woorden. Na deze wereld kun je jezelf al voorstellen!
+note: Geen vervoegingen :: In het Chinees verandert een werkwoord nooit: 我是 = ik ben, 你是 = jij bent. 是 blijft altijd 是. :: 我是马克斯=ik ben Max ;; 你是王明=jij bent Wang Ming
+w 你好 | hallo | 👋
+w 谢谢 | dank je | 🙏
+w 再见 | tot ziens / doei | 🚪👋
+w 我 | ik | 🙋‍♂️
+w 你 | jij | 👉
+w 是 | zijn (ben / is) | 🟰
+s 我/是/马克斯 | Ik ben Max | 🙋‍♂️📛
+d A 你好！ | Hallo!
+d B 你好！我是马克斯。 | Hallo! Ik ben Max.
+d A 我是王明。 | Ik ben Wang Ming.
+d B 谢谢！再见！ | Dank je! Doei!
+d A 再见！ | Doei!
+
+@ u2 | Hoe heet je? | 📛
+note: Vraagwoorden blijven op hun plek :: In het Chinees zet je het vraagwoord gewoon op de plek van het antwoord: 你叫什么名字? = letterlijk 'jij heet wat naam?'. Antwoord: 我叫马克斯. :: 你叫什么名字=hoe heet je? ;; 我叫马克斯=ik heet Max
+w 叫 | heten | 🏷️
+w 什么 | wat | ❓
+w 名字 | naam | 📛
+s 你/叫/什么/名字 | Hoe heet je? | 🙋❓
+s 我/叫/马克斯 | Ik heet Max | 🙋‍♂️🏷️
+s 你/呢 | En jij? | 👉🤔
+d A 你好！我叫王明。 | Hallo! Ik heet Wang Ming.
+d A 你叫什么名字？ | Hoe heet jij?
+d B 你好，王明！我叫马克斯。 | Hallo, Wang Ming! Ik heet Max.
+
+@ u3 | Hoe gaat het? | 😄
+note: Ja/nee-vraag met 吗 :: Zet 吗 achter een gewone zin en het wordt een ja/nee-vraag: 你好 = hallo, 你好吗? = gaat het goed met je? :: 你好吗=hoe gaat het? ;; 你是马克斯吗=ben jij Max?
+w 好 | goed | 👍
+w 吗 | (maakt een ja/nee-vraag) | ✅❓
+w 很 | heel / erg | 💯
+w 也 | ook | ➕
+w 不客气 | graag gedaan | 😊
+s 你/好/吗 | Hoe gaat het? | 👋❓
+s 我/很/好 | Het gaat goed met me | 😄👍
+s 我/也/很/好 | Met mij gaat het ook goed | 😄➕
+d A 你好吗？ | Hoe gaat het?
+d B 我很好，谢谢！你呢？ | Goed, dank je! En met jou?
+d A 我也很好。 | Ook goed.
+d B 谢谢！ | Dank je!
+d A 不客气！ | Graag gedaan!
+
+@ u4 | Waar kom je vandaan? | 🌍
+note: Land + 人 :: Land + 人 (persoon) = iemand uit dat land: 荷兰人 = Nederlander, 中国人 = Chinees. :: 我是荷兰人=ik ben Nederlander ;; 他是中国人=hij is Chinees
+w 人 | mens / persoon | 🧍
+w 荷兰 | Nederland | 🇳🇱
+w 中国 | China | 🇨🇳
+w 中国人 | Chinees (persoon) | 🇨🇳🧍
+s 你/是/哪/国/人 | Uit welk land kom je? | 🌍❓
+s 我/是/荷兰/人 | Ik ben Nederlander | 🙋‍♂️🇳🇱
+d A 你是哪国人？ | Uit welk land kom je?
+d B 我是荷兰人。你呢？ | Ik ben Nederlander. En jij?
+d A 我是中国人。 | Ik ben Chinees.
+
+@ u5 | Tellen 1–5 | 🔢
+note: Getal + 个 + ding :: Tussen een getal en een ding staat een telwoord, meestal 个: 三个人 = drie mensen. Twee van iets is 两 (niet 二): 两个人. :: 三个人=drie mensen ;; 两个人=twee mensen
+w 一 | 1 | 1️⃣
+w 二 | 2 | 2️⃣
+w 三 | 3 | 3️⃣
+w 四 | 4 | 4️⃣
+w 五 | 5 | 5️⃣
+w 两 | twee (van iets) | ✌️
+w 个 | (telwoord, algemeen) | 🔹
+s 三/个/人 | drie mensen | 🧍🧍🧍
+d A 一、二、三！ | Eén, twee, drie!
+d B 四、五！ | Vier, vijf!
+d A 很好！ | Heel goed!
+
+@ u6 | Tellen 6–10 & je leeftijd | 🎂
+note: Leeftijd met 岁 :: Je leeftijd zeg je met getal + 岁: 我二十一岁 = ik ben 21. Je hebt hier geen 是 nodig. Getallen boven 10: 二十 = 'twee-tien' = 20, 二十一 = 21. :: 我二十一岁=ik ben 21 jaar ;; 你多大了=hoe oud ben je?
+w 六 | 6 | 6️⃣
+w 七 | 7 | 7️⃣
+w 八 | 8 | 8️⃣
+w 九 | 9 | 9️⃣
+w 十 | 10 | 🔟
+w 二十 | 20 (twee-tien) | 2️⃣0️⃣
+w 岁 | jaar (oud) | 🎂
+s 你/多大/了 | Hoe oud ben je? | 🤔🎂
+w @age | Ik ben … jaar | 🙋‍♂️🎂
+d A 你多大了？ | Hoe oud ben je?
+d B @age_nine
+d A 我二十五岁。 | Ik ben 25.
+
+@ u7 | Ik studeer | 🎓
+w 学生 | student | 🎓
+w 大学 | universiteit | 🏛️
+w 学习 | studeren / leren | 📚
+w 人工智能 | AI (kunstmatige intelligentie) | 🤖
+w 在 | in / op (een plek) | 📍
+s 我/是/学生 | Ik ben student | 🙋‍♂️🎓
+s 我/学习/人工智能 | Ik studeer AI | 📚🤖
+s 我/在/阿姆斯特丹/上/大学 | Ik studeer in Amsterdam | 🏛️🇳🇱
+d A 你是学生吗？ | Ben je student?
+d B 是，我是学生。我学习人工智能。 | Ja, ik ben student. Ik studeer AI.
+d B 我在阿姆斯特丹上大学。 | Ik studeer in Amsterdam.
+
+@ u8 | Wat vind je leuk? | ❤️
+w 喜欢 | leuk vinden / houden van | ❤️
+w 运动 | sporten | 🏋️
+w 跑步 | hardlopen | 🏃
+w 音乐 | muziek | 🎵
+w 看书 | lezen | 📖
+s 你/喜欢/什么 | Wat vind jij leuk? | ❤️❓
+s 我/喜欢/跑步 | Ik hou van hardlopen | 🙋‍♂️❤️🏃
+d A 你喜欢什么？ | Wat vind jij leuk?
+d B 我喜欢运动。我也喜欢音乐。你呢？ | Ik hou van sporten. Ik hou ook van muziek. En jij?
+d A 我喜欢看书。 | Ik lees graag.
+
+@ u9 | Waarom Chinees? | 🀄
+note: Omdat = 因为 :: 为什么 = waarom, 因为 = omdat. Het antwoord begint gewoon met 因为: 因为中文很有意思 = omdat Chinees heel interessant is. :: 你为什么学中文=waarom leer je Chinees? ;; 因为很有意思=omdat het interessant is
+w 中文 | Chinees (de taal) | 🀄
+w 为什么 | waarom | 🤔
+w 因为 | omdat | 👉💡
+w 朋友 | vriend | 🤝
+w 有意思 | interessant / leuk | ✨
+s 你/为什么/学/中文 | Waarom leer je Chinees? | 🤔🀄
+s 因为/中文/很/有意思 | Omdat Chinees heel interessant is | 🀄✨
+s 我/的/朋友/会/说/中文 | Mijn vriend spreekt Chinees | 🤝🗣️🀄
+d A 你为什么学中文？ | Waarom leer je Chinees?
+d B 因为中文很有意思。 | Omdat Chinees heel interessant is.
+d B 我的朋友也会说中文。 | Mijn vriend spreekt ook Chinees.
+
+@ u10 | Ja & nee | ✅
+note: Nee zeggen met 不 :: 不 voor een werkwoord maakt het ontkennend: 我不是中国人 = ik ben geen Chinees. Op een ja/nee-vraag antwoord je vaak door het werkwoord te herhalen: 是 (ja) of 不是 (nee). :: 我不是中国人=ik ben geen Chinees ;; 我不喜欢=ik vind het niet leuk
+w 不 | niet / nee | ❌
+w 不是 | is niet / nee | 🚫🟰
+w 好的 | oké | 👌
+s 你/是/中国人/吗 | Ben jij Chinees? | 🇨🇳❓
+s 我/不/是/中国人 | Ik ben geen Chinees | 🙅🇨🇳
+s 你/是/学生/吗 | Ben je student? | 🎓❓
+d A 你是中国人吗？ | Ben jij Chinees?
+d B 不是，我是荷兰人。 | Nee, ik ben Nederlander.
+d A 你是学生吗？ | Ben je student?
+d B 是，我是学生。 | Ja, ik ben student.
+d A 好的！ | Oké!
+
+@ u11 | Leuk je te ontmoeten | 🤝
+w 认识 | kennen / leren kennen | 🤝👀
+w 高兴 | blij | 😃
+w 会 | kunnen (aangeleerd) | 🎓👌
+w 说 | spreken / zeggen | 🗣️
+w 一点 | een beetje | 🤏
+s 认识/你/很/高兴 | Leuk je te ontmoeten | 🤝😃
+s 我/会/说/一点/中文 | Ik spreek een beetje Chinees | 🗣️🤏🀄
+d A 认识你很高兴！ | Leuk je te ontmoeten!
+d B 我也很高兴！ | Ik ook!
+d A 你会说中文吗？ | Spreek je Chinees?
+d B 我会说一点中文。 | Ik spreek een beetje Chinees.
+
+@ u12 | Het eerste grote gesprek | 🏆
+intro: Alles wat je tot nu toe hebt geleerd, in één gesprek. Jij bent 'Jij'!
+w 加油 | zet 'm op! / hup! | 💪
+w 下次见 | tot de volgende keer | 👋📅
+d A 你好！你叫什么名字？ | Hallo! Hoe heet je?
+d B 你好！我叫马克斯。你呢？ | Hallo! Ik heet Max. En jij?
+d A 我叫王明。你是哪国人？ | Ik heet Wang Ming. Uit welk land kom je?
+d B 我是荷兰人。 | Ik ben Nederlander.
+d A 你多大了？ | Hoe oud ben je?
+d B @age
+d A 你是学生吗？ | Ben je student?
+d B 是，我是学生。我学习人工智能。 | Ja, ik ben student. Ik studeer AI.
+d A 你为什么学中文？ | Waarom leer je Chinees?
+d B 因为中文很有意思。我的朋友会说中文。 | Omdat Chinees heel interessant is. Mijn vriend spreekt Chinees.
+d A 你的中文很好！加油！ | Je Chinees is heel goed! Zet 'm op!
+d B 谢谢！认识你很高兴。下次见！ | Dank je! Leuk je te ontmoeten. Tot de volgende keer!

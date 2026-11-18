@@ -54,7 +54,7 @@ PHRASES = {
     "答应": [["dā"], ["ying"]], "种": [["zhǒng"]], "号码": [["hào"], ["mǎ"]],
     "了解": [["liǎo"], ["jiě"]], "尝一下": [["cháng"], ["yí"], ["xià"]],
     "公共汽车": [["gōng"], ["gòng"], ["qì"], ["chē"]], "宇航员": [["yǔ"], ["háng"], ["yuán"]],
-    "背": [["bèi"]], "对不起": [["duì"], ["bu"], ["qǐ"]], "听不懂": [["tīng"], ["bu"], ["dǒng"]], "看不懂": [["kàn"], ["bu"], ["dǒng"]], "找不到": [["zhǎo"], ["bu"], ["dào"]], "好不好": [["hǎo"], ["bu"], ["hǎo"]], "对不对": [["duì"], ["bu"], ["duì"]], "调": [["diào"]], "声调": [["shēng"], ["diào"]],
+    "背": [["bèi"]], "对不起": [["duì"], ["bu"], ["qǐ"]], "不客气": [["bù"], ["kè"], ["qi"]], "听不懂": [["tīng"], ["bu"], ["dǒng"]], "看不懂": [["kàn"], ["bu"], ["dǒng"]], "找不到": [["zhǎo"], ["bu"], ["dào"]], "好不好": [["hǎo"], ["bu"], ["hǎo"]], "对不对": [["duì"], ["bu"], ["duì"]], "调": [["diào"]], "声调": [["shēng"], ["diào"]],
 }
 load_phrases_dict(PHRASES)
 # "得" als werkwoordscomplement altijd neutraal
@@ -96,7 +96,8 @@ def raw_syllables(text):
         while True:
             j = s.find(p, start)
             if j < 0: break
-            syl[j] = syl[j][0].upper() + syl[j][1:]
+            for k in range(j, j + (len(p) if p in ("王明",) else 1)):
+                syl[k] = syl[k][0].upper() + syl[k][1:]
             start = j + len(p)
     return chars, syl
 
@@ -109,6 +110,7 @@ def segment_line(text):
         h = [c for c in tok if HZ.match(c)]
         if not h: continue
         # voornaamwoorden los schrijven: 我学 → 我 | 学 (maar 我们, 你们 blijven heel)
+        if "".join(h) == "王明": words.append(["王"]); words.append(["明"]); continue
         if len(h) >= 2 and h[0] in PRON and h[1] not in "们的":
             words.append(h[:1]); h = h[1:]
         words.append(h)
@@ -150,6 +152,10 @@ def parse(path):
             story = {"title": ln[6:].strip(), "lines": [], "q": []}; u["story"] = story; continue
         kind, rest = ln[:1], ln[2:]
         f = [x.strip() for x in rest.split("|")]
+        if kind == "w" and f[0] == "@age":
+            u["items"].append({"id": "myage", "personal": "age", "nl": f[1], "e": f[2]}); continue
+        if kind == "d" and rest.split(" ", 1)[1].startswith("@"):
+            u["dialogue"].append({"s": rest.split(" ", 1)[0], "personal": rest.split(" ", 1)[1].strip()[1:]}); continue
         if kind in "ws":
             zh, nl, e = f[0], f[1], f[2]
             parts = zh.split("/") if kind == "s" else [zh]
@@ -174,22 +180,21 @@ def parse(path):
     return units
 
 units = []
-for p in ["content1.txt", "content2.txt", "content3.txt"]:
+for p in ["content0.txt", "content1.txt", "content2.txt", "content3.txt"]:
     units += parse(p)
 
 # --- controles ---
-old = open("../data.js", encoding="utf-8").read()
 seen = {}
-for m in re.finditer(r'zh: "([^"]+)"', old.split("window.UNITS")[1]):
-    seen[m.group(1).replace("|", "")] = "oud"
 dups = []
 for u in units:
     keep = []
     for it in u["items"]:
+        if it.get("personal"): keep.append(it); continue
         z = it["zh"].replace("|", "")
         if z in seen: dups.append(f"{u['id']}: {z} (al in {seen[z]})"); continue
         seen[z] = u["id"]; keep.append(it)
-    for i, it in enumerate(keep): it["id"] = f"{u['id']}_{i + 1}"
+    for i, it in enumerate(keep):
+        if not it.get("personal"): it["id"] = f"{u['id']}_{i + 1}"
     u["items"] = keep
 print("Dubbel (verwijderd):", *dups, sep="\n  ")
 n_items = sum(len(u["items"]) for u in units)
@@ -197,7 +202,7 @@ print(f"{len(units)} werelden, {n_items} woorden/zinnen, {sum(len(u['dialogue'])
       f"{sum(1 for u in units if 'story' in u)} verhaaltjes, {sum(len(u.get('notes', [])) for u in units)} uitlegkaartjes")
 
 with open("../data2.js", "w", encoding="utf-8") as fh:
-    fh.write("// Werelden 13–68 (gegenereerd door build.py; pinyin automatisch gecontroleerd)\n")
+    fh.write("// Alle werelden (gegenereerd door bron/build.py; pinyin automatisch gecontroleerd)\n")
     fh.write("window.UNITS.push(...")
     fh.write(json.dumps(units, ensure_ascii=False, indent=0))
     fh.write(");\n")
@@ -206,8 +211,10 @@ with open("../data2.js", "w", encoding="utf-8") as fh:
 with open("review.txt", "w", encoding="utf-8") as fh:
     for u in units:
         fh.write(f"\n== {u['id']} {u['title']}\n")
-        for it in u["items"]: fh.write(f"  {it['zh']:<22} {it['py']}\n")
-        for d in u["dialogue"]: fh.write(f"  [{d['s']}] {d['zh']}  {d['py']}\n")
+        for it in u["items"]:
+            if "zh" in it: fh.write(f"  {it['zh']:<22} {it['py']}\n")
+        for d in u["dialogue"]:
+            if "zh" in d: fh.write(f"  [{d['s']}] {d['zh']}  {d['py']}\n")
         for t in u.get("story", {}).get("lines", []): fh.write(f"  (t) {t['zh']}  {t['py']}\n")
         for n in u.get("notes", []):
             for e in n["ex"]: fh.write(f"  (n) {e['zh']}  {e['py']}\n")

@@ -3,6 +3,8 @@
 @ u13 | Familie & vrienden | 👨‍👩‍👦
 note: Mijn = 我的 :: 的 maakt bezit: 我的手机 = mijn telefoon. Bij familie en vrienden mag 的 vaak weg: 我妈妈 = mijn moeder. :: 我的手机=mijn telefoon ;; 我妈妈=mijn moeder
 w 家 | familie / thuis | 🏠
+w 妈妈 | mama | 👩
+w 爸爸 | papa | 👨
 w 和 | en | ➕ | tw=;In Taiwan hoor je 和 vaak uitgesproken als 'hàn' in plaats van 'hé'.
 w 哥哥 | oudere broer | 👦⬆️
 w 姐姐 | oudere zus | 👧⬆️
@@ -30,7 +32,9 @@ note: Wonen in = 住在 :: 住在 + plaats = wonen in. 有 betekent ook 'er is /
 w 住 | wonen | 🏡
 w 城市 | stad | 🏙️
 w 房间 | kamer | 🛏️
+w 大 | groot | 🐘
 w 小 | klein | 🐭
+w 哪里 | waar | 📍❓
 w 漂亮 | mooi | 🌷
 w 这 | dit / deze | 👇
 w 那 | dat / die | 👉
