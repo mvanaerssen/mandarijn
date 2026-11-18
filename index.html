@@ -582,10 +582,14 @@ function drawContour(cv, res) {
 /* ---------- opnemen ---------- */
 let rec = null;
 async function startRecording(maxMs, onLevel) {
+  // iOS: getUserMedia moet als ALLEREERSTE in de tik gebeuren, zonder 'await' ervoor,
+  // anders weigert iOS meteen zonder het te vragen.
+  if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) throw Object.assign(new Error("geen microfoon-ondersteuning"), { name: "NotSupportedError" });
+  const gum = navigator.mediaDevices.getUserMedia({ audio: true });
   const AC = window.AudioContext || window.webkitAudioContext;
   const ctx = new AC();
-  if (ctx.state === "suspended") { try { await ctx.resume(); } catch (e) {} }
-  const stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
+  const stream = await gum;
+  if (ctx.state !== "running") { try { await ctx.resume(); } catch (e) {} }
   const src = ctx.createMediaStreamSource(stream), an = ctx.createAnalyser();
   an.fftSize = 2048; src.connect(an);
   const buf = new Float32Array(an.fftSize);
@@ -615,7 +619,7 @@ async function startRecording(maxMs, onLevel) {
         lastAt = now;
         an.getFloatTimeDomainData(buf);
         let r = 0; for (let i = 0; i < buf.length; i++) r += buf[i] * buf[i]; r = Math.sqrt(r / buf.length);
-        if (now < 180) { noise.push(r); thr = Math.max(0.01, 3 * noise.slice().sort((a, b) => a - b)[noise.length >> 1]); }
+        if (now < 180) { if (r > 0) noise.push(r); if (noise.length) thr = Math.max(0.004, 3 * noise.slice().sort((a, b) => a - b)[noise.length >> 1]); }
         let f = null;
         if (r > thr && now >= 180) { f = detectPitch(buf, ctx.sampleRate); if (f) { voicedSeen++; lastVoice = now; } }
         frames.push({ t: now, f, r });
@@ -628,6 +632,12 @@ async function startRecording(maxMs, onLevel) {
   });
 }
 
+function micErrorText(e) {
+  const name = (e && e.name) || "", msg = (e && e.message) || String(e);
+  if (name === "NotAllowedError") return "iOS gaf geen toegang tot de microfoon. Check: iPhone-instellingen → Apps → Safari → Microfoon → <b>Vraag</b> of <b>Sta toe</b>. Werkt het dan nog niet, verwijder de app van je beginscherm en zet hem er opnieuw op. <span class='small muted'>(" + esc(name + ": " + msg) + ")</span>";
+  if (name === "NotFoundError") return "Geen microfoon gevonden. <span class='small muted'>(" + esc(msg) + ")</span>";
+  return "De microfoon werkt hier niet. <span class='small muted'>(" + esc(name + ": " + msg) + ")</span>";
+}
 /* Uitspraak-widget: model afspelen, opnemen, lijn tekenen, score */
 function speakWidget(host, it, onAttempt) {
   host.innerHTML = `
@@ -686,9 +696,7 @@ function speakWidget(host, it, onAttempt) {
       q("result").classList.remove("hidden");
       q("result").querySelector(".canvas-wrap").classList.add("hidden");
       q("score").textContent = "🎙️❌";
-      q("tip").innerHTML = e && e.name === "NotAllowedError"
-        ? "Microfoon geweigerd. Zet hem aan via iPhone-instellingen → Safari → Microfoon, of zet 'Ik kan nu niet praten' aan."
-        : "De microfoon werkt hier niet (" + esc(e && e.name || e) + ").";
+      q("tip").innerHTML = micErrorText(e);
       q("me").style.display = "none";
       onAttempt && onAttempt(null, best, true);
     } finally {
@@ -943,6 +951,12 @@ function renderSettings() {
       <button class="btn" data-act="testvoice" style="margin-top:10px">🔊 Test stem</button>
     </div>
     <div class="card">
+      <b>🎙️ Microfoontest</b>
+      <div class="small muted" style="margin:6px 0 10px">Tik, zeg 3 seconden lang "aaa" en kijk wat de app hoort.</div>
+      <button class="btn" data-act="mictest">🎙️ Test microfoon</button>
+      <div id="micres" class="small" style="margin-top:8px;line-height:1.6"></div>
+    </div>
+    <div class="card">
       <b>💾 Back-up</b>
       <div class="small muted" style="margin:6px 0 10px">Je voortgang staat alleen op deze telefoon. Maak af en toe een back-up, bijvoorbeeld door hem in je Notities te plakken.</div>
       <button class="btn" data-act="copybackup">📋 Kopieer back-up</button>
@@ -962,6 +976,19 @@ function renderSettings() {
   r.oninput = () => { S.rate = +r.value; document.getElementById("ratev").textContent = S.rate.toFixed(2); save(); };
   if (v) v.onchange = () => { S.voiceURI = v.value; pickVoice(); save(); say("你好"); };
 }
+ACT.mictest = async () => {
+  const out = document.getElementById("micres");
+  out.textContent = "Luisteren… zeg 'aaa'";
+  let maxR = 0;
+  try {
+    const { frames } = await startRecording(3000, v => { maxR = Math.max(maxR, v); out.textContent = "Luisteren… volume " + "█".repeat(Math.round(v * 10)); });
+    const voiced = frames.filter(f => f.f), loud = Math.max(0, ...frames.map(f => f.r));
+    const med = voiced.length ? Math.round(voiced.map(f => f.f).sort((a, b) => a - b)[voiced.length >> 1]) : 0;
+    out.innerHTML = voiced.length > 5
+      ? `✅ Werkt! Ik hoorde je stem (rond ${med} Hz, in ${Math.round(voiced.length / frames.length * 100)}% van de tijd).`
+      : `⚠️ Microfoon staat aan, maar ik hoorde (bijna) geen stem. Hardste geluid: ${loud.toFixed(4)}. Praat harder of dichter bij de onderkant van je telefoon.`;
+  } catch (e) { out.innerHTML = "❌ " + micErrorText(e); }
+};
 ACT.copybackup = async () => {
   const txt = "XZW1:" + btoa(unescape(encodeURIComponent(JSON.stringify(S))));
   try { await navigator.clipboard.writeText(txt); toast("📋 Back-up gekopieerd. Plak hem in je Notities."); }
